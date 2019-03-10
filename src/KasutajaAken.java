@@ -1,46 +1,73 @@
 import java.awt.*;
 import java.awt.event.*;
+import javax.imageio.ImageIO;
 import javax.swing.*;
+import java.awt.image.BufferedImage;
+import java.awt.image.ImageObserver;
+import java.io.File;
+import java.io.IOException;
 
-public class KasutajaAken extends Frame {
+public class KasutajaAken extends JFrame {
 
     private Image aken_ikoon;
 
-    private Label silt_vastus;
-    private TextField vastus;
+    private JPanel pildi_paneel;
+    private JPanel suhtlus_paneel;
+
+    private JLabel silt_vastus;
+    private JTextField vastus;
     private String vastus_tekst;
 
-    private Label silt_sisend;
-    private TextField sisend;
+    private JLabel silt_sisend;
+    private JTextField sisend;
     private String sisend_tekst;
 
-    private Button suhtle;
+    private JButton suhtle;
 
-    private JFrame pilt_ala;
-    private Image pilt;
+    private JLabel pilt_ala;
+    private BufferedImage pilt;
 
     public KasutajaAken () {
-        setLayout(new GridLayout(6,1,2,2));
-        // layout vasakult paremale, read üksteise all
+        pildi_paneel = new JPanel();
+        pildi_paneel.setLayout(new GridLayout(1,1,1,1));
+        suhtlus_paneel = new JPanel();
+        suhtlus_paneel.setLayout(new GridLayout(5,1,2,2));
 
-        silt_vastus = new Label(" Meister: ");
-        add(silt_vastus);
-        vastus = new TextField(vastus_tekst,3);
+        try {
+            pilt = ImageIO.read(new File("whale-fall.png"));
+            //pildid peaksid olema laiusega 380
+            pilt_ala = new JLabel(new ImageIcon(pilt));
+            pildi_paneel.add(pilt_ala);
+            pildi_paneel.setMaximumSize(new Dimension(410,410));
+        } catch(IOException e) {
+            e.printStackTrace(); //ma ei tea miks, aga kuskil oli nii?
+        }
+
+
+
+        silt_vastus = new JLabel(" Meister: ");
+        suhtlus_paneel.add(silt_vastus);
+        vastus = new JTextField(vastus_tekst,3);
         vastus.setEditable(false);
         vastus.setBackground(new Color(191,255,244));
-        add(vastus);
+        suhtlus_paneel.add(vastus);
 
-        silt_sisend = new Label(" Sina: ");
-        add(silt_sisend);
-        sisend = new TextField(sisend_tekst,3);
+        silt_sisend = new JLabel(" Sina: ");
+        suhtlus_paneel.add(silt_sisend);
+        sisend = new JTextField(sisend_tekst,3);
         sisend.setBackground(new Color(191,255,244));
-        add(sisend);
+        suhtlus_paneel.add(sisend);
 
-        suhtle = new Button(" Suhtle ");
+        suhtle = new JButton(" Suhtle ");
         suhtle.setBackground(new Color(208,239,160));
-        add(suhtle);
+        suhtlus_paneel.add(suhtle);
 
-        setSize(410,220);
+        suhtlus_paneel.setSize(410,220);
+        pildi_paneel.setSize(pilt.getWidth(),pilt.getHeight());
+        add(pildi_paneel,BorderLayout.BEFORE_FIRST_LINE);
+        add(suhtlus_paneel);
+        setSize(410,suhtlus_paneel.getHeight()+pildi_paneel.getHeight());
+
         setTitle("Java Projekt 2001: Zen Meister");
         setBackground(new Color(244,164,164));
 
