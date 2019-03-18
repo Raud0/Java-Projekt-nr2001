@@ -1,9 +1,7 @@
 import java.awt.*;
-import java.awt.event.*;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.image.BufferedImage;
-import java.awt.image.ImageObserver;
 import java.io.File;
 import java.io.IOException;
 
@@ -17,17 +15,23 @@ public class KasutajaAken extends JFrame {
     private JLabel silt_vastus;
     private JTextField vastus;
     private String vastus_tekst;
+    public String getVastus_tekst() { return vastus_tekst; }
+    public void setVastus_tekst(String vastus_tekst) { this.vastus_tekst = vastus_tekst; }
 
     private JLabel silt_sisend;
     private JTextField sisend;
     private String sisend_tekst;
+    public String getSisend_tekst() { return sisend_tekst; }
+
+    public void setSisend_tekst(String sisend_tekst) { this.sisend_tekst = sisend_tekst; }
 
     private JButton suhtle;
 
     private JLabel pilt_ala;
     private BufferedImage pilt;
 
-    public KasutajaAken () {
+    public KasutajaAken (String algtekst) {
+        setVastus_tekst(algtekst);
         pildi_paneel = new JPanel();
         pildi_paneel.setLayout(new GridLayout(1,1,1,1));
         suhtlus_paneel = new JPanel();
@@ -45,20 +49,20 @@ public class KasutajaAken extends JFrame {
 
 
 
-        silt_vastus = new JLabel(" Meister: ");
+        silt_vastus = new JLabel(" Master: ");
         suhtlus_paneel.add(silt_vastus);
         vastus = new JTextField(vastus_tekst,3);
         vastus.setEditable(false);
         vastus.setBackground(new Color(191,255,244));
         suhtlus_paneel.add(vastus);
 
-        silt_sisend = new JLabel(" Sina: ");
+        silt_sisend = new JLabel(" Student: ");
         suhtlus_paneel.add(silt_sisend);
         sisend = new JTextField(sisend_tekst,3);
         sisend.setBackground(new Color(191,255,244));
         suhtlus_paneel.add(sisend);
 
-        suhtle = new JButton(" Suhtle ");
+        suhtle = new JButton(" Speak ");
         suhtle.setBackground(new Color(208,239,160));
         suhtlus_paneel.add(suhtle);
 
@@ -68,7 +72,7 @@ public class KasutajaAken extends JFrame {
         add(suhtlus_paneel);
         setSize(410,suhtlus_paneel.getHeight()+pildi_paneel.getHeight());
 
-        setTitle("Java Projekt 2001: Zen Meister");
+        setTitle("Java Projekt 2001: Zen Master");
         setBackground(new Color(244,164,164));
 
         aken_ikoon = Toolkit.getDefaultToolkit().getImage("meistriikoon.png");
@@ -77,9 +81,8 @@ public class KasutajaAken extends JFrame {
         setVisible(true);
     }
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         KasutajaAken programm = new KasutajaAken();
-    }
-
+    }*/
 
 }
