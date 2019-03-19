@@ -1,11 +1,15 @@
 import java.awt.*;
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
 public class KasutajaAken extends JFrame {
+
+    //private String sisu;
 
     private Image aken_ikoon;
 
@@ -29,6 +33,10 @@ public class KasutajaAken extends JFrame {
 
     private JLabel pilt_ala;
     private BufferedImage pilt;
+
+    /**public String getSisu() {
+        return sisu;
+    }*/
 
     public KasutajaAken (String algtekst) {
         setVastus_tekst(algtekst);
@@ -65,6 +73,12 @@ public class KasutajaAken extends JFrame {
         suhtle = new JButton(" Speak ");
         suhtle.setBackground(new Color(208,239,160));
         suhtlus_paneel.add(suhtle);
+        suhtle.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                System.out.println(sisend.getText());
+                //sisu = sisend.getText();
+            }
+        });
 
         suhtlus_paneel.setSize(410,220);
         pildi_paneel.setSize(pilt.getWidth(),pilt.getHeight());
