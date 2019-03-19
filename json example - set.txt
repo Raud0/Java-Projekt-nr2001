@@ -1,0 +1,1670 @@
+﻿{
+    "metadata": {
+        "provider": "Oxford University Press"
+    },
+    "results": [
+        {
+            "id": "set",
+            "language": "en",
+            "lexicalEntries": [
+                {
+                    "entries": [
+                        {
+                            "etymologies": [
+                                "Old English settan, of Germanic origin; related to Dutch zetten, German setzen, also to sit"
+                            ],
+                            "grammaticalFeatures": [
+                                {
+                                    "text": "Past Participle",
+                                    "type": "Non Finiteness"
+                                },
+                                {
+                                    "text": "Present",
+                                    "type": "Tense"
+                                },
+                                {
+                                    "text": "Past",
+                                    "type": "Tense"
+                                }
+                            ],
+                            "homographNumber": "100",
+                            "senses": [
+                                {
+                                    "definitions": [
+                                        "put, lay, or stand (something) in a specified place or position"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "Catherine set a chair by the bed"
+                                        },
+                                        {
+                                            "text": "Delaney set the mug of tea down"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0928250.010",
+                                    "notes": [
+                                        {
+                                            "text": "with object and usually with adverbial",
+                                            "type": "grammaticalNote"
+                                        }
+                                    ],
+                                    "short_definitions": [
+                                        "put, lay, or stand something in specified place or position"
+                                    ],
+                                    "subsenses": [
+                                        {
+                                            "definitions": [
+                                                "be situated or fixed in a specified place or position"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "the village was set among olive groves on a hill"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.016",
+                                            "notes": [
+                                                {
+                                                    "text": "\"be set\"",
+                                                    "type": "wordFormNote"
+                                                }
+                                            ],
+                                            "short_definitions": [
+                                                "be situated or fixed in specified place or position"
+                                            ],
+                                            "thesaurusLinks": [
+                                                {
+                                                    "entry_id": "set",
+                                                    "sense_id": "t_en_gb0013278.002"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "represent (a story, play, film, or scene) as happening at a specified time or in a specified place"
+                                            ],
+                                            "domains": [
+                                                "Literature",
+                                                "Film"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "a private-eye novel set in Berlin"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.018",
+                                            "short_definitions": [
+                                                "represent story, play, film, or scene as happening at specified time"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "mount a precious stone in (something, typically a piece of jewellery)"
+                                            ],
+                                            "domains": [
+                                                "Jewellery"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "a bracelet set with emeralds"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.019",
+                                            "short_definitions": [
+                                                "mount precious stone in"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "mount (a precious stone) in something"
+                                            ],
+                                            "domains": [
+                                                "Jewellery"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "a huge square-cut emerald set in platinum"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.020",
+                                            "short_definitions": [
+                                                "mount precious stone in something"
+                                            ],
+                                            "thesaurusLinks": [
+                                                {
+                                                    "entry_id": "set",
+                                                    "sense_id": "t_en_gb0013278.004"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "arrange (type) as required"
+                                            ],
+                                            "domains": [
+                                                "Printing"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "the compositors refused to set the type for an editorial"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.021",
+                                            "short_definitions": [
+                                                "arrange type as required"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "arrange the type for (a piece of text)"
+                                            ],
+                                            "domains": [
+                                                "Printing"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "article headings will be set in Times fourteen point"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.022",
+                                            "short_definitions": [
+                                                "arrange type for"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "prepare (a table) for a meal by placing cutlery, crockery, etc. on it in their proper places"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "she set the table and began breakfast"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.023",
+                                            "short_definitions": [
+                                                "prepare table for meal by placing cutlery"
+                                            ],
+                                            "thesaurusLinks": [
+                                                {
+                                                    "entry_id": "set",
+                                                    "sense_id": "t_en_gb0013278.005"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "provide (music) so that a written work can be produced in a musical form"
+                                            ],
+                                            "domains": [
+                                                "Music"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "a form of poetry which can be set to music"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.025",
+                                            "notes": [
+                                                {
+                                                    "text": "\"set something to\"",
+                                                    "type": "wordFormNote"
+                                                }
+                                            ],
+                                            "short_definitions": [
+                                                "provide music so that written work can be produced in musical form"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "move (a bell) so that it rests in an inverted position ready for ringing"
+                                            ],
+                                            "domains": [
+                                                "Bellringing"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "the ringer gradually increases the swing until the bell is balanced or set"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.026",
+                                            "short_definitions": [
+                                                "move bell so that it rests in inverted position ready for ringing"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "cause (a hen) to sit on eggs"
+                                            ],
+                                            "domains": [
+                                                "Farming"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "you had to set the clucking hens"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.028",
+                                            "short_definitions": [
+                                                "cause hen to sit on eggs"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "put (a seed or plant) in the ground to grow"
+                                            ],
+                                            "domains": [
+                                                "Horticulture"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "I set the plants in shallow hollows to facilitate watering"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.029",
+                                            "short_definitions": [
+                                                "put seed or plant in ground to grow"
+                                            ]
+                                        },
+                                        {
+                                            "crossReferences": [
+                                                {
+                                                    "id": "set_sail",
+                                                    "text": "set sail",
+                                                    "type": "see also"
+                                                }
+                                            ],
+                                            "definitions": [
+                                                "put (a sail) up in position to catch the wind"
+                                            ],
+                                            "domains": [
+                                                "Nautical"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "a safe distance from shore all sails were set"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.031",
+                                            "short_definitions": [
+                                                "put sail up in position to catch wind"
+                                            ]
+                                        }
+                                    ],
+                                    "thesaurusLinks": [
+                                        {
+                                            "entry_id": "set",
+                                            "sense_id": "t_en_gb0013278.001"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "put or bring into a specified state"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "the hostages were set free"
+                                        },
+                                        {
+                                            "text": "the Home Secretary set in motion a review of the law"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0928250.033",
+                                    "notes": [
+                                        {
+                                            "text": "with object and usually with adverbial",
+                                            "type": "grammaticalNote"
+                                        }
+                                    ],
+                                    "short_definitions": [
+                                        "put or bring into specified state"
+                                    ],
+                                    "subsenses": [
+                                        {
+                                            "definitions": [
+                                                "cause (someone or something) to start doing something"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "the incident set me thinking"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.034",
+                                            "notes": [
+                                                {
+                                                    "text": "with object and present participle",
+                                                    "type": "grammaticalNote"
+                                                }
+                                            ],
+                                            "short_definitions": [
+                                                "cause person or thing to start doing something"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "instruct (someone) to do something"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "he'll set a man to watch you"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.035",
+                                            "notes": [
+                                                {
+                                                    "text": "with object and infinitive",
+                                                    "type": "grammaticalNote"
+                                                }
+                                            ],
+                                            "short_definitions": [
+                                                "instruct someone to do something"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "give someone (a task or test) to do"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "the problem we have been set"
+                                                },
+                                                {
+                                                    "text": "schools will begin to set mock tests"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.036",
+                                            "short_definitions": [
+                                                "give someone task or test to do"
+                                            ],
+                                            "thesaurusLinks": [
+                                                {
+                                                    "entry_id": "set",
+                                                    "sense_id": "t_en_gb0013278.006"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "establish as (an example) for others to follow, copy, or try to achieve"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "the scheme sets a precedent for other companies"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.038",
+                                            "short_definitions": [
+                                                "establish as example for others to follow, copy, or try to achieve"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "establish (a record)"
+                                            ],
+                                            "domains": [
+                                                "Sport"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "his time in the 25 m freestyle set a national record"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.039",
+                                            "short_definitions": [
+                                                "establish"
+                                            ],
+                                            "thesaurusLinks": [
+                                                {
+                                                    "entry_id": "set",
+                                                    "sense_id": "t_en_gb0013278.010"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "decide on and announce"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "they set a date for a full hearing at the end of February"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.040",
+                                            "short_definitions": [
+                                                "decide on and announce"
+                                            ],
+                                            "thesaurusLinks": [
+                                                {
+                                                    "entry_id": "set",
+                                                    "sense_id": "t_en_gb0013278.008"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "fix (a price, value, or limit) on something"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "the unions had set a limit on the size of the temporary workforce"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.041",
+                                            "short_definitions": [
+                                                "fix price, value, or limit on something"
+                                            ]
+                                        }
+                                    ],
+                                    "thesaurusLinks": [
+                                        {
+                                            "entry_id": "set%2Fput_in_motion",
+                                            "sense_id": "t_en_gb0009694.006"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "adjust (a clock or watch), typically to show the right time"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "set your watch immediately to local time at your destination"
+                                        },
+                                        {
+                                            "registers": [
+                                                "figurative"
+                                            ],
+                                            "text": "to revert to an old style would be to try to set back the clock and deny the progress which had been made"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0928250.043",
+                                    "notes": [
+                                        {
+                                            "text": "with object",
+                                            "type": "grammaticalNote"
+                                        }
+                                    ],
+                                    "short_definitions": [
+                                        "adjust clock or watch"
+                                    ],
+                                    "subsenses": [
+                                        {
+                                            "definitions": [
+                                                "adjust (an alarm clock) to sound at the required time"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "I usually set my alarm clock for eight"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.044",
+                                            "short_definitions": [
+                                                "adjust alarm clock to sound at required time"
+                                            ],
+                                            "thesaurusLinks": [
+                                                {
+                                                    "entry_id": "set",
+                                                    "sense_id": "t_en_gb0013278.012"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "adjust (a device) so that it performs a particular operation"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "you have to be careful not to set the volume too high"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.045",
+                                            "short_definitions": [
+                                                "adjust device so that it performs particular operation"
+                                            ],
+                                            "thesaurusLinks": [
+                                                {
+                                                    "entry_id": "set",
+                                                    "sense_id": "t_en_gb0013278.012"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "cause (a binary device) to enter the state representing the numeral 1."
+                                            ],
+                                            "domains": [
+                                                "Computing",
+                                                "Electronics"
+                                            ],
+                                            "id": "m_en_gbus0928250.046",
+                                            "short_definitions": [
+                                                "cause binary device to enter state representing numeral 1"
+                                            ]
+                                        }
+                                    ],
+                                    "thesaurusLinks": [
+                                        {
+                                            "entry_id": "set",
+                                            "sense_id": "t_en_gb0013278.011"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "harden into a solid or semi-solid state"
+                                    ],
+                                    "domains": [
+                                        "Cooking"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "cook for a further thirty-five minutes until the filling has set"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0928250.048",
+                                    "notes": [
+                                        {
+                                            "text": "no object",
+                                            "type": "grammaticalNote"
+                                        }
+                                    ],
+                                    "short_definitions": [
+                                        "harden into solid or semi-solid state"
+                                    ],
+                                    "subsenses": [
+                                        {
+                                            "definitions": [
+                                                "arrange (the hair) while damp so that it dries in the required style"
+                                            ],
+                                            "domains": [
+                                                "Hairdressing"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "she had set her hair on small rollers"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.049",
+                                            "notes": [
+                                                {
+                                                    "text": "with object",
+                                                    "type": "grammaticalNote"
+                                                }
+                                            ],
+                                            "short_definitions": [
+                                                "arrange hair while damp so that it dries in required style"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "put parts of (a broken or dislocated bone or limb) into the correct position for healing"
+                                            ],
+                                            "domains": [
+                                                "Surgery"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "he lined up the bones and set the arm"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.050",
+                                            "notes": [
+                                                {
+                                                    "text": "with object",
+                                                    "type": "grammaticalNote"
+                                                }
+                                            ],
+                                            "short_definitions": [
+                                                "put parts of into correct position for healing"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "(of a bone) be restored to its normal condition by knitting together again after being broken"
+                                            ],
+                                            "domains": [
+                                                "Physiology"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "children's bones soon set"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.051",
+                                            "short_definitions": [
+                                                "(of bone) be restored to its normal condition by knitting together again after being broken"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "(with reference to a person's face) assume or cause to assume a fixed or rigid expression"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "Travis's face was set as he looked up"
+                                                },
+                                                {
+                                                    "text": "her features never set into a civil parade of attention"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.052",
+                                            "short_definitions": [
+                                                "assume or cause to assume fixed or rigid expression"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "(of a hunting dog) adopt a rigid attitude indicating the presence of game."
+                                            ],
+                                            "domains": [
+                                                "Hunting"
+                                            ],
+                                            "id": "m_en_gbus0928250.054",
+                                            "short_definitions": [
+                                                "(of hunting dog) adopt rigid attitude indicating presence of game"
+                                            ]
+                                        }
+                                    ],
+                                    "thesaurusLinks": [
+                                        {
+                                            "entry_id": "set",
+                                            "sense_id": "t_en_gb0013278.013"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "(of the sun, moon, or another celestial body) appear to move towards and below the earth's horizon as the earth rotates"
+                                    ],
+                                    "domains": [
+                                        "Astronomy"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "the sun was setting and a warm red glow filled the sky"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0928250.056",
+                                    "notes": [
+                                        {
+                                            "text": "no object",
+                                            "type": "grammaticalNote"
+                                        }
+                                    ],
+                                    "short_definitions": [
+                                        "(of sun, moon, or another celestial body) appear to move towards and below earth's horizon as earth rotates"
+                                    ],
+                                    "thesaurusLinks": [
+                                        {
+                                            "entry_id": "set",
+                                            "sense_id": "t_en_gb0013278.014"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "(of a tide or current) take or have a specified direction or course"
+                                    ],
+                                    "domains": [
+                                        "Nautical"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "a fair tide can be carried well past Land's End before the stream sets to the north"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0928250.058",
+                                    "notes": [
+                                        {
+                                            "text": "no object, with adverbial of direction",
+                                            "type": "grammaticalNote"
+                                        }
+                                    ],
+                                    "short_definitions": [
+                                        "(of tide or current) take or have specified direction or course"
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "start (a fire)"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "the school had been broken into and the fire had been set"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0928250.060",
+                                    "notes": [
+                                        {
+                                            "text": "with object",
+                                            "type": "grammaticalNote"
+                                        }
+                                    ],
+                                    "regions": [
+                                        "North American"
+                                    ],
+                                    "short_definitions": [
+                                        "start"
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "(of blossom or a tree) form into or produce (fruit)"
+                                    ],
+                                    "domains": [
+                                        "Horticulture"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "wait until first flowers have set fruit before planting out the peppers"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0928250.062",
+                                    "notes": [
+                                        {
+                                            "text": "with object",
+                                            "type": "grammaticalNote"
+                                        }
+                                    ],
+                                    "short_definitions": [
+                                        "(of blossom or tree) form into or produce"
+                                    ],
+                                    "subsenses": [
+                                        {
+                                            "definitions": [
+                                                "(of fruit) develop from blossom"
+                                            ],
+                                            "domains": [
+                                                "Horticulture"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "once fruits have set, feed weekly with a high potash liquid tomato fertilizer"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.063",
+                                            "notes": [
+                                                {
+                                                    "text": "no object",
+                                                    "type": "grammaticalNote"
+                                                }
+                                            ],
+                                            "short_definitions": [
+                                                "(of fruit) develop from blossom"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "(of a plant) produce (seed)"
+                                            ],
+                                            "domains": [
+                                                "Horticulture"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "the herb has flowered and started to set seed"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928250.064",
+                                            "short_definitions": [
+                                                "(of plant) produce"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "sit"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "the rest of them people just set there goggle-eyed for a minute"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0928250.066",
+                                    "notes": [
+                                        {
+                                            "text": "no object",
+                                            "type": "grammaticalNote"
+                                        }
+                                    ],
+                                    "registers": [
+                                        "dialect"
+                                    ],
+                                    "short_definitions": [
+                                        "sit"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "grammaticalFeatures": [
+                                {
+                                    "text": "Transitive",
+                                    "type": "Subcategorization"
+                                },
+                                {
+                                    "text": "Past Participle",
+                                    "type": "Non Finiteness"
+                                },
+                                {
+                                    "text": "Present",
+                                    "type": "Tense"
+                                },
+                                {
+                                    "text": "Past",
+                                    "type": "Tense"
+                                }
+                            ],
+                            "homographNumber": "201",
+                            "senses": [
+                                {
+                                    "definitions": [
+                                        "group (pupils or students) in sets according to ability."
+                                    ],
+                                    "domains": [
+                                        "Education"
+                                    ],
+                                    "id": "m_en_gbus0928260.052",
+                                    "regions": [
+                                        "British"
+                                    ],
+                                    "short_definitions": [
+                                        "group pupils or students in sets according to ability"
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "language": "en",
+                    "lexicalCategory": "Verb",
+                    "pronunciations": [
+                        {
+                            "audioFile": "http://audio.oxforddictionaries.com/en/mp3/set_gb_1.mp3",
+                            "dialects": [
+                                "British English"
+                            ],
+                            "phoneticNotation": "IPA",
+                            "phoneticSpelling": "sɛt"
+                        }
+                    ],
+                    "text": "set"
+                },
+                {
+                    "entries": [
+                        {
+                            "etymologies": [
+                                "late Middle English: partly from Old French sette, from Latin secta ‘sect’, partly from set"
+                            ],
+                            "grammaticalFeatures": [
+                                {
+                                    "text": "Singular",
+                                    "type": "Number"
+                                }
+                            ],
+                            "homographNumber": "200",
+                            "senses": [
+                                {
+                                    "definitions": [
+                                        "a group or collection of things that belong together or resemble one another or are usually found together"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "a spare set of clothes"
+                                        },
+                                        {
+                                            "text": "a set of false teeth"
+                                        },
+                                        {
+                                            "text": "a new cell with two sets of chromosomes"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0928260.007",
+                                    "short_definitions": [
+                                        "group or collection of things that belong together or resemble one another or are usually found together"
+                                    ],
+                                    "subsenses": [
+                                        {
+                                            "definitions": [
+                                                "a collection of implements, containers, or other objects customarily used together"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "a fondue set"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928260.010",
+                                            "short_definitions": [
+                                                "collection of implements, containers, or other objects customarily used together"
+                                            ],
+                                            "thesaurusLinks": [
+                                                {
+                                                    "entry_id": "set",
+                                                    "sense_id": "t_en_gb0013279.005"
+                                                },
+                                                {
+                                                    "entry_id": "set",
+                                                    "sense_id": "t_en_gb0013279.004"
+                                                },
+                                                {
+                                                    "entry_id": "set",
+                                                    "sense_id": "t_en_gb0013279.003"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "a group of people with common interests or occupations or of similar social status"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "it was a fashionable haunt of the literary set"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928260.011",
+                                            "short_definitions": [
+                                                "group of people with common interests or occupations"
+                                            ],
+                                            "thesaurusLinks": [
+                                                {
+                                                    "entry_id": "set",
+                                                    "sense_id": "t_en_gb0013279.002"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "a group of pupils or students of the same average ability in a particular subject who are taught together"
+                                            ],
+                                            "domains": [
+                                                "Education"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "the policy of allocating pupils to mathematics sets"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928260.012",
+                                            "regions": [
+                                                "British"
+                                            ],
+                                            "short_definitions": [
+                                                "group of pupils or students of same average ability in particular subject"
+                                            ],
+                                            "thesaurusLinks": [
+                                                {
+                                                    "entry_id": "set",
+                                                    "sense_id": "t_en_gb0013279.006"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "(in tennis, darts, and other games) a group of games counting as a unit towards a match"
+                                            ],
+                                            "domains": [
+                                                "Sport",
+                                                "Tennis",
+                                                "Games"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "he took the first set 6–3"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928260.013",
+                                            "short_definitions": [
+                                                "(in games) group of games counting as unit towards match"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "(in jazz or popular music) a sequence of songs or pieces performed together and constituting or forming part of a live show or recording"
+                                            ],
+                                            "domains": [
+                                                "Jazz",
+                                                "Popular Music"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "a short four-song set"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928260.014",
+                                            "short_definitions": [
+                                                "(in jazz or popular music) sequence of songs or pieces performed together and constituting or forming part of live show or recording"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "a group of people making up the required number for a square dance or similar country dance."
+                                            ],
+                                            "domains": [
+                                                "Dance"
+                                            ],
+                                            "id": "m_en_gbus0928260.015",
+                                            "short_definitions": [
+                                                "group of people making up required number for square dance"
+                                            ]
+                                        },
+                                        {
+                                            "crossReferences": [
+                                                {
+                                                    "id": "rep",
+                                                    "text": "rep",
+                                                    "type": "see also"
+                                                }
+                                            ],
+                                            "definitions": [
+                                                "a fixed number of repetitions of a particular bodybuilding exercise"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "making sure that you perform 3 sets of at least 8 repetitions"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928260.016",
+                                            "short_definitions": [
+                                                "fixed number of repetitions of particular bodybuilding exercise"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "a collection of distinct entities regarded as a unit, being either individually specified or (more usually) satisfying specified conditions"
+                                            ],
+                                            "domains": [
+                                                "Mathematics",
+                                                "Logic"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "the set of all positive integers"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928260.017",
+                                            "short_definitions": [
+                                                "collection of distinct entities regarded as unit, being either individually specified or more"
+                                            ]
+                                        }
+                                    ],
+                                    "thesaurusLinks": [
+                                        {
+                                            "entry_id": "set",
+                                            "sense_id": "t_en_gb0013279.001"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "the way in which something is set, disposed, or positioned"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "the shape and set of the eyes"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0928260.019",
+                                    "notes": [
+                                        {
+                                            "text": "in singular",
+                                            "type": "grammaticalNote"
+                                        }
+                                    ],
+                                    "short_definitions": [
+                                        "way in which something is set or positioned"
+                                    ],
+                                    "subsenses": [
+                                        {
+                                            "definitions": [
+                                                "the posture or attitude of a part of the body, typically in relation to the impression this gives of a person's feelings or intentions"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "the determined set of her upper torso"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928260.021",
+                                            "short_definitions": [
+                                                "posture or attitude of part of body"
+                                            ],
+                                            "thesaurusLinks": [
+                                                {
+                                                    "entry_id": "set",
+                                                    "sense_id": "t_en_gb0013279.007"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "crossReferenceMarkers": [
+                                                "short for mindset"
+                                            ],
+                                            "crossReferences": [
+                                                {
+                                                    "id": "mindset",
+                                                    "text": "mindset",
+                                                    "type": "abbreviation"
+                                                }
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "he's got this set against social psychology"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928260.022"
+                                        },
+                                        {
+                                            "definitions": [
+                                                "a grudge"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "most of them hear a thing or two and then get a set on you"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928260.023",
+                                            "regions": [
+                                                "NZ",
+                                                "Australian"
+                                            ],
+                                            "registers": [
+                                                "informal"
+                                            ],
+                                            "short_definitions": [
+                                                "grudge"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "the flow of a current or tide in a particular direction"
+                                            ],
+                                            "domains": [
+                                                "Nautical"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "the rudder kept the dinghy straight against the set of the tide"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928260.024",
+                                            "short_definitions": [
+                                                "flow of current or tide in particular direction"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "the inverted position of a bell when it is ready for ringing."
+                                            ],
+                                            "domains": [
+                                                "Bellringing"
+                                            ],
+                                            "id": "m_en_gbus0928260.025",
+                                            "short_definitions": [
+                                                "inverted position of bell when it is ready for ringing"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "a setter's pointing in the presence of game."
+                                            ],
+                                            "domains": [
+                                                "Hunting"
+                                            ],
+                                            "id": "m_en_gbus0928260.026",
+                                            "short_definitions": [
+                                                "setter's pointing in presence of game"
+                                            ],
+                                            "variantForms": [
+                                                {
+                                                    "text": "dead set"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "the inclination of the teeth of a saw in alternate directions."
+                                            ],
+                                            "domains": [
+                                                "Tools"
+                                            ],
+                                            "id": "m_en_gbus0928260.030",
+                                            "short_definitions": [
+                                                "inclination of teeth of saw in alternate directions"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "a warp or bend in wood, metal, or another material caused by continued strain or pressure."
+                                            ],
+                                            "domains": [
+                                                "Mechanics"
+                                            ],
+                                            "id": "m_en_gbus0928260.031",
+                                            "short_definitions": [
+                                                "warp or bend in wood, metal, or another material caused by continued strain"
+                                            ]
+                                        }
+                                    ],
+                                    "thesaurusLinks": [
+                                        {
+                                            "entry_id": "set",
+                                            "sense_id": "t_en_gb0013279.008"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "a radio or television receiver"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "a TV set"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0928260.033",
+                                    "short_definitions": [
+                                        "radio or television receiver"
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "a collection of scenery, stage furniture, and other articles used for a particular scene in a play or film."
+                                    ],
+                                    "domains": [
+                                        "Theatre",
+                                        "Film"
+                                    ],
+                                    "id": "m_en_gbus0928260.035",
+                                    "short_definitions": [
+                                        "collection of scenery, stage furniture"
+                                    ],
+                                    "subsenses": [
+                                        {
+                                            "definitions": [
+                                                "the place or area in which filming is taking place or a play is performed"
+                                            ],
+                                            "domains": [
+                                                "Film"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "the magazine has interviews on set with top directors"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928260.036",
+                                            "short_definitions": [
+                                                "place or area in which filming is taking place or play is performed"
+                                            ]
+                                        }
+                                    ],
+                                    "thesaurusLinks": [
+                                        {
+                                            "entry_id": "set",
+                                            "sense_id": "t_en_gb0013279.009"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "an arrangement of the hair when damp so that it dries in the required style"
+                                    ],
+                                    "domains": [
+                                        "Hairdressing"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "a shampoo and set"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0928260.038",
+                                    "short_definitions": [
+                                        "arrangement of hair when damp so that it dries in required style"
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "a cutting, young plant, or bulb used in the propagation of new plants."
+                                    ],
+                                    "domains": [
+                                        "Botany",
+                                        "Horticulture"
+                                    ],
+                                    "id": "m_en_gbus0928260.040",
+                                    "short_definitions": [
+                                        "cutting, young plant, or bulb used in propagation of new plants"
+                                    ],
+                                    "subsenses": [
+                                        {
+                                            "definitions": [
+                                                "a young fruit that has just formed."
+                                            ],
+                                            "domains": [
+                                                "Botany",
+                                                "Horticulture"
+                                            ],
+                                            "id": "m_en_gbus0928260.041",
+                                            "short_definitions": [
+                                                "young fruit that has just formed"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "the last coat of plaster on a wall."
+                                    ],
+                                    "domains": [
+                                        "Building"
+                                    ],
+                                    "id": "m_en_gbus0928260.043",
+                                    "short_definitions": [
+                                        "last coat of plaster on wall"
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "the amount of spacing in type controlling the distance between letters."
+                                    ],
+                                    "domains": [
+                                        "Printing"
+                                    ],
+                                    "id": "m_en_gbus0928260.045",
+                                    "short_definitions": [
+                                        "amount of spacing in type controlling distance between letters"
+                                    ],
+                                    "subsenses": [
+                                        {
+                                            "definitions": [
+                                                "the width of a piece of type."
+                                            ],
+                                            "domains": [
+                                                "Printing"
+                                            ],
+                                            "id": "m_en_gbus0928260.046",
+                                            "short_definitions": [
+                                                "width of piece of type"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "crossReferenceMarkers": [
+                                        "variant spelling of sett"
+                                    ],
+                                    "crossReferences": [
+                                        {
+                                            "id": "sett",
+                                            "text": "sett",
+                                            "type": "variant spelling"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0928260.048"
+                                },
+                                {
+                                    "crossReferenceMarkers": [
+                                        "another term for plant (sense 4 of the noun)"
+                                    ],
+                                    "crossReferences": [
+                                        {
+                                            "id": "plant",
+                                            "text": "plant",
+                                            "type": "another term for"
+                                        }
+                                    ],
+                                    "domains": [
+                                        "Billiards"
+                                    ],
+                                    "id": "m_en_gbus0928260.050"
+                                }
+                            ]
+                        }
+                    ],
+                    "language": "en",
+                    "lexicalCategory": "Noun",
+                    "pronunciations": [
+                        {
+                            "audioFile": "http://audio.oxforddictionaries.com/en/mp3/set_gb_1.mp3",
+                            "dialects": [
+                                "British English"
+                            ],
+                            "phoneticNotation": "IPA",
+                            "phoneticSpelling": "sɛt"
+                        }
+                    ],
+                    "text": "set"
+                },
+                {
+                    "entries": [
+                        {
+                            "etymologies": [
+                                "late Old English, past participle of set"
+                            ],
+                            "grammaticalFeatures": [
+                                {
+                                    "text": "Positive",
+                                    "type": "Degree"
+                                }
+                            ],
+                            "homographNumber": "300",
+                            "senses": [
+                                {
+                                    "definitions": [
+                                        "fixed or arranged in advance"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "try to feed the puppy at set times each day"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0928270.006",
+                                    "short_definitions": [
+                                        "fixed or arranged in advance"
+                                    ],
+                                    "subsenses": [
+                                        {
+                                            "definitions": [
+                                                "(of a view or habit) unlikely to change"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "I've been on my own a long time and I'm rather set in my ways"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928270.008",
+                                            "short_definitions": [
+                                                "unlikely to change"
+                                            ],
+                                            "thesaurusLinks": [
+                                                {
+                                                    "entry_id": "set",
+                                                    "sense_id": "t_en_gb0013280.002"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "(of a person's expression) held for an unnaturally long time without changing, typically as a reflection of determination"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "Iris was staring in front of her with a set expression"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928270.009",
+                                            "short_definitions": [
+                                                "held for unnaturally long time without changing"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "(of a meal or menu in a restaurant) offered at a fixed price with a limited choice of dishes"
+                                            ],
+                                            "domains": [
+                                                "Restaurants"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "a three-course set menu"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928270.010",
+                                            "short_definitions": [
+                                                "(of meal or menu in restaurant) offered at fixed price with limited choice of dishes"
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "(of a book) prescribed for study as part of a particular course or for an examination"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "his book is a set text which has influenced countless schoolchildren"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928270.011",
+                                            "short_definitions": [
+                                                "prescribed for study as part of particular course or for examination"
+                                            ]
+                                        },
+                                        {
+                                            "crossReferences": [
+                                                {
+                                                    "id": "set_phrase",
+                                                    "text": "set phrase",
+                                                    "type": "see also"
+                                                }
+                                            ],
+                                            "definitions": [
+                                                "having a conventional or predetermined wording; formulaic"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "witnesses often delivered their testimony according to a set speech"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928270.012",
+                                            "short_definitions": [
+                                                "having conventional or predetermined wording"
+                                            ],
+                                            "thesaurusLinks": [
+                                                {
+                                                    "entry_id": "set",
+                                                    "sense_id": "t_en_gb0013280.003"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "thesaurusLinks": [
+                                        {
+                                            "entry_id": "set",
+                                            "sense_id": "t_en_gb0013280.001"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "definitions": [
+                                        "ready, prepared, or likely to do something"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "water costs look set to increase"
+                                        },
+                                        {
+                                            "text": "the first family was set for a quiet night of rest"
+                                        },
+                                        {
+                                            "text": "both are all set to get married"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0928270.014",
+                                    "notes": [
+                                        {
+                                            "text": "predicative",
+                                            "type": "grammaticalNote"
+                                        }
+                                    ],
+                                    "short_definitions": [
+                                        "ready, prepared, or likely to do something"
+                                    ],
+                                    "subsenses": [
+                                        {
+                                            "definitions": [
+                                                "firmly opposed to"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "last night you were dead set against the idea"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928270.015",
+                                            "notes": [
+                                                {
+                                                    "text": "\"set against\"",
+                                                    "type": "wordFormNote"
+                                                }
+                                            ],
+                                            "short_definitions": [
+                                                "firmly opposed to"
+                                            ],
+                                            "thesaurusLinks": [
+                                                {
+                                                    "entry_id": "set",
+                                                    "sense_id": "t_en_gb0013280.006"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "definitions": [
+                                                "determined to do (something)"
+                                            ],
+                                            "examples": [
+                                                {
+                                                    "text": "he's set on marrying that girl"
+                                                }
+                                            ],
+                                            "id": "m_en_gbus0928270.016",
+                                            "notes": [
+                                                {
+                                                    "text": "\"set on\"",
+                                                    "type": "wordFormNote"
+                                                }
+                                            ],
+                                            "short_definitions": [
+                                                "determined to do"
+                                            ],
+                                            "thesaurusLinks": [
+                                                {
+                                                    "entry_id": "set",
+                                                    "sense_id": "t_en_gb0013280.005"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "thesaurusLinks": [
+                                        {
+                                            "entry_id": "set",
+                                            "sense_id": "t_en_gb0013280.004"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "language": "en",
+                    "lexicalCategory": "Adjective",
+                    "pronunciations": [
+                        {
+                            "audioFile": "http://audio.oxforddictionaries.com/en/mp3/set_gb_1.mp3",
+                            "dialects": [
+                                "British English"
+                            ],
+                            "phoneticNotation": "IPA",
+                            "phoneticSpelling": "sɛt"
+                        }
+                    ],
+                    "text": "set"
+                }
+            ],
+            "type": "headword",
+            "word": "set"
+        }
+    ]
+}

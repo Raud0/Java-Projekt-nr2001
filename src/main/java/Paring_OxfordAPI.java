@@ -31,7 +31,7 @@ public class Paring_OxfordAPI {
             //System.out.println(vastus.getStatusLine());
             HttpEntity olevus = vastus.getEntity();
             String vaste = EntityUtils.toString(olevus);
-            //System.out.println(vaste);
+            System.out.println(vaste);
             tulemus = objectMapper.readValue(vaste, OxfordAPIVasteDTO.class);
             EntityUtils.consume(olevus);
         } finally {
