@@ -124,7 +124,7 @@ public class Lause {
         Kui sisse antud sõne ei ole üks lause, siis lõikab sõne pooleks pärast esimest '?', '!' või '.'.
         Hetkel viskab teise poole minema, sest teda pole kuhugi salvestada.
          */
-        String[] laused = toores_lause.split("(?<=[\\?\\.\\!] )");
+        String[] laused = toores_lause.split("(?<=\\p{javaUpperCase}{0}\\p{javaLowerCase}{0,3}[\\?\\.\\!] )");
         for (int i = 1; i < laused.length; i++) {
             Lause uus_lause = new Lause(laused[i]);
             // Tee uus staatiline sõnumite logija. Kahekordest listist. Ülemine tase, kus vahetumisi kirjutatakse ja alumine, kus on kõik laused, mis korraga öeldi, koos.

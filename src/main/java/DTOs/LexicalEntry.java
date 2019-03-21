@@ -24,7 +24,7 @@ public class LexicalEntry {
 
     public LexicalEntry() {}
     public LexicalEntry(String id) {
-        this.lexicalCategory = "unknown";
+        this.lexicalCategory = "Unknown";
         this.text = id;
     }
     public LexicalEntry(List<Entry> entries, String language, String lexicalCategory, String text) {

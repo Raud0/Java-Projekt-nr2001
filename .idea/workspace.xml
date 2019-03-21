@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c484054-f590-403e-9943-f64a9127b2e5" name="Default Changelist" comment="let's see if intellij is the greatest">
-      <change beforePath="$PROJECT_DIR$/.idea/Java Projekt 2001.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Java Projekt 2001.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcomponents_core_4_4_11.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DTOs/DTO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DTOs/LexicalEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DTOs/LexicalEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DTOs/OxfordAPIVasteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DTOs/OxfordAPIVasteDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DTOs/Paring_OxfordAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN/Paring_OxfordAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DTOs/ResultsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DTOs/ResultsDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KasutajaAken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Sona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Sona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Zen2001Programm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DTOs/DTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DTOs/LexicalEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DTOs/LexicalEntry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DTOs/OxfordAPIVasteDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DTOs/OxfordAPIVasteDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DTOs/Paring_OxfordAPI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DTOs/ResultsDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DTOs/ResultsDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/KasutajaAken$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/KasutajaAken.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/SONAMOISTJA/Lause.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SONAMOISTJA/Lause.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SONAMOISTJA/Sona.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SONAMOISTJA/Sona.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Zen2001Programm.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,102 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1029">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DTOs/OxfordAPIVasteDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DTOs/ResultsDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Paring_OxfordAPI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Uurija.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="97" lean-forward="true" selection-start-line="15" selection-start-column="97" selection-end-line="15" selection-end-column="97" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#217#229#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Sona.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DTOs/LexicalEntry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="104" column="43" selection-start-line="104" selection-start-column="43" selection-end-line="104" selection-end-column="43" />
+            <state relative-caret-position="442">
+              <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -200,9 +90,9 @@
         <option value="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" />
         <option value="$PROJECT_DIR$/src/main/java/DTOs/OxfordAPIVasteDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/DTOs/ResultsDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTOs/LexicalEntry.java" />
         <option value="$PROJECT_DIR$/src/main/java/MAIN/Paring_OxfordAPI.java" />
         <option value="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DTOs/LexicalEntry.java" />
       </list>
     </option>
   </component>
@@ -259,22 +149,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="DTOs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java Projekt 2001" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java Projekt 2001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="MAIN" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java Projekt 2001" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java Projekt 2001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="SONAMOISTJA" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -391,11 +265,12 @@
       <workItem from="1552999605434" duration="4703000" />
       <workItem from="1553149849609" duration="7347000" />
       <workItem from="1553160194282" duration="24662000" />
+      <workItem from="1553197713744" duration="1504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59419000" />
+    <option name="totallyTimeSpent" value="60923000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -410,7 +285,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.041577823" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20522387" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -467,33 +342,14 @@
     <entry file="file://$PROJECT_DIR$/pom.xml.tld" />
     <entry file="file://$PROJECT_DIR$/../project test/JButton_test.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Kasutaja_sisend.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Paring_OxfordAPI.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ResultsDTO.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/MetadataDTO.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/OxfordAPIVasteDTO.java" />
     <entry file="file://$PROJECT_DIR$/iced.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DTOs/DTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ResultExplorer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DTOs/DTO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ResultExplorer.java" />
     <entry file="file://$PROJECT_DIR$/whale-fall.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -567,9 +423,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DTOs/Klausel.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DTOs/Klausel.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Klausel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -605,58 +459,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Sona.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DTOs/LexicalEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Paring_OxfordAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Uurija.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="97" lean-forward="true" selection-start-line="15" selection-start-column="97" selection-end-line="15" selection-end-column="97" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#217#229#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1029">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="569">
+          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -666,7 +482,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/DTOs/OxfordAPIVasteDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -690,10 +506,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Paring_OxfordAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Uurija.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="97" selection-start-line="15" selection-start-column="97" selection-end-line="15" selection-end-column="97" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Sona.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="104" column="43" selection-start-line="104" selection-start-column="43" selection-end-line="104" selection-end-column="43" />
+        <state relative-caret-position="688">
+          <caret line="125" column="11" lean-forward="true" selection-start-line="125" selection-start-column="11" selection-end-line="125" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DTOs/LexicalEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
