@@ -1,3 +1,5 @@
+package DTOs;
+
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -5,18 +7,14 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
-public class ResultsDTO {
+public class MetadataDTO {
 
-    String word;
+    private String provider;
 
-    public ResultsDTO() {
-    }
+    public String getProvider() {return provider;}
 
-    public ResultsDTO(String id) {
-        //this.word = id;
-    }
-
-    public String getWord() {
-        return word;
+    public MetadataDTO() {}
+    public MetadataDTO(String provider) {
+        this.provider = provider;
     }
 }
