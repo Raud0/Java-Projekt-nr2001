@@ -9,20 +9,20 @@ import java.util.List;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
-public class LexicalEntries {
+public class LexicalEntry {
 
-    List<Entries> entries;
+    List<Entry> entries;
     String language;
     String lexicalCategory;
     String text;
 
-    public List<Entries> getEntries() {return entries;}
+    public List<Entry> getEntries() {return entries;}
     public String getLanguage() {return language;}
     public String getLexical_category() {return lexicalCategory;}
     public String getText() {return text;}
 
-    public LexicalEntries() {}
-    public LexicalEntries(List<Entries> entries, String language, String lexicalCategory, String text) {
+    public LexicalEntry() {}
+    public LexicalEntry(List<Entry> entries, String language, String lexicalCategory, String text) {
         this.entries = entries;
         this.language = language;
         this.lexicalCategory = lexicalCategory;

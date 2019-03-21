@@ -7,17 +7,14 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
-public class Notes {
+public class Example {
 
     private String text;
-    private String type;
 
     public String getText() {return text;}
-    public String getType() {return type;}
 
-    public Notes() {}
-    public Notes(String text, String type) {
+    public Example() {}
+    public Example(String text) {
         this.text = text;
-        this.type = type;
     }
 }

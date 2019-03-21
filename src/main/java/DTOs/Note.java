@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
-public class GrammaticalFeatures {
+public class Note {
 
     private String text;
     private String type;
@@ -15,8 +15,8 @@ public class GrammaticalFeatures {
     public String getText() {return text;}
     public String getType() {return type;}
 
-    public GrammaticalFeatures() {}
-    public GrammaticalFeatures(String text, String type) {
+    public Note() {}
+    public Note(String text, String type) {
         this.text = text;
         this.type = type;
     }

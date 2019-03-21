@@ -7,14 +7,17 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
-public class Examples {
+public class GrammaticalFeature {
 
     private String text;
+    private String type;
 
     public String getText() {return text;}
+    public String getType() {return type;}
 
-    public Examples() {}
-    public Examples(String text) {
+    public GrammaticalFeature() {}
+    public GrammaticalFeature(String text, String type) {
         this.text = text;
+        this.type = type;
     }
 }

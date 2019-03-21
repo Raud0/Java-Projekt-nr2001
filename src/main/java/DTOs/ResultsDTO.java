@@ -13,18 +13,18 @@ public class ResultsDTO {
 
     private String id;
     private String language;
-    private List<LexicalEntries> lexicalEntries;
+    private List<LexicalEntry> lexicalEntries;
     private String type;
     private String word;
 
     public String getId() {return id;}
     public String getLanguage() {return language;}
-    public List<LexicalEntries> getLexicalEntries() {return lexicalEntries;}
+    public List<LexicalEntry> getLexicalEntries() {return lexicalEntries;}
     public String getType() {return type;}
     public String getWord() {return word;}
 
     public ResultsDTO(){}
-    public ResultsDTO(String id, String language, List<LexicalEntries> lexicalEntries, String type, String word) {
+    public ResultsDTO(String id, String language, List<LexicalEntry> lexicalEntries, String type, String word) {
         this.id = id;
         this.language = language;
         this.lexicalEntries = lexicalEntries;
