@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+//peamine struktuur, hoiab enamsti uht motet
 public class Lause {
 
     private String toores_lause;
@@ -26,13 +27,19 @@ public class Lause {
     public List<Lauseosa> getLauseosad() {return lauseosad;}
     public void setLauseosad(List<Lauseosa> lauseosad) {this.lauseosad = lauseosad;}
 
+    //teeb teksti moistetavamaks
+    //voib olla peaks tulevikus automaatselt ara tegema "he's" -> "he is", samas, et langetada otsus, kas "'s" nimisonafraasis "the dog's" on contraction voi possessive, peab lauset enne moistma
     public String lausesaniteerija(String lause) {
+        //koik tuhikud uhekordseks
         while(lause.contains("  ")) {lause = lause.replaceAll(" {2}", " ");}
-        while(lause.startsWith(" ")) {lause = lause.replaceFirst(" ","");}
+        //tekst ei alga tuhikutega
+        while(lause.startsWith(" ")) {lause = lause.replaceFirst("\\p{javaWhitespace}","");}
+        //kolm punkti loetakse kokku uheks sumboliks
         lause = lause.replaceAll("\\.\\.\\.","…");
         return lause;
     }
 
+    //kuna ettesoodetud tekst voetakse sisse karakter haaval, on vaja need tagasi sonedeks teha
     public String karakterid_sonaks(List<Character> osa) {
         StringBuilder ehitaja = new StringBuilder(osa.size());
         for (Character x : osa) {
@@ -41,25 +48,31 @@ public class Lause {
         return ehitaja.toString();
     }
 
+    //teeb lause osadeks (sonad, sumbolid)
     public List<String> lauseTukeldaja(String toores_lause) {
         List<String> tukeldatud_lause = new ArrayList<String>();
 
+        //alustan uut sona "osa"
         List<Character> osa = new ArrayList<Character>();
+        //kain labi koik karakterit ettesoodetud lauses
         for(int i = 0; i < toores_lause.length(); i++) {
             char x = toores_lause.charAt(i);
+            //teen kindlaks, et "osa" on tuhi
             if (i == 0) {osa.clear();}
 
+            //tahed, numbrid ja sidekriipsud voetakse kokku uheks sonaks
             if (Character.isLetterOrDigit(x) || x == '-' || x == '–') {
                 osa.add(x);
-            } else if (x != ' ') {
+            } else if (x != ' ') { //tuhikud alustavad uut sona, aga neid ennast ignoreeritakse, sest tuhikute asemel eraldatakse sonu nuud massiivi lahtritega
                 tukeldatud_lause.add(karakterid_sonaks(osa));
                 osa.clear();
                 osa.add(x);
-            } else {
+            } else { //iga uue sumboliga lopetatakse vana sona ara ja alustatakse uut
                 if (osa.size() > 0) {tukeldatud_lause.add(karakterid_sonaks(osa));}
                 osa.clear();
             }
 
+            //lopetab kaesoleva sona, kui lausega on lopuni joutud
             if(i == toores_lause.length() - 1 && osa.size() > 0){
                 tukeldatud_lause.add(karakterid_sonaks(osa));
                 osa.clear();
@@ -69,6 +82,7 @@ public class Lause {
         return tukeldatud_lause;
     }
 
+    //sonad hakkavad midagi tahendama
     public List<Sona> lauseTolk(List<String> tukeldatud_lause) throws IOException {
         List<Sona> sonad = new ArrayList<Sona>();
 
@@ -124,6 +138,20 @@ public class Lause {
         Kui sisse antud sõne ei ole üks lause, siis lõikab sõne pooleks pärast esimest '?', '!' või '.'.
         Hetkel viskab teise poole minema, sest teda pole kuhugi salvestada.
          */
+
+        // "(?<=\\p{javaUpperCase}{0}\\p{javaLowerCase}{0,3}[\\?\\.\\!] )" on vajalik selle parast, et initsiaalid ja nimetused nagu "Prof. K. Solmann" mitmeks lauseks ei muutuks.
+        // https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html#jcc
+        // ?<= - tee split paremalt valikust
+        // \\p{javaUpperCase}{0} suuri tahti on sonas enne punkti 0
+        // \\p{javaLowerCase}{0,3} vaikseid tahti suure tahe vahel voib olla 3
+        // [\\?\\.\\!] katkestuskohtades peab olema "?", "." voi "!"
+        // " " parast eelnevat sumbolit peab tulema tuhik (voiks olla ka suur taht, aga seda ei saa alati garanteerida
+        // (?<=X) votab koik kokku
+        //
+        // arvestamata on veel jargarvud, aga ma ei tea, kuidas neid teha, sest number voib olla lause lopus, mitte nagu initsiaal
+        // ei toota ka sellistel juhtudel, kus nimi on luhike, nagu "I am Mr. K." laheks jargmise lausega kokku
+
+
         String[] laused = toores_lause.split("(?<=\\p{javaUpperCase}{0}\\p{javaLowerCase}{0,3}[\\?\\.\\!] )");
         for (int i = 1; i < laused.length; i++) {
             Lause uus_lause = new Lause(laused[i]);

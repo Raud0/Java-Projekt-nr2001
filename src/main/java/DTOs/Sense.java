@@ -20,7 +20,10 @@ public class Sense {
     private List<Sense> subsenses;
 
     public List<String> getDefinitions() {return definitions;}
-    public List<String> getDomains() {return domains;}
+    public List<String> getDomains() {
+        if(domains.size() == 0){domains.add("Unknown");};
+        return domains;
+    } // Et oleks domeene lihtne kusida ka neilt, millele seda antud pole
     public List<Example> getExamples() {return examples;}
     public List<Note> getNotes() {return notes;}
     public List<String> getShort_definitionss() {return short_definitions;}
@@ -28,9 +31,16 @@ public class Sense {
     public List<Sense> getSubsenses() {
         if (subsenses.size() == 0) {subsenses.add(this);}
         return subsenses;
-    }
+    } // Et igal sense'il oleks vahemalt uks subsense, mis puudumise puhul viitab tagasi temale endale.
 
     public Sense() {}
-
-
+    public Sense(List<String> definitions, List<String> domains, List<Example> examples, List<Note> notes, List<String> short_definitions, List<ThesaurusLink> thesaurusLinks, List<Sense> subsenses) {
+        this.definitions = definitions;
+        this.domains = domains;
+        this.examples = examples;
+        this.notes = notes;
+        this.short_definitions = short_definitions;
+        this.thesaurusLinks = thesaurusLinks;
+        this.subsenses = subsenses;
+    }
 }
