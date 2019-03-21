@@ -1,3 +1,5 @@
+package MAIN;
+
 import java.awt.*;
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -96,7 +98,7 @@ public class KasutajaAken extends JFrame {
     }
 
     /*public static void main(String[] args) {
-        KasutajaAken programm = new KasutajaAken();
+        MAIN.KasutajaAken programm = new MAIN.KasutajaAken();
     }*/
 
 }
