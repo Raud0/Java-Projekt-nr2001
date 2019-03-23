@@ -58,7 +58,7 @@ public class Zen2001Programm {
         String testsone = "(*￣m￣)"; //vaikevaartus zen-meistri poolt, ausalt, voiks talle kaomoji pagasi anda | ヽ(￣ω￣(。。 )ゝ
 
         //selle võiks jätta nulli peale, kui midagi, mis ei nõua päringute tegemist, testida, vähem raiskamist
-        int testmode = 1;
+        int testmode = 0;
 
         if (testmode == 1) //sona otsingu tester + korduvotsingu tester
             testsone = tester1("set") + tester1("home") + tester1("set");

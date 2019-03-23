@@ -1,6 +1,7 @@
 package MAIN;
 
 import DISPLAY.*;
+import sun.tools.tree.ThisExpression;
 
 import java.awt.*;
 import javax.imageio.ImageIO;
@@ -11,11 +12,10 @@ import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class KasutajaAken extends JFrame {
-
-    //private String sisu;
 
     private Image aken_ikoon;
 
@@ -114,12 +114,23 @@ public class KasutajaAken extends JFrame {
         suhtle.setFont(new Font("MS PGothic",Font.PLAIN,13));
         suhtle.setBackground(new Color(208,239,160));
         suhtlus_paneel.add(suhtle,lahtripiirangud(5,0,0,suhtle));
-        suhtle.addActionListener(new ActionListener() {
+
+        //this does not work :):):):):):):):):):):):)
+        /**suhtle.addActionListener(new ActionListener() {
+            @Override
             public void actionPerformed(ActionEvent e) {
                 System.out.println(sisend.getText());
-                //sisu = sisend.getText();
+                sisend.setText("");
+
+                try(FileWriter fail = new FileWriter("slowandsteady.txt")) {
+                    String faili_sisu = sisend.getText();
+                    fail.write(faili_sisu);
+                }catch (IOException f) {
+                    new Exception("I dont fucking know", e).printStackTrace();
+                }
             }
-        });
+
+        }); */
 
         //tervik init.
         pildi_paneel.setSize(pilt.getIconWidth(),pilt.getIconHeight());
