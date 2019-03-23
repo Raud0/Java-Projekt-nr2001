@@ -131,6 +131,27 @@ public class KasutajaAken extends JFrame {
             }
 
         }); */
+        //this does work
+        /**
+        suhtle.addActionListener(new ActionListener() {
+
+            public void actionPerformed(ActionEvent e) {
+                System.out.println(sisend.getText());
+                try {
+                    FileWriter fail = new FileWriter("slowandsteady.txt");
+                    String faili_sisu = sisend.getText();
+                    fail.write(faili_sisu);
+                    fail.close();
+                    System.out.println("done");
+                } catch (IOException exception) {
+                    System.out.println(exception.getMessage());
+                }
+                sisend.setText("");
+            }
+
+        });*/
+
+
 
         //tervik init.
         pildi_paneel.setSize(pilt.getIconWidth(),pilt.getIconHeight());
