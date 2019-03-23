@@ -1,5 +1,7 @@
 package MAIN;
 
+import DISPLAY.*;
+
 import java.awt.*;
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -19,6 +21,14 @@ public class KasutajaAken extends JFrame {
 
     private JPanel pildi_paneel;
     private JPanel suhtlus_paneel;
+
+    private JTextArea tuju;
+    private JScrollPane tuju_ala;
+    private String tujutekst = "";
+    public void setTujutekst(String tujutekst) {
+        tuju.insert(tujutekst,0);
+        this.tujutekst = tujutekst;
+    }
 
     private JLabel silt_vastus;
     private JTextArea vastus;
@@ -71,40 +81,39 @@ public class KasutajaAken extends JFrame {
         pildi_paneel.setLayout(new GridBagLayout());
         suhtlus_paneel = new JPanel();
         suhtlus_paneel.setLayout(new GridBagLayout());
-        suhtlus_paneel.setSize(410,220);
+        suhtlus_paneel.setSize(410,200);
 
         //pilt init.
         pilt = new ImageIcon(pilt_failinimed[(int)(Math.random()*pilt_failinimed.length)]);
         pilt_ala = new JLabel(pilt);
         pildi_paneel.add(pilt_ala);
 
-        //programmi kast init.
-        silt_vastus = new JLabel(" Master: ");
-        suhtlus_paneel.add(silt_vastus,lahtripiirangud(0,0,0,silt_vastus));
-        vastus = new JTextArea(vastus_tekst,3,1);
-        vastus.setLineWrap(true);
-        vastus.setWrapStyleWord(true);
-        vastus.setEditable(false);
-        vastus.setBackground(new Color(191,255,244));
-        vastus_ala = new JScrollPane(vastus);
+        //tuju kast init.
+        tuju = new SonaVali(tujutekst,1,1);
+        tuju.setEditable(false);
+        tuju_ala = new JScrollPane(tuju);
+        suhtlus_paneel.add(tuju_ala,lahtripiirangud(0,0,1,tuju));
 
-        suhtlus_paneel.add(vastus_ala,lahtripiirangud(1,0,1,vastus));
+        //programmi kast init.
+        silt_vastus = new PealKirje(" master: ");
+        suhtlus_paneel.add(silt_vastus,lahtripiirangud(1,0,0,silt_vastus));
+        vastus = new SonaVali(vastus_tekst,3,1);
+        vastus.setEditable(false);
+        vastus_ala = new JScrollPane(vastus);
+        suhtlus_paneel.add(vastus_ala,lahtripiirangud(2,0,1,vastus));
 
         //kasutaja kast.
-        silt_sisend = new JLabel(" Student: ");
-        suhtlus_paneel.add(silt_sisend,lahtripiirangud(2,0,0,silt_sisend));
-        sisend = new JTextArea(sisend_tekst,3,1);
-        sisend.setLineWrap(true);
-        sisend.setWrapStyleWord(true);
-        sisend.setBackground(new Color(191,255,244));
+        silt_sisend = new PealKirje(" student: ");
+        suhtlus_paneel.add(silt_sisend,lahtripiirangud(3,0,0,silt_sisend));
+        sisend = new SonaVali(sisend_tekst,3,1);
         sisend_ala = new JScrollPane(sisend);
-
-        suhtlus_paneel.add(sisend_ala,lahtripiirangud(3,0,1,sisend));
+        suhtlus_paneel.add(sisend_ala,lahtripiirangud(4,0,1,sisend));
 
         //nupp init.
-        suhtle = new JButton(" Speak ");
+        suhtle = new JButton(" speak ");
+        suhtle.setFont(new Font("MS PGothic",Font.PLAIN,13));
         suhtle.setBackground(new Color(208,239,160));
-        suhtlus_paneel.add(suhtle,lahtripiirangud(4,0,0,suhtle));
+        suhtlus_paneel.add(suhtle,lahtripiirangud(5,0,0,suhtle));
         suhtle.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 System.out.println(sisend.getText());

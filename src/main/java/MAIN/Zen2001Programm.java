@@ -5,6 +5,7 @@ import SONAMOISTJA.*;
 
 import java.util.List;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 
 public class Zen2001Programm {
@@ -53,7 +54,7 @@ public class Zen2001Programm {
         return testsone;
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
         String testsone = "(*￣m￣)"; //vaikevaartus zen-meistri poolt, ausalt, voiks talle kaomoji pagasi anda | ヽ(￣ω￣(。。 )ゝ
 
         //selle võiks jätta nulli peale, kui midagi, mis ei nõua päringute tegemist, testida, vähem raiskamist
@@ -66,6 +67,7 @@ public class Zen2001Programm {
 
         //ajutine aknatest
         KasutajaAken aken = new KasutajaAken(testsone);
+        aken.setTujutekst("ヽ(￣ω￣(。。 )ゝ");
 
         //ajutine paralleeljooksutamistest
         System.out.println("\nmulti-track drifting\n");
