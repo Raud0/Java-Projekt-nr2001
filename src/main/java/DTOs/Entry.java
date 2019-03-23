@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -20,6 +21,10 @@ public class Entry {
     public List<Sense> getSenses() {return senses;}
 
     public Entry() {}
+    public Entry(String id) {
+        this.senses = new ArrayList<Sense>();
+        this.senses.add(new Sense(id));
+    }
     public Entry(List<GrammaticalFeature> grammaticalFeatures, String homographNumber, List<Sense> senses) {
         this.grammaticalFeatures = grammaticalFeatures;
         this.homographNumber = homographNumber;

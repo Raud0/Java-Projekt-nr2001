@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -26,6 +27,8 @@ public class LexicalEntry {
     public LexicalEntry(String id) {
         this.lexicalCategory = "Unknown";
         this.text = id;
+        this.entries = new ArrayList<Entry>();
+        this.entries.add(new Entry(id));
     }
     public LexicalEntry(List<Entry> entries, String language, String lexicalCategory, String text) {
         this.entries = entries;
