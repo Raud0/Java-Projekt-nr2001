@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c484054-f590-403e-9943-f64a9127b2e5" name="Default Changelist" comment="let's see if intellij is the greatest">
+    <list default="true" id="8c484054-f590-403e-9943-f64a9127b2e5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slowandsteady.txt" beforeDir="false" afterPath="$PROJECT_DIR$/slowandsteady.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MAIN/KasutajaAken$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MAIN/KasutajaAken$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MAIN/KasutajaAken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MAIN/KasutajaAken.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,25 +18,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="72" column="55" selection-start-line="72" selection-start-column="55" selection-end-line="72" selection-end-column="55" />
+            <state relative-caret-position="230">
+              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#248#249#0" expanded="true" />
+                <element signature="e#286#287#0" expanded="true" />
+                <element signature="e#236#237#0" expanded="true" />
+                <element signature="e#266#267#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="134" column="11" lean-forward="true" selection-start-line="134" selection-start-column="11" selection-end-line="134" selection-end-column="11" />
+            <state relative-caret-position="227">
+              <caret line="133" column="75" lean-forward="true" selection-start-line="133" selection-start-column="75" selection-end-line="133" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4524#5132#0" expanded="true" />
+                <element signature="e#5131#5132#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,10 +133,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="912" />
-    <option name="y" value="83" />
+    <option name="x" value="911" />
+    <option name="y" value="82" />
     <option name="width" value="975" />
-    <option name="height" value="1089" />
+    <option name="height" value="1090" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -135,9 +146,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -147,7 +158,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553350797054" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554247213571" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -256,11 +267,20 @@
       <workItem from="1553341589479" duration="922000" />
       <workItem from="1553343645330" duration="6006000" />
       <workItem from="1553360905389" duration="99000" />
+      <workItem from="1554237261378" duration="4680000" />
     </task>
+    <task id="LOCAL-00001" summary="removed idiocy">
+      <created>1554237572528</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554237572528</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89937000" />
+    <option name="totallyTimeSpent" value="94617000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -272,9 +292,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17004265" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17248322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -283,7 +304,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.32152975" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.32152975" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -341,7 +362,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="let's see if intellij is the greatest" />
-    <option name="LAST_COMMIT_MESSAGE" value="let's see if intellij is the greatest" />
+    <MESSAGE value="removed idiocy" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed idiocy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -599,22 +621,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="72" column="55" selection-start-line="72" selection-start-column="55" selection-end-line="72" selection-end-column="55" />
+        <state relative-caret-position="227">
+          <caret line="133" column="75" lean-forward="true" selection-start-line="133" selection-start-column="75" selection-end-line="133" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4524#5132#0" expanded="true" />
+            <element signature="e#5131#5132#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="134" column="11" lean-forward="true" selection-start-line="134" selection-start-column="11" selection-end-line="134" selection-end-column="11" />
+        <state relative-caret-position="230">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
           </folding>
         </state>
       </provider>

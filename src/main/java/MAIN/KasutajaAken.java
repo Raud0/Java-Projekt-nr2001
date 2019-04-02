@@ -123,16 +123,22 @@ public class KasutajaAken extends JFrame {
 
             public void actionPerformed(ActionEvent e) {
                 System.out.println(sisend.getText());
+
                 try {
                     FileWriter fail = new FileWriter("slowandsteady.txt");
                     String faili_sisu = sisend.getText();
                     fail.write(faili_sisu);
                     fail.close();
                     System.out.println("done");
+
+                    Zen2001Programm papa = new Zen2001Programm();
+                    vastus.setText(papa.tulemuse_tekitaja());
+                    sisend.setText("");
+
                 } catch (IOException exception) {
                     System.out.println(exception.getMessage());
                 }
-                sisend.setText("");
+
             }
 
         });

@@ -3,12 +3,37 @@ package MAIN;
 import DTOs.*;
 import SONAMOISTJA.*;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.List;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 
 public class Zen2001Programm {
+
+    public Zen2001Programm() {
+
+    }
+
+    public static String tulemuse_tekitaja() {
+
+        try {
+            BufferedReader fail = new BufferedReader(new FileReader("slowandsteady.txt"));
+            String faili_sisu = fail.readLine();
+            fail.close();
+            String muteeritud_sisu = tester2(faili_sisu);
+            System.out.println("done2");
+            return muteeritud_sisu;
+
+        } catch (IOException exception) {
+            System.out.println(exception.getMessage());
+
+        }
+
+        return "";
+
+    }
 
     //tester, mis otsib sona ning leiab sealt ules naitekasutuse ja kasutusdomeeni
     public static String tester1(String sona) throws IOException {
