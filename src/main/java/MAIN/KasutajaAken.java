@@ -1,7 +1,9 @@
 package MAIN;
 
 import DISPLAY.*;
-import sun.tools.tree.ThisExpression;
+
+// crashed for me and wasn't used?
+//import sun.tools.tree.ThisExpression;
 
 import java.awt.*;
 import javax.imageio.ImageIO;
@@ -115,24 +117,8 @@ public class KasutajaAken extends JFrame {
         suhtle.setBackground(new Color(208,239,160));
         suhtlus_paneel.add(suhtle,lahtripiirangud(5,0,0,suhtle));
 
-        //this does not work :):):):):):):):):):):):)
-        /**suhtle.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                System.out.println(sisend.getText());
-                sisend.setText("");
-
-                try(FileWriter fail = new FileWriter("slowandsteady.txt")) {
-                    String faili_sisu = sisend.getText();
-                    fail.write(faili_sisu);
-                }catch (IOException f) {
-                    new Exception("I dont fucking know", e).printStackTrace();
-                }
-            }
-
-        }); */
         //this does work
-        /**
+
         suhtle.addActionListener(new ActionListener() {
 
             public void actionPerformed(ActionEvent e) {
@@ -149,7 +135,7 @@ public class KasutajaAken extends JFrame {
                 sisend.setText("");
             }
 
-        });*/
+        });
 
 
 
