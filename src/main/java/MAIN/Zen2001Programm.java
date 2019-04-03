@@ -96,7 +96,7 @@ public class Zen2001Programm {
 
         //alustab lauseosade kategoriseerimist
         lause.lauseTolk(lauseosad);
-        lause.listiprintija(lauseosad,1);
+        lause.listiprintija(lauseosad,0);
 
         //suvalise lause genereerija tagastamiseks (see pole vaga oluline :D)
         int piir = Math.min(1 + (int)(Math.random()*6),lauseosad.size());
@@ -111,7 +111,7 @@ public class Zen2001Programm {
         String testsone = "(*￣m￣)"; //vaikevaartus zen-meistri poolt, ausalt, voiks talle kaomoji pagasi anda | ヽ(￣ω￣(。。 )ゝ
 
         //selle võiks jätta nulli peale, kui midagi, mis ei nõua päringute tegemist, testida, vähem raiskamist
-        int testmode = 0;
+        int testmode = 2;
 
         if (testmode == 1) //sona otsingu tester + korduvotsingu tester
             testsone = tester1("set") + tester1("home") + tester1("set");

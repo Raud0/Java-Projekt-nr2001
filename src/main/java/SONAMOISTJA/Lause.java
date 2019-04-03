@@ -16,6 +16,9 @@ public class Lause {
     private List<Sona> sonad;
     private List<Klausel> klauslid;
     private List<Lauseosa> lauseosad;
+    private List<ResultsDTO> vasted;
+
+    public List<ResultsDTO> getVasted() {return vasted;}
 
     public String getToores_lause() {return toores_lause;}
     public void setToores_lause(String toores_lause) {this.toores_lause = toores_lause;}
@@ -101,6 +104,8 @@ public class Lause {
             List<Double> kategooria_kaalud = new ArrayList<Double>();
             List<LexicalEntry> leksilised_sisendid = vaste.getLexicalEntries();
 
+            vasted.add(vaste);
+
             //Lisan võimalikud leksilised kategooriad
             for (LexicalEntry leksiline_sisend : leksilised_sisendid) {
                 leksilised_kategooriad.add(leksiline_sisend.getLexicalCategory());
@@ -147,25 +152,10 @@ public class Lause {
                 }
             }
 
-
-
             //Kinnitamine
             if (!muudetud){
-                //Eemaldan teadmatuse, kui midagi on teada
-                if (kategooriad.size() > 1 && kategooriad.contains("Unknown")) {
-                    int indeks = kategooriad.indexOf("Unknown");
-                    kategooriad.remove(indeks);
-                    kaalud.remove(indeks);
-                }
 
-                //Taastan, et kaalude kogusumma oleks 1.
-                double kogu_kaal = 0;
-                for (double kaal : kaalud) {kogu_kaal += kaal;}
-                for (int j = 0; j < kaalud.size(); j++) {kaalud.set(j,kaalud.get(j)/kogu_kaal);}
-
-                //Muudan objekti
-                sona.setLexical_category(kategooriad);
-                sona.setKategooria_kaalud(kaalud);
+                sona.kaaluseadja(kategooriad,kaalud);
             }
         }
 
@@ -177,12 +167,66 @@ public class Lause {
     //kui kogu informatsioon sonade kohta on käes, hakkan uurima sõnade võimalikke tähendusi lause kontekstist lähtudes
     public List<Sona> lauseKontekstTolk(List<Sona> sonad) {
 
+        //Verbi võimalused
+        List<Integer> verbi_indeksid = new ArrayList<Integer>();
+        for (int i = 0; i < sonad.size(); i++) {
+            if (sonad.get(i).getLexical_category().contains("Verb")) {
+                verbi_indeksid.add(i);
+            }
+        }
+
+        if (verbi_indeksid.size() == 1) {
+            Sona sona = sonad.get(verbi_indeksid.get(0));
+            sona.teeVerbiks();
+        }
+
+        if (verbi_indeksid.size() > 1) {
+            for (int i = 0; i < verbi_indeksid.size() - 1; i++) {
+                Sona sona_1 = sonad.get(verbi_indeksid.get(i));
+                Sona sona_2 = sonad.get(verbi_indeksid.get(i + 1));
+
+                ResultsDTO vaste = getVasted().get(verbi_indeksid.get(i));
+                boolean sobivad = false;
+                if (Uurija.onGrammatilineTekst(vaste,"Verb","Auxiliary")) {
+                    verbi_indeksid.get(i);
+                    List<Sona> verbi_vahe = sonad.subList(verbi_indeksid.get(i)+1,verbi_indeksid.get(i+1));
+                    sobivad = (verbi_vahe.size() == 0);
+                    if(!sobivad){
+                        sobivad = Uurija.onNimisonaFraas(verbi_vahe);
+                    }
+
+                    if(sobivad) {
+                        sona_1.teeVerbiks();
+                        sona_2.teeVerbiks();
+                    }
+                }
+            }
+        }
 
         this.setSonad(sonad);
         return sonad;
     }
 
     public void listiprintija(List<String> list, int mode) {
+        if (mode == 0) {
+            sonad = this.getSonad();
+            if (sonad.size() > 0) {
+                for (Sona sona : sonad) {
+                    double suurim_kaal = 0;
+                    int suurim_kaal_i = 0;
+                    List<Double> kaalud = sona.getKategooria_kaalud();
+                    for (int i = 0; i < kaalud.size(); i++) {
+                        if (kaalud.get(i) > suurim_kaal) {
+                            suurim_kaal = kaalud.get(i);
+                            suurim_kaal_i = i;
+                        }
+                    }
+                    System.out.print(sona.getLexical_category().get(suurim_kaal_i) + "|");
+                }
+                System.out.println();
+                return;
+            }
+        }
         if (mode == 1) {
             sonad = this.getSonad();
             if (sonad.size() > 0) {
@@ -234,5 +278,6 @@ public class Lause {
         this.toores_lause = laused[0];
         this.tukeldatud_lause = lauseTukeldaja(toores_lause);
         this.sonad = new ArrayList<Sona>();
+        this.vasted = new ArrayList<ResultsDTO>();
     }
 }

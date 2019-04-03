@@ -24,6 +24,7 @@ public class Entry {
     public Entry(String id) {
         this.senses = new ArrayList<Sense>();
         this.senses.add(new Sense(id));
+        this.grammaticalFeatures = new ArrayList<GrammaticalFeature>();
     }
     public Entry(List<GrammaticalFeature> grammaticalFeatures, String homographNumber, List<Sense> senses) {
         this.grammaticalFeatures = grammaticalFeatures;

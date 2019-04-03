@@ -16,6 +16,37 @@ public class Sona {
     public List<Double> getKategooria_kaalud() {return kategooria_kaalud;}
     public void setKategooria_kaalud(List<Double> kategooria_kaalud) {this.kategooria_kaalud = kategooria_kaalud;}
 
+    public void teeVerbiks() {
+        List<String> kategooriad = this.getLexical_category();
+        List<Double> kaalud = this.getKategooria_kaalud();
+
+        for (int i = 0; i < kategooriad.size(); i++) {
+            if (!kategooriad.get(i).equals("Verb")) {
+                kaalud.set(i,0.0);
+            }
+        }
+
+        this.kaaluseadja(kategooriad,kaalud);
+    }
+
+    public void kaaluseadja(List<String> kategooriad, List<Double> kaalud) {
+        //Eemaldan teadmatuse, kui midagi on teada
+        if (kategooriad.size() > 1 && kategooriad.contains("Unknown")) {
+            int indeks = kategooriad.indexOf("Unknown");
+            kategooriad.remove(indeks);
+            kaalud.remove(indeks);
+        }
+
+        //Taastan, et kaalude kogusumma oleks 1.
+        double kogu_kaal = 0;
+        for (double kaal : kaalud) {kogu_kaal += kaal;}
+        for (int j = 0; j < kaalud.size(); j++) {kaalud.set(j,kaalud.get(j)/kogu_kaal);}
+
+        //Muudan objekti
+        this.setLexical_category(kategooriad);
+        this.setKategooria_kaalud(kaalud);
+    }
+
     public Sona(String tekst) {
         this.tekst = tekst;
         this.lexical_category = new ArrayList<String>();
