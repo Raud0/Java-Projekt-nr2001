@@ -106,13 +106,13 @@ public class Zen2001Programm {
 
         //Tujukas
         ArrayList<Character> tuju_saba = new ArrayList<Character>();
-        tuju_saba.addAll(0,karakteriseerija("ヽ(￣ω￣(。。 )ゝ"));
+        tuju_saba.addAll(0,karakteriseerija("( • )( • )ԅ(≖‿≖ԅ)                     ヽ(￣ω￣(。。 )ゝ                     ヽ(￣ω￣(。。 )ゝ                     ヽ(￣ω￣(。。 )ゝ                      (｡・//ε//・｡)                     ヽ(￣ω￣(。。 )ゝ                     ヽ(￣ω￣(。。 )ゝ                     ヽ(￣ω￣(。。 )ゝ                     (^_<)X(>_^)                     ヽ(￣ω￣(。。 )ゝ                     (╯°益°)╯彡┻━┻                     ヽ(￣ω￣(。。 )ゝ                     ヽ(￣ω￣(。。 )ゝ                     ｀、ヽ｀ヽ｀、ヽ(ノ＞＜)ノ ｀、ヽ｀☂ヽ｀、ヽ                     ヽ(￣ω￣(。。 )ゝ                     ヽ(￣ω￣(。。 )ゝ                     ヽ(￣ω￣(。。 )ゝ                      (=O*_*)=O Q(*_*Q)                     ヽ(￣ω￣(。。 )ゝ                      (ノ°∀°)ノ⌒･*:.｡. .｡.:*･゜ﾟ･*☆               ヽ(￣ω￣(。。 )ゝ                     ヽ(￣ω￣(。。 )ゝ                     ヽ(￣ω￣(。。 )ゝ"));
         System.out.println(tuju_saba);
         StringBuilder sone_ehitaja = new StringBuilder(aken.getTujutekst());
 
         while(true){
 
-            Thread.sleep(1111);
+            Thread.sleep(666);
             if (tuju_saba.size()>0) {
                 sone_ehitaja.insert(0,tuju_saba.get(tuju_saba.size()-1));
                 tuju_saba.remove(tuju_saba.size()-1);
