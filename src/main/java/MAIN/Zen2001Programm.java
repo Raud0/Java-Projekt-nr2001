@@ -112,7 +112,7 @@ public class Zen2001Programm {
 
         while(true){
 
-            Thread.sleep(1111);
+            Thread.sleep(1000);
             if (tuju_saba.size()>0) {
                 sone_ehitaja.insert(0,tuju_saba.get(tuju_saba.size()-1));
                 tuju_saba.remove(tuju_saba.size()-1);
