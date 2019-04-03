@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c484054-f590-403e-9943-f64a9127b2e5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DTOs/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DTOs/Entry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MAIN/Uurija.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN/Uurija.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Sona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Sona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MAIN/Paring_OxfordAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MAIN/Paring_OxfordAPI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MAIN/Zen2001Programm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MAIN/Zen2001Programm.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="98" column="39" selection-start-line="98" selection-start-column="39" selection-end-line="98" selection-end-column="39" />
+            <state relative-caret-position="-411">
+              <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -38,10 +31,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
+            <state relative-caret-position="-261">
               <caret line="223" column="90" lean-forward="true" selection-start-line="223" selection-start-column="90" selection-end-line="223" selection-end-column="90" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -209,8 +202,8 @@
         <option value="$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java" />
         <option value="$PROJECT_DIR$/src/main/java/MAIN/Uurija.java" />
         <option value="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Sona.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" />
         <option value="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" />
       </list>
     </option>
   </component>
@@ -305,7 +298,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554325578143" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554326100576" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -417,7 +410,7 @@
       <workItem from="1554237261378" duration="5156000" />
       <workItem from="1554273476765" duration="734000" />
       <workItem from="1554303802997" duration="7296000" />
-      <workItem from="1554311213540" duration="9741000" />
+      <workItem from="1554311213540" duration="10182000" />
     </task>
     <task id="LOCAL-00001" summary="removed idiocy">
       <created>1554237572528</created>
@@ -437,7 +430,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112864000" />
+    <option name="totallyTimeSpent" value="113305000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -773,13 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="98" column="39" selection-start-line="98" selection-start-column="39" selection-end-line="98" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-799">
@@ -789,12 +775,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
+        <state relative-caret-position="-261">
           <caret line="223" column="90" lean-forward="true" selection-start-line="223" selection-start-column="90" selection-end-line="223" selection-end-column="90" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#7665#7674#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-411">
+          <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
         </state>
       </provider>
     </entry>
