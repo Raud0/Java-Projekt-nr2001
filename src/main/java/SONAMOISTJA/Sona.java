@@ -1,5 +1,6 @@
 package SONAMOISTJA;
 
+import java.util.ArrayList;
 import java.util.List;
 
 //hetkel omab ainult teksti ja leksilist kategooriat, tulevikus ilmselt ka domeeni
@@ -7,10 +8,17 @@ import java.util.List;
 public class Sona {
     private String tekst;
     private List<String> lexical_category;
+    private List<Double> kategooria_kaalud;
 
     public String getTekst() {return tekst;}
     public List<String> getLexical_category() {return lexical_category;}
     public void setLexical_category(List<String> lexical_category) {this.lexical_category = lexical_category;}
+    public List<Double> getKategooria_kaalud() {return kategooria_kaalud;}
+    public void setKategooria_kaalud(List<Double> kategooria_kaalud) {this.kategooria_kaalud = kategooria_kaalud;}
 
-    public Sona(String tekst) {this.tekst = tekst;}
+    public Sona(String tekst) {
+        this.tekst = tekst;
+        this.lexical_category = new ArrayList<String>();
+        this.kategooria_kaalud = new ArrayList<Double>();
+    }
 }

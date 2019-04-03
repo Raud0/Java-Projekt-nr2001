@@ -5,6 +5,8 @@ import SONAMOISTJA.*;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -33,6 +35,14 @@ public class Zen2001Programm {
 
         return "";
 
+    }
+
+    public static List<Character> karakteriseerija(String sone) {
+        List<Character> karakterid = new ArrayList<Character>();
+        for (char karakter : sone.toCharArray()) {
+            karakterid.add(karakter);
+        }
+        return karakterid;
     }
 
     //tester, mis otsib sona ning leiab sealt ules naitekasutuse ja kasutusdomeeni
@@ -90,11 +100,31 @@ public class Zen2001Programm {
         if (testmode == 2) //lause tester
             testsone = tester2(" Why do they want Rathenau tonight? What did Caesar really whisper to his protégé as he fell? Et tu, Brute, the official lie, is about what you’d expect to get from them—it says exactly nothing. The moment of assassination is the moment when power and the ignorance of power come together, with Death as validator. When one speaks to the other then it is not to pass the time of day with et-tu-Brutes. What passes is a truth so terrible that history—at best a conspiracy, not always among gentlemen, to defraud—will never admit it. The truth will be repressed or in ages of particular elegance be disguised as something else. What will Rathenau, past the moment, years into a new otherside existence, have to say about the old dispensation? Probably nothing as incredible as what he might have said just as the shock flashed his mortal nerves, as the Angel swooped in…");
 
-        //ajutine aknatest
         KasutajaAken aken = new KasutajaAken(testsone);
-        aken.setTujutekst("ヽ(￣ω￣(。。 )ゝ");
-
         //ajutine paralleeljooksutamistest
         System.out.println("\nmulti-track drifting\n");
+
+        //Tujukas
+        ArrayList<Character> tuju_saba = new ArrayList<Character>();
+        tuju_saba.addAll(0,karakteriseerija("ヽ(￣ω￣(。。 )ゝ"));
+        System.out.println(tuju_saba);
+        StringBuilder sone_ehitaja = new StringBuilder(aken.getTujutekst());
+
+        while(true){
+
+            Thread.sleep(1111);
+            if (tuju_saba.size()>0) {
+                sone_ehitaja.insert(0,tuju_saba.get(tuju_saba.size()-1));
+                tuju_saba.remove(tuju_saba.size()-1);
+            } else {
+                sone_ehitaja.insert(0,' ');
+            }
+
+            System.out.println(sone_ehitaja);
+            sone_ehitaja.deleteCharAt(sone_ehitaja.length()-1);
+            aken.setTujutekst(sone_ehitaja.toString());
+        }
+
+
     }
 }

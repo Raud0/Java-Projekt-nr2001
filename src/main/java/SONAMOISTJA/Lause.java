@@ -9,6 +9,7 @@ import java.util.List;
 
 //peamine struktuur, hoiab enamsti uht motet
 public class Lause {
+    private static final char[] sumbolid = {'-','–','…','?','.',',',':',';','(',')','"'};
 
     private String toores_lause;
     private List<String> tukeldatud_lause;
@@ -26,6 +27,7 @@ public class Lause {
     public void setKlauslid(List<Klausel> klauslid) {this.klauslid = klauslid;}
     public List<Lauseosa> getLauseosad() {return lauseosad;}
     public void setLauseosad(List<Lauseosa> lauseosad) {this.lauseosad = lauseosad;}
+    public static char[] getSumbolid() {return sumbolid;}
 
     //teeb teksti moistetavamaks
     //voib olla peaks tulevikus automaatselt ara tegema "he's" -> "he is", samas, et langetada otsus, kas "'s" nimisonafraasis "the dog's" on contraction voi possessive, peab lauset enne moistma
@@ -96,13 +98,85 @@ public class Lause {
             ResultsDTO vaste = Uurija.sonaleidja(sona.getTekst());
 
             List<String> leksilised_kategooriad = new ArrayList<String>();
+            List<Double> kategooria_kaalud = new ArrayList<Double>();
             List<LexicalEntry> leksilised_sisendid = vaste.getLexicalEntries();
 
+            //Lisan võimalikud leksilised kategooriad
             for (LexicalEntry leksiline_sisend : leksilised_sisendid) {
                 leksilised_kategooriad.add(leksiline_sisend.getLexicalCategory());
             }
+            //Lisan vastavad algtõenäosused
+            for (int i = 0; i < leksilised_kategooriad.size(); i++){
+                kategooria_kaalud.add(1.0/leksilised_kategooriad.size());
+            }
+
             sona.setLexical_category(leksilised_kategooriad);
+            sona.setKategooria_kaalud(kategooria_kaalud);
         }
+
+        //Leian lihtsamaid Unknown tüüpe.
+        for(int i = 0; i < sonad.size(); i++) {
+            boolean muudetud = false;
+            Sona sona = sonad.get(i);
+            String tekst = sona.getTekst();
+            List<String> kategooriad = sona.getLexical_category();
+            List<Double> kaalud = sona.getKategooria_kaalud();
+
+            //Nimi
+            if (Character.isUpperCase(tekst.charAt(0))) {
+                if (!kategooriad.contains("Noun")) {
+                    kategooriad.add("Noun");
+                    kaalud.add(0.0);}
+                int indeks = kategooriad.indexOf("Noun");
+                if (i == 0) {kaalud.set(indeks,kaalud.get(indeks) + 0.2);}
+                else {kaalud.set(indeks,kaalud.get(indeks) + 0.5);}
+            }
+
+            //Sümbol
+            if (tekst.length()==1) {
+                char teksti_sumbol = tekst.charAt(0);
+                for (char sumbol : sumbolid) {
+                    if (sumbol == teksti_sumbol) {
+                        if (!kategooriad.contains("Symbol")) {
+                            kategooriad.add("Symbol");
+                            kaalud.add(0.0);}
+                        int indeks = kategooriad.indexOf("Symbol");
+                        if (i == sonad.size()-1) {kaalud.set(indeks,kaalud.get(indeks) + 2);}
+                        else {kaalud.set(indeks,kaalud.get(indeks) + 1.5);}
+                    }
+                }
+            }
+
+
+
+            //Kinnitamine
+            if (!muudetud){
+                //Eemaldan teadmatuse, kui midagi on teada
+                if (kategooriad.size() > 1 && kategooriad.contains("Unknown")) {
+                    int indeks = kategooriad.indexOf("Unknown");
+                    kategooriad.remove(indeks);
+                    kaalud.remove(indeks);
+                }
+
+                //Taastan, et kaalude kogusumma oleks 1.
+                double kogu_kaal = 0;
+                for (double kaal : kaalud) {kogu_kaal += kaal;}
+                for (int j = 0; j < kaalud.size(); j++) {kaalud.set(j,kaalud.get(j)/kogu_kaal);}
+
+                //Muudan objekti
+                sona.setLexical_category(kategooriad);
+                sona.setKategooria_kaalud(kaalud);
+            }
+        }
+
+
+        this.setSonad(sonad);
+        return sonad;
+    }
+
+    //kui kogu informatsioon sonade kohta on käes, hakkan uurima sõnade võimalikke tähendusi lause kontekstist lähtudes
+    public List<Sona> lauseKontekstTolk(List<Sona> sonad) {
+
 
         this.setSonad(sonad);
         return sonad;
@@ -113,11 +187,10 @@ public class Lause {
             sonad = this.getSonad();
             if (sonad.size() > 0) {
                 for (Sona sona : sonad) {
-                    if (sona.getLexical_category().size() == 1) {
-                        System.out.print(sona.getLexical_category().get(0) + "|");
-                    } else {
-                        System.out.print("Undecided|");
+                    for (String kategooria : sona.getLexical_category()) {
+                        System.out.print(kategooria + "/");
                     }
+                    System.out.print("| ");
                 }
                 System.out.println();
                 return;
@@ -158,7 +231,6 @@ public class Lause {
             // Tee uus staatiline sõnumite logija. Kahekordest listist. Ülemine tase, kus vahetumisi kirjutatakse ja alumine, kus on kõik laused, mis korraga öeldi, koos.
         }
 
-        System.out.println(laused[0]);
         this.toores_lause = laused[0];
         this.tukeldatud_lause = lauseTukeldaja(toores_lause);
         this.sonad = new ArrayList<Sona>();

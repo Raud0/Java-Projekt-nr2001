@@ -26,11 +26,13 @@ public class KasutajaAken extends JFrame {
 
     private JTextArea tuju;
     private JScrollPane tuju_ala;
-    private String tujutekst = "";
-    public void setTujutekst(String tujutekst) {
-        tuju.insert(tujutekst,0);
-        this.tujutekst = tujutekst;
+    private String tujutekst = "                                                                                                    "; //100 karakterit
+    public void setTujutekst(String sisend) {
+        tuju.removeAll();
+        tuju.insert(sisend,0);
+        this.tujutekst = sisend;
     }
+    public String getTujutekst() {return tujutekst;}
 
     private JLabel silt_vastus;
     private JTextArea vastus;
