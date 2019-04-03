@@ -131,8 +131,7 @@ public class KasutajaAken extends JFrame {
                     fail.close();
                     System.out.println("done");
 
-                    Zen2001Programm papa = new Zen2001Programm();
-                    vastus.setText(papa.tulemuse_tekitaja());
+                    vastus.setText(Zen2001Programm.tulemuse_tekitaja());
                     sisend.setText("");
 
                 } catch (IOException exception) {
