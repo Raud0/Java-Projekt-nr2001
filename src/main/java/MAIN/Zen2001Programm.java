@@ -116,6 +116,7 @@ public class Zen2001Programm {
 
         //Loop
         int ajaluger = 0;
+        String siesendi_samasuse_kontroll = "";
         while(true){
             ajaluger++;
             if (ajaluger%10 == 0 && getTuju_saba().size() <= 3) {
@@ -132,8 +133,18 @@ public class Zen2001Programm {
 
             sone_ehitaja.deleteCharAt(sone_ehitaja.length()-1);
             aken.setTujutekst(sone_ehitaja.toString());
+
+            String sisestatud_lause = KasutajaAken.gib_sisestatu();
+
+            if(!(sisestatud_lause.equals(""))){
+                if(!(sisestatud_lause.equals(siesendi_samasuse_kontroll))) {
+
+                    siesendi_samasuse_kontroll = sisestatud_lause;
+                    String vastus = tester2(sisestatud_lause);
+                    aken.setfinall(vastus);
+                    aken.vastsue_kuvar();
+                }
+            }
         }
-
-
     }
 }

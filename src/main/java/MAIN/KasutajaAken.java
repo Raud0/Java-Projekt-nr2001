@@ -32,7 +32,13 @@ public class KasutajaAken extends JFrame {
         tuju.insert(sisend,0);
         this.tujutekst = sisend;
     }
+
     public String getTujutekst() {return tujutekst;}
+
+    private String finall = "";
+    public void setfinall(String sisend) {
+        this.finall = sisend;
+    }
 
     private JLabel silt_vastus;
     private JTextArea vastus;
@@ -56,9 +62,20 @@ public class KasutajaAken extends JFrame {
     //pildid peaksid olema laiusega 380
     private static final String[] pilt_failinimed = {"whale-fall.png","coolboi.jpg","iced.png","bedroom.gif","temple.gif"};
 
-    /**public String getSisu() {
-        return sisu;
-    }*/
+    public static String sisestatu = "";
+
+    public static String gib_sisestatu(){
+
+        return sisestatu;
+
+    }
+
+    public void vastsue_kuvar(){
+
+        vastus.setText(finall);
+
+    }
+
 
     public GridBagConstraints lahtripiirangud(int rida, int veerg,int mode, Component komponent){
         GridBagConstraints piirangud = new GridBagConstraints();
@@ -133,18 +150,16 @@ public class KasutajaAken extends JFrame {
                     fail.close();
                     System.out.println("done");
 
-                    vastus.setText(Zen2001Programm.tulemuse_tekitaja());
-                    sisend.setText("");
-
                 } catch (IOException exception) {
                     System.out.println(exception.getMessage());
                 }
 
+                sisestatu = sisend.getText();
+                sisend.setText("");
+
             }
 
         });
-
-
 
         //tervik init.
         pildi_paneel.setSize(pilt.getIconWidth(),pilt.getIconHeight());
