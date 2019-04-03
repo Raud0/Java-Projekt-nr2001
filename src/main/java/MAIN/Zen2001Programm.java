@@ -14,8 +14,25 @@ import java.util.concurrent.TimeUnit;
 
 public class Zen2001Programm {
 
-    public Zen2001Programm() {
 
+    private static final String[] emotsioonid = {
+            "           ",
+            "ヽ(￣ω￣(。。 )ゝ",
+            "(｡・//ε//・｡)",
+            "(^_<)X(>_^)",
+            "(╯°益°)╯彡┻━┻",
+            "｀、ヽ｀ヽ｀、ヽ(ノ＞＜)ノ ｀、ヽ｀☂ヽ｀、ヽ",
+            "(=O*_*)=O Q(*_*Q)",
+            "(ノ°∀°)ノ⌒･*:.｡. .｡.:*･゜ﾟ･*☆",
+            "( • )( • )ԅ(≖‿≖ԅ)",
+    };
+    private static ArrayList<Character> tuju_saba = new ArrayList<Character>();
+    public static ArrayList<Character> getTuju_saba() {return tuju_saba;}
+
+    public static void lisaSappa(int i){
+        ArrayList<Character> tuju_saba = getTuju_saba();
+        tuju_saba.addAll(0,karakteriseerija(emotsioonid[i]));
+        tuju_saba.addAll(0,karakteriseerija(emotsioonid[0]));
     }
 
     public static String tulemuse_tekitaja() {
@@ -34,7 +51,6 @@ public class Zen2001Programm {
         }
 
         return "";
-
     }
 
     public static List<Character> karakteriseerija(String sone) {
@@ -89,6 +105,8 @@ public class Zen2001Programm {
         return testsone;
     }
 
+    public Zen2001Programm() {}
+
     public static void main(String[] args) throws IOException, InterruptedException {
         String testsone = "(*￣m￣)"; //vaikevaartus zen-meistri poolt, ausalt, voiks talle kaomoji pagasi anda | ヽ(￣ω￣(。。 )ゝ
 
@@ -105,22 +123,26 @@ public class Zen2001Programm {
         System.out.println("\nmulti-track drifting\n");
 
         //Tujukas
-        ArrayList<Character> tuju_saba = new ArrayList<Character>();
-        tuju_saba.addAll(0,karakteriseerija("ヽ(￣ω￣(。。 )ゝ"));
-        System.out.println(tuju_saba);
+
+
         StringBuilder sone_ehitaja = new StringBuilder(aken.getTujutekst());
 
+
+        int ajaluger = 0;
         while(true){
+            ajaluger++;
+            if (ajaluger%10 == 0 && getTuju_saba().size() <= 3) {
+                lisaSappa((int)(Math.random()*(emotsioonid.length-1)+1));
+            }
 
             Thread.sleep(1000);
-            if (tuju_saba.size()>0) {
-                sone_ehitaja.insert(0,tuju_saba.get(tuju_saba.size()-1));
-                tuju_saba.remove(tuju_saba.size()-1);
+            if (getTuju_saba().size()>0) {
+                sone_ehitaja.insert(0,getTuju_saba().get(getTuju_saba().size()-1));
+                getTuju_saba().remove(getTuju_saba().size()-1);
             } else {
                 sone_ehitaja.insert(0,' ');
             }
 
-            System.out.println(sone_ehitaja);
             sone_ehitaja.deleteCharAt(sone_ehitaja.length()-1);
             aken.setTujutekst(sone_ehitaja.toString());
         }
