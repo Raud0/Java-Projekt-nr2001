@@ -6,6 +6,7 @@ import DTOs.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 //peamine struktuur, hoiab enamsti uht motet
 public class Lause {
@@ -97,6 +98,8 @@ public class Lause {
         }
 
         //Otsin välja, mis tüüpi sõna olla saab (verb, noun, jne.)
+        System.out.println("Alustan Oxford API küsitlemist.");
+        long start = System.nanoTime();
         for(Sona sona : sonad) {
             ResultsDTO vaste = Uurija.sonaleidja(sona.getTekst());
 
@@ -118,6 +121,9 @@ public class Lause {
             sona.setLexical_category(leksilised_kategooriad);
             sona.setKategooria_kaalud(kategooria_kaalud);
         }
+        long end = System.nanoTime();
+        System.out.println("Lõpetasin küsitlemise. Aega kulus " + TimeUnit.SECONDS.convert(end - start, TimeUnit.NANOSECONDS) + " sekundit.");
+
 
         //Leian lihtsamaid Unknown tüüpe.
         for(int i = 0; i < sonad.size(); i++) {
@@ -207,7 +213,8 @@ public class Lause {
         return sonad;
     }
 
-    public void listiprintija(List<String> list, int mode) {
+    public String listiprintija(List<String> list, int mode) {
+        StringBuilder sone_ehitaja = new StringBuilder();
         if (mode == 0) {
             sonad = this.getSonad();
             if (sonad.size() > 0) {
@@ -221,10 +228,11 @@ public class Lause {
                             suurim_kaal_i = i;
                         }
                     }
-                    System.out.print(sona.getLexical_category().get(suurim_kaal_i) + "|");
+                    sone_ehitaja.append(sona.getLexical_category().get(suurim_kaal_i));
+                    sone_ehitaja.append('|');
                 }
-                System.out.println();
-                return;
+                System.out.println(sone_ehitaja.toString());
+                return sone_ehitaja.toString();
             }
         }
         if (mode == 1) {
@@ -232,20 +240,24 @@ public class Lause {
             if (sonad.size() > 0) {
                 for (Sona sona : sonad) {
                     for (String kategooria : sona.getLexical_category()) {
-                        System.out.print(kategooria + "/");
+                        sone_ehitaja.append(kategooria);
+                        sone_ehitaja.append('/');
                     }
-                    System.out.print("| ");
+                    sone_ehitaja.append('|');
                 }
-                System.out.println();
-                return;
+                System.out.println(sone_ehitaja.toString());
+                return sone_ehitaja.toString();
             }
         }
 
         //default print, kui soovitud mood ei tööta
         for (String sone : list) {
-            System.out.print(sone + "|");
+            sone_ehitaja.append(sone);
+            sone_ehitaja.append('|');
         }
-        System.out.println();
+
+        System.out.println(sone_ehitaja.toString());
+        return sone_ehitaja.toString();
     }
 
     public Lause(String toores_lause) throws IOException {

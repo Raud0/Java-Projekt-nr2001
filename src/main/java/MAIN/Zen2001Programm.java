@@ -87,12 +87,13 @@ public class Zen2001Programm {
 
         //alustab lauseosade kategoriseerimist
         lause.lauseTolk(lauseosad);
-        lause.listiprintija(lauseosad,0);
-
+        testsone = lause.listiprintija(lauseosad,0);
         //suvalise lause genereerija tagastamiseks (see pole vaga oluline :D)
+        /*
         int piir = Math.min(1 + (int)(Math.random()*6),lauseosad.size());
         for(int i = 0; i < piir; i++)
             testsone += lauseosad.get((int)(Math.random()*(lauseosad.size()))) + " ";
+        */
         return testsone;
     }
 
@@ -120,7 +121,7 @@ public class Zen2001Programm {
         while(true){
             ajaluger++;
             if (ajaluger%10 == 0 && getTuju_saba().size() <= 3) {
-                lisaSappa((int)(Math.random()*(emotsioonid.length-1)+1));
+                lisaSappa((int)(Math.random()*(emotsioonid.length-2)+1));
             }
 
             Thread.sleep(1000);
