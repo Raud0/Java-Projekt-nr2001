@@ -9,17 +9,14 @@ import java.awt.*;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
+import java.awt.event.*;
 import java.awt.image.BufferedImage;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class KasutajaAken extends JFrame implements KeyListener{
+public class KasutajaAken extends JFrame implements KeyListener, MouseListener, ActionListener {
 
     private Image aken_ikoon;
 
@@ -130,38 +127,15 @@ public class KasutajaAken extends JFrame implements KeyListener{
         suhtlus_paneel.add(suhtle,lahtripiirangud(5,0,0,suhtle));
 
         //this does work
-
-        suhtle.addActionListener(new ActionListener() {
-
-            public void actionPerformed(ActionEvent e) {
-                System.out.println(sisend.getText());
-
-                try {
-                    FileWriter fail = new FileWriter("slowandsteady.txt", true);
-                    String faili_sisu = sisend.getText();
-                    fail.write(faili_sisu);
-                    fail.write("\n");
-                    fail.close();
-                    System.out.println("done");
-
-                } catch (IOException exception) {
-                    System.out.println(exception.getMessage());
-                }
-
-                sisestatu = sisend.getText();
-                sisend.setText("");
-
-            }
-
-        });
+        suhtle.addActionListener(this);
 
         //tervik init.
         pildi_paneel.setSize(pilt.getIconWidth(),pilt.getIconHeight());
-        add(pildi_paneel,BorderLayout.BEFORE_FIRST_LINE);
-        add(suhtlus_paneel, BorderLayout.AFTER_LAST_LINE);
+        add(pildi_paneel,BorderLayout.CENTER);
+        add(suhtlus_paneel,BorderLayout.SOUTH);
         addKeyListener(this);
+        addMouseListener(this);
         setFocusable(true);
-        setFocusTraversalKeysEnabled(false);
         setSize(410,suhtlus_paneel.getHeight()+pildi_paneel.getHeight());
         setResizable(true);
         setMinimumSize(new Dimension(410,suhtlus_paneel.getHeight()+pildi_paneel.getHeight()));
@@ -176,9 +150,9 @@ public class KasutajaAken extends JFrame implements KeyListener{
         setVisible(true);
     }
 
-    public void keyTyped(KeyEvent e) {
-    }
-
+    //Key Listener
+    public void keyTyped(KeyEvent e) {}
+    public void keyReleased(KeyEvent e) {}
     public void keyPressed(KeyEvent e) {
         Color c = new Color((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
         pildi_paneel.setBackground(c);
@@ -186,11 +160,34 @@ public class KasutajaAken extends JFrame implements KeyListener{
         setBackground(c);
     }
 
-    public void keyReleased(KeyEvent e) {
+    //Mouse Listener
+    public void mousePressed(MouseEvent e) {}
+    public void mouseReleased(MouseEvent e) {}
+    public void mouseEntered(MouseEvent e) {}
+    public void mouseExited(MouseEvent e) {}
+    public void mouseClicked(MouseEvent e) {
+        requestFocusInWindow();
     }
 
-    /*public static void main(String[] args) {
-        MAIN.KasutajaAken programm = new MAIN.KasutajaAken();
-    }*/
+    //Action Listener
+    public void actionPerformed(ActionEvent e) {
+        //System.out.println(sisend.getText());
 
+        //Võta vastu
+        try {
+            FileWriter fail = new FileWriter("slowandsteady.txt", true);
+            String faili_sisu = sisend.getText();
+            fail.write(faili_sisu);
+            fail.write("\n");
+            fail.close();
+            System.out.println("done");
+        } catch (IOException exception) {
+            System.out.println(exception.getMessage());
+        }
+        sisestatu = sisend.getText();
+
+        //Taasta algolek
+        sisend.setText("");
+        requestFocusInWindow();
+    }
 }
