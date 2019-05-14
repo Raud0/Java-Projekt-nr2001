@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Uurija {
+public class Uurija extends Thread {
     private static List<ResultsDTO> sonakogu = new ArrayList<ResultsDTO>();
 
     public static boolean onGrammatilineTekst(ResultsDTO vaste, String otsitud_kategooria, String otsitud_omadus) {

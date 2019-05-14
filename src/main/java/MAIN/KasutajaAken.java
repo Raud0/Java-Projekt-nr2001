@@ -169,6 +169,7 @@ public class KasutajaAken extends JFrame {
         add(suhtlus_paneel, BorderLayout.AFTER_LAST_LINE);
         setSize(410,suhtlus_paneel.getHeight()+pildi_paneel.getHeight());
         setResizable(true);
+        setMinimumSize(new Dimension(410,suhtlus_paneel.getHeight()+pildi_paneel.getHeight()));
         //lisa init.
         setTitle("Java Projekt 2001: Zen Master");
         setBackground(new Color(244,164,164));
