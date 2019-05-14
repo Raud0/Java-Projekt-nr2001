@@ -104,7 +104,7 @@ public class Zen2001Programm {
         String algtekst = "(*￣m￣)";
         //testerid
         // 0 väldib API küsitlemist
-        int testmode = 2;
+        int testmode = 0;
         if (testmode == 1) //sona otsingu tester
             algtekst = tester1("set");
         if (testmode == 2) //lause tester

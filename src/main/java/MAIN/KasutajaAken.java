@@ -11,13 +11,15 @@ import javax.swing.*;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.awt.image.BufferedImage;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class KasutajaAken extends JFrame {
+public class KasutajaAken extends JFrame implements KeyListener{
 
     private Image aken_ikoon;
 
@@ -63,18 +65,9 @@ public class KasutajaAken extends JFrame {
     private static final String[] pilt_failinimed = {"whale-fall.png","coolboi.jpg","iced.png","bedroom.gif","temple.gif"};
 
     public static String sisestatu = "";
+    public static String gib_sisestatu(){return sisestatu;}
 
-    public static String gib_sisestatu(){
-
-        return sisestatu;
-
-    }
-
-    public void vastsue_kuvar(){
-
-        vastus.setText(finall);
-
-    }
+    public void vastsue_kuvar(){vastus.setText(finall);}
 
 
     public GridBagConstraints lahtripiirangud(int rida, int veerg,int mode, Component komponent){
@@ -108,7 +101,6 @@ public class KasutajaAken extends JFrame {
         pilt = new ImageIcon(pilt_failinimed[(int)(Math.random()*pilt_failinimed.length)]);
         pilt_ala = new JLabel(pilt);
         pildi_paneel.add(pilt_ala);
-        setResizable(true);
 
         //tuju kast init.
         tuju = new SonaVali(tujutekst,1,1);
@@ -167,16 +159,34 @@ public class KasutajaAken extends JFrame {
         pildi_paneel.setSize(pilt.getIconWidth(),pilt.getIconHeight());
         add(pildi_paneel,BorderLayout.BEFORE_FIRST_LINE);
         add(suhtlus_paneel, BorderLayout.AFTER_LAST_LINE);
+        addKeyListener(this);
+        setFocusable(true);
+        setFocusTraversalKeysEnabled(false);
         setSize(410,suhtlus_paneel.getHeight()+pildi_paneel.getHeight());
         setResizable(true);
         setMinimumSize(new Dimension(410,suhtlus_paneel.getHeight()+pildi_paneel.getHeight()));
         //lisa init.
         setTitle("Java Projekt 2001: Zen Master");
-        setBackground(new Color(244,164,164));
+        Color c = new Color(244,164,164);
+        pildi_paneel.setBackground(c);
+        suhtlus_paneel.setBackground(c);
+        setBackground(c);
         aken_ikoon = Toolkit.getDefaultToolkit().getImage("meistriikoon.png");
         setIconImage(aken_ikoon);
-
         setVisible(true);
+    }
+
+    public void keyTyped(KeyEvent e) {
+    }
+
+    public void keyPressed(KeyEvent e) {
+        Color c = new Color((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
+        pildi_paneel.setBackground(c);
+        suhtlus_paneel.setBackground(c);
+        setBackground(c);
+    }
+
+    public void keyReleased(KeyEvent e) {
     }
 
     /*public static void main(String[] args) {
