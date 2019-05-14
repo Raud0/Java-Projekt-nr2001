@@ -85,19 +85,24 @@ public class KasutajaAken extends JFrame implements KeyListener, MouseListener, 
     }
 
     public KasutajaAken (String algtekst) {
+        //preset init.
         setVastus_tekst(algtekst);
-
-        //paneelid init.
-        pildi_paneel = new JPanel();
-        pildi_paneel.setLayout(new GridBagLayout());
-        suhtlus_paneel = new JPanel();
-        suhtlus_paneel.setLayout(new GridBagLayout());
-        suhtlus_paneel.setSize(410,200);
+        Color c = new Color(244,164,164);
 
         //pilt init.
         pilt = new ImageIcon(pilt_failinimed[(int)(Math.random()*pilt_failinimed.length)]);
         pilt_ala = new JLabel(pilt);
+
+        //paneelid init.
+        pildi_paneel = new JPanel();
+        pildi_paneel.setLayout(new GridBagLayout());
         pildi_paneel.add(pilt_ala);
+        pildi_paneel.setSize(pilt.getIconWidth(),pilt.getIconHeight());
+        pildi_paneel.setBackground(c);
+        suhtlus_paneel = new JPanel();
+        suhtlus_paneel.setLayout(new GridBagLayout());
+        suhtlus_paneel.setSize(410,200);
+        suhtlus_paneel.setBackground(c);
 
         //tuju kast init.
         tuju = new SonaVali(tujutekst,1,1);
@@ -125,28 +130,24 @@ public class KasutajaAken extends JFrame implements KeyListener, MouseListener, 
         suhtle.setFont(new Font("MS PGothic",Font.PLAIN,13));
         suhtle.setBackground(new Color(208,239,160));
         suhtlus_paneel.add(suhtle,lahtripiirangud(5,0,0,suhtle));
-
-        //this does work
         suhtle.addActionListener(this);
 
         //tervik init.
-        pildi_paneel.setSize(pilt.getIconWidth(),pilt.getIconHeight());
         add(pildi_paneel,BorderLayout.CENTER);
         add(suhtlus_paneel,BorderLayout.SOUTH);
-        addKeyListener(this);
-        addMouseListener(this);
-        setFocusable(true);
         setSize(410,suhtlus_paneel.getHeight()+pildi_paneel.getHeight());
         setResizable(true);
         setMinimumSize(new Dimension(410,suhtlus_paneel.getHeight()+pildi_paneel.getHeight()));
+        addKeyListener(this);
+        addMouseListener(this);
+        setFocusable(true);
+
         //lisa init.
         setTitle("Java Projekt 2001: Zen Master");
-        Color c = new Color(244,164,164);
-        pildi_paneel.setBackground(c);
-        suhtlus_paneel.setBackground(c);
-        setBackground(c);
         aken_ikoon = Toolkit.getDefaultToolkit().getImage("meistriikoon.png");
         setIconImage(aken_ikoon);
+
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
     }
 
@@ -157,7 +158,6 @@ public class KasutajaAken extends JFrame implements KeyListener, MouseListener, 
         Color c = new Color((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
         pildi_paneel.setBackground(c);
         suhtlus_paneel.setBackground(c);
-        setBackground(c);
     }
 
     //Mouse Listener
