@@ -5,6 +5,7 @@ import SONAMOISTJA.*;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -111,6 +112,20 @@ public class Zen2001Programm {
 
         //Aken init.
         KasutajaAken aken = new KasutajaAken(algtekst);
+
+        try {
+            FileWriter fail = new FileWriter("slowandsteady.txt", true);
+            fail.write("\n");
+            fail.write("\n");
+            fail.write("Uus aken meie hinge                              " + new java.sql.Timestamp(System.currentTimeMillis()));
+            fail.write("\n");
+            fail.write("\n");
+
+
+            fail.close();
+        } catch (IOException exception) {
+            System.out.println(exception.getMessage());
+        }
 
         //Tujukas
         StringBuilder sone_ehitaja = new StringBuilder(aken.getTujutekst());

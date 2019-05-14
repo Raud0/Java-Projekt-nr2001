@@ -108,6 +108,7 @@ public class KasutajaAken extends JFrame {
         pilt = new ImageIcon(pilt_failinimed[(int)(Math.random()*pilt_failinimed.length)]);
         pilt_ala = new JLabel(pilt);
         pildi_paneel.add(pilt_ala);
+        setResizable(true);
 
         //tuju kast init.
         tuju = new SonaVali(tujutekst,1,1);
@@ -144,9 +145,10 @@ public class KasutajaAken extends JFrame {
                 System.out.println(sisend.getText());
 
                 try {
-                    FileWriter fail = new FileWriter("slowandsteady.txt");
+                    FileWriter fail = new FileWriter("slowandsteady.txt", true);
                     String faili_sisu = sisend.getText();
                     fail.write(faili_sisu);
+                    fail.write("\n");
                     fail.close();
                     System.out.println("done");
 
@@ -166,7 +168,7 @@ public class KasutajaAken extends JFrame {
         add(pildi_paneel,BorderLayout.BEFORE_FIRST_LINE);
         add(suhtlus_paneel, BorderLayout.AFTER_LAST_LINE);
         setSize(410,suhtlus_paneel.getHeight()+pildi_paneel.getHeight());
-        setResizable(false);
+        setResizable(true);
         //lisa init.
         setTitle("Java Projekt 2001: Zen Master");
         setBackground(new Color(244,164,164));
