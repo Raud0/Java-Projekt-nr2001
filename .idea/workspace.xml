@@ -1,32 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c484054-f590-403e-9943-f64a9127b2e5" name="Default Changelist" comment="">
+    <list default="true" id="5481915c-6ae0-4e2b-9bac-3b318f6c796a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/slowandsteady.txt" beforeDir="false" afterPath="$PROJECT_DIR$/slowandsteady.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DTOs/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DTOs/Entry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DTOs/Sense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DTOs/Sense.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MAIN/Paring_OxfordAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN/ParingOxfordAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MAIN/Uurija.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN/Uurija.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lauseosa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lauseosa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Sona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Sona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SONAVOTJA/Teadmine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SONAVOTJA/Teadmine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DTOs/Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DTOs/Entry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DTOs/Sense.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DTOs/Sense.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MAIN/KasutajaAken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MAIN/KasutajaAken.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MAIN/Paring_OxfordAPI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MAIN/Uurija.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MAIN/Uurija.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MAIN/Zen2001Programm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MAIN/Zen2001Programm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/SONAMOISTJA/Lause.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SONAMOISTJA/Lause.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SONAMOISTJA/Sona.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SONAMOISTJA/Sona.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/SONAVOTJA/Vastamine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SONAVOTJA/Vastamine.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+            <state relative-caret-position="158">
+              <caret line="191" selection-start-line="191" selection-end-line="191" />
             </state>
           </provider>
         </entry>
@@ -46,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="751">
-              <caret line="246" column="52" lean-forward="true" selection-start-line="246" selection-start-column="52" selection-end-line="246" selection-end-column="52" />
+            <state relative-caret-position="377">
+              <caret line="180" column="53" selection-start-line="180" selection-start-column="53" selection-end-line="180" selection-end-column="53" />
               <folding>
                 <element signature="e#8834#8840#0" expanded="true" />
                 <element signature="e#9690#9696#0" expanded="true" />
@@ -61,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/ParingOxfordAPI.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
-              <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+              <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,14 +85,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+            <state relative-caret-position="339">
+              <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#252#262#0" expanded="true" />
+                <element signature="e#377#387#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="305">
+              <caret line="128" column="21" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -133,40 +119,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DTOs/LexicalEntry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Kotlin File" />
-        <option value="Tag Library Descriptor" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>OxfordApiResponseDTO</find>
-      <find>MetadataDTO</find>
-      <find>sisend</find>
-      <find>do</find>
-      <find>listener</find>
-      <find>ActionLis</find>
-      <find>EventListener</find>
-      <find>setMin</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -174,71 +127,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/TestFile.java" />
-        <option value="$PROJECT_DIR$/src/AWTCounter.java" />
-        <option value="$PROJECT_DIR$/src/Window.java" />
-        <option value="$PROJECT_DIR$/src/Kanvas.java" />
-        <option value="$PROJECT_DIR$/src/KasutajaAken.java" />
-        <option value="$PROJECT_DIR$/src/Paring_OxfordAPI.java" />
-        <option value="$PROJECT_DIR$/pom.xml.tld" />
-        <option value="$PROJECT_DIR$/src/main/java/MetadataDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/OxfordAPIVasteDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Kasutaja_sisend.java" />
-        <option value="$PROJECT_DIR$/src/main/java/KasutajaAken.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ResultsDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTOs/MetadataDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTOs/DTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ResultExplorer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTOs/GrammaticalFeatures.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTOs/LexicalEntries.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTOs/Senses.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTOs/Examples.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTOs/ThesaurusLinks.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTOs/Notes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Sentence.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTOs/Entries.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTOs/Example.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTOs/Note.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Lause.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Paring_OxfordAPI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Uurija.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Zen2001Programm.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/DTOs/OxfordAPIVasteDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTOs/ResultsDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTOs/ExampleDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Klausel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Sona_Vali.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DISPLAY/PealKirje.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DISPLAY/SonaVali.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ListJavaFonts.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTOs/LexicalEntry.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MAIN/Paring_OxfordAPI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTOs/Entry.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DTOs/Sense.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MAIN/Uurija.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lauseosa.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Sona.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SONAVOTJA/Teadmine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MAIN/ParingOxfordAPI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java" />
         <option value="$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -256,6 +151,11 @@
             <path>
               <item name="Java Projekt 2001" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java Projekt 2001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java Projekt 2001" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java Projekt 2001" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java Projekt 2001" type="b2602c69:ProjectViewProjectNode" />
@@ -306,25 +206,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557958458045" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="coverage" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557958979558" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -338,56 +220,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Zen2001Programm">
-    <configuration name="AWTCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AWTCounter" />
-      <module name="Java Projekt 2001" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KasutajaAken" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MAIN.KasutajaAken" />
-      <module name="Java Projekt 2001" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ListJavaFonts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ListJavaFonts" />
-      <module name="Java Projekt 2001" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Window" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Window" />
-      <module name="Java Projekt 2001" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Zen2001Programm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MAIN.Zen2001Programm" />
       <module name="Java Projekt 2001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MAIN.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.AWTCounter" />
-      <item itemvalue="Application.KasutajaAken" />
-      <item itemvalue="Application.Window" />
-      <item itemvalue="Application.Zen2001Programm" />
-      <item itemvalue="Application.ListJavaFonts" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Zen2001Programm" />
-        <item itemvalue="Application.ListJavaFonts" />
-        <item itemvalue="Application.KasutajaAken" />
-        <item itemvalue="Application.AWTCounter" />
-        <item itemvalue="Application.Window" />
       </list>
     </recent_temporary>
   </component>
@@ -429,7 +278,7 @@
       <workItem from="1557856977404" duration="6674000" />
       <workItem from="1557866883714" duration="2152000" />
       <workItem from="1557940223085" duration="1824000" />
-      <workItem from="1557942241158" duration="10860000" />
+      <workItem from="1557942241158" duration="11353000" />
     </task>
     <task id="LOCAL-00001" summary="removed idiocy">
       <created>1554237572528</created>
@@ -445,26 +294,16 @@
       <option name="project" value="LOCAL" />
       <updated>1554247290833</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135409000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2521322" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2521322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -473,7 +312,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4968017" visible="true" weight="0.28141224" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4968017" weight="0.28141224" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -483,7 +322,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3281412" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50319827" side_tool="true" weight="0.42471445" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4978678" weight="0.423676" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4978678" visible="true" weight="0.423676" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -495,7 +334,7 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2521322" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2521322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -504,7 +343,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4968017" visible="true" weight="0.28141224" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4968017" weight="0.28141224" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -526,28 +365,13 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout-to-restore>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="let's see if intellij is the greatest" />
     <MESSAGE value="removed idiocy" />
     <MESSAGE value="pretty sure this is what you didn't want, in an even uglier way" />
     <option name="LAST_COMMIT_MESSAGE" value="pretty sure this is what you didn't want, in an even uglier way" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.11/httpcore-4.4.11.jar!/org/apache/http/StatusLine.class</url>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AWTCounter.java" />
     <entry file="file://$PROJECT_DIR$/src/Kanvas.java" />
     <entry file="file://$PROJECT_DIR$/src/Oxford Api/OxfordAPIparija.kt" />
     <entry file="file://$PROJECT_DIR$/pom.xml.tld" />
@@ -819,22 +643,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="246" column="52" lean-forward="true" selection-start-line="246" selection-start-column="52" selection-end-line="246" selection-end-column="52" />
-          <folding>
-            <element signature="e#8834#8840#0" expanded="true" />
-            <element signature="e#9690#9696#0" expanded="true" />
-            <element signature="e#9947#9957#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/ParingOxfordAPI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -848,128 +660,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+        <state relative-caret-position="339">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#377#387#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="305">
+          <caret line="128" column="21" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+        <state relative-caret-position="377">
+          <caret line="180" column="53" selection-start-line="180" selection-start-column="53" selection-end-line="180" selection-end-column="53" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#252#262#0" expanded="true" />
+            <element signature="e#8834#8840#0" expanded="true" />
+            <element signature="e#9690#9696#0" expanded="true" />
+            <element signature="e#9947#9957#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArquillianSettingsConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Java Projekt 2001</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-680">
+          <caret line="8" column="140" selection-start-line="8" selection-start-column="140" selection-end-line="8" selection-end-column="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="191" selection-start-line="191" selection-end-line="191" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
