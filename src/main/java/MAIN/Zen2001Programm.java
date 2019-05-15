@@ -79,7 +79,6 @@ public class Zen2001Programm {
             fail.write("\n");
             fail.write("\n");
             fail.write("\n");
-            fail.write("\n");
             fail.write("Uus aken meie hinge                              " + new java.sql.Timestamp(System.currentTimeMillis()));
             fail.write("\n");
             fail.write("\n");

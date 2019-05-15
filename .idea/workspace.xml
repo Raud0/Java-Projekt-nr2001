@@ -4,13 +4,14 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" line="127" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c484054-f590-403e-9943-f64a9127b2e5" name="Default Changelist" comment="pretty sure this is what you didn't want, in an even uglier way">
+    <list default="true" id="8c484054-f590-403e-9943-f64a9127b2e5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/slowandsteady.txt" beforeDir="false" afterPath="$PROJECT_DIR$/slowandsteady.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MAIN/KasutajaAken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MAIN/KasutajaAken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MAIN/Zen2001Programm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MAIN/Zen2001Programm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SONAMOISTJA/Lause.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SONAMOISTJA/Lause.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SONAVOTJA/Vastamine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SONAVOTJA/Vastamine.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,25 +25,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
+            <state relative-caret-position="1574">
               <caret line="179" column="35" selection-start-line="179" selection-start-column="35" selection-end-line="179" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="122" column="70" lean-forward="true" selection-start-line="122" selection-start-column="70" selection-end-line="122" selection-end-column="70" />
+            <state relative-caret-position="350">
+              <caret line="83" column="29" lean-forward="true" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
+            <state relative-caret-position="843">
               <caret line="73" column="60" lean-forward="true" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -174,8 +175,8 @@
         <option value="$PROJECT_DIR$/src/main/java/SONAVOTJA/Teadmine.java" />
         <option value="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java" />
         <option value="$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" />
         <option value="$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" />
       </list>
     </option>
   </component>
@@ -255,7 +256,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557957597133" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557957950886" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -373,7 +374,7 @@
       <workItem from="1557866883714" duration="2152000" />
       <workItem from="1557940223085" duration="1824000" />
       <workItem from="1557942241158" duration="5059000" />
-      <workItem from="1557953171964" duration="4531000" />
+      <workItem from="1557953171964" duration="4775000" />
     </task>
     <task id="LOCAL-00001" summary="removed idiocy">
       <created>1554237572528</created>
@@ -389,11 +390,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554247290833</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Pakume küsimustele vastuseid ja salvestame vastused.">
+      <created>1557957765387</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1557957765387</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134461000" />
+    <option name="totallyTimeSpent" value="134705000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -477,7 +485,8 @@
     <MESSAGE value="let's see if intellij is the greatest" />
     <MESSAGE value="removed idiocy" />
     <MESSAGE value="pretty sure this is what you didn't want, in an even uglier way" />
-    <option name="LAST_COMMIT_MESSAGE" value="pretty sure this is what you didn't want, in an even uglier way" />
+    <MESSAGE value="Pakume küsimustele vastuseid ja salvestame vastused." />
+    <option name="LAST_COMMIT_MESSAGE" value="Pakume küsimustele vastuseid ja salvestame vastused." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -785,27 +794,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="843">
+          <caret line="73" column="60" lean-forward="true" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
+        <state relative-caret-position="1574">
           <caret line="179" column="35" selection-start-line="179" selection-start-column="35" selection-end-line="179" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="122" column="70" lean-forward="true" selection-start-line="122" selection-start-column="70" selection-end-line="122" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="73" column="60" lean-forward="true" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="350">
+          <caret line="83" column="29" lean-forward="true" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
         </state>
       </provider>
     </entry>

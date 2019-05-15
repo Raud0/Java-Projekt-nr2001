@@ -480,3 +480,19 @@ Uus aken meie hinge                              2019-05-16 00:59:28.069
 
 will you be at edge?         ---------->          It is so.
 are you beautiful?         ---------->          Tea.
+
+
+
+Uus aken meie hinge                              2019-05-16 01:05:16.106
+
+
+new test         ---------->          Adjective|Noun|
+make proud?         ---------->          Tea.
+
+
+
+Uus aken meie hinge                              2019-05-16 01:05:34.244
+
+
+please do?         ---------->          Computer says no.
+i love you         ---------->          Residual|Noun|Pronoun|
