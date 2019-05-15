@@ -178,7 +178,6 @@ public class KasutajaAken extends JFrame implements KeyListener, MouseListener, 
             FileWriter fail = new FileWriter("slowandsteady.txt", true);
             String faili_sisu = sisend.getText();
             fail.write(faili_sisu);
-            fail.write("\n");
             fail.close();
             System.out.println("done");
         } catch (IOException exception) {

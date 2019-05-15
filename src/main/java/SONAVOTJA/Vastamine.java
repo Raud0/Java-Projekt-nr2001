@@ -9,6 +9,37 @@ import java.util.List;
 
 public class Vastamine {
 
+    private final static String[] eightBallVastused = {
+            "Absolutely.",
+            "Why ask if you know?",
+            "Definitely.",
+            "Computer says no.",
+            "It is so.",
+            "Cannot say.",
+            "You dont want to know!",
+            "YES!",
+            "No.",
+            "It is decided",
+            "Probably not so",
+            "Divination is for fools.",
+            "Very doubtful.",
+            "Go home.",
+            "Tea.",
+            "No, but it's for the best.",
+            "Not yet."
+    };
+
+    private final static String[] eightBallKaomoji = {
+            " ╮(︶︿︶)╭",
+            "(•ิ_•ิ)?",
+            "(￢_￢)",
+            "(^ω~)/",
+            "|･ω･)",
+            " __φ(．．;)",
+            "(－.－)...zzz",
+            "( ಠ ʖ̯ ಠ)",
+    };
+
     //tester, mis loob lause, tukeldab selle ja demonstreerib selle liigitamist, lopuks valjastab suvalistest sonadest sonumi
     public static String tester(int testmode, String sisend) throws IOException {
         if (testmode == 1) {
@@ -40,9 +71,12 @@ public class Vastamine {
 
         Lause lause = new Lause(kuuldud_lause);
         lause.lauseTolk(lause.lauseTukeldaja(lause.getToores_lause()));
+        System.out.println(lause.getGrammatiline_mood()[9]);
 
         if (lause.getGrammatiline_mood()[9]) {
             //on küsimus, siis vastus muutub
+            return eightBallVastused[(int)(Math.random()*17)] + "                                             " + eightBallKaomoji[(int)(Math.random()*8)];
+
         } else {
             //pole küsimus
         }

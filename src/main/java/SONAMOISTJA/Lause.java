@@ -161,7 +161,7 @@ public class Lause {
                 char teksti_sumbol = tekst.charAt(0);
                 for (char sumbol : sumbolid) {
                     if (sumbol == teksti_sumbol) {
-                        if (sumbol == '?') {grammatiline_mood[9] = false;}
+                        if (sumbol == '?') {grammatiline_mood[9] = true;}
                         if (!kategooriad.contains("Symbol")) {
                             kategooriad.add("Symbol");
                             kaalud.add(0.0);}

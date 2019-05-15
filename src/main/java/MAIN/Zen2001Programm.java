@@ -78,7 +78,10 @@ public class Zen2001Programm {
             FileWriter fail = new FileWriter("slowandsteady.txt", true);
             fail.write("\n");
             fail.write("\n");
+            fail.write("\n");
+            fail.write("\n");
             fail.write("Uus aken meie hinge                              " + new java.sql.Timestamp(System.currentTimeMillis()));
+            fail.write("\n");
             fail.write("\n");
             fail.write("\n");
 
@@ -118,6 +121,18 @@ public class Zen2001Programm {
 
                     siesendi_samasuse_kontroll = sisestatud_lause;
                     String vastus = Vastamine.vasta(sisestatud_lause);
+
+                    try {
+                        FileWriter fail = new FileWriter("slowandsteady.txt", true);
+                        String prinditavVastus = vastus.split("  ")[0];
+                        fail.write("         ---------->          " + prinditavVastus);
+                        fail.write("\n");
+                        fail.close();
+                        System.out.println("done");
+                    } catch (IOException exception) {
+                        System.out.println(exception.getMessage());
+                    }
+
                     aken.setfinall(vastus);
                     aken.vastsue_kuvar();
                 }
