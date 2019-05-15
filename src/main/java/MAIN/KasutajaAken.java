@@ -6,25 +6,22 @@ import DISPLAY.*;
 //import sun.tools.tree.ThisExpression;
 
 import java.awt.*;
-import javax.imageio.ImageIO;
 import javax.swing.*;
 
 import java.awt.event.*;
-import java.awt.image.BufferedImage;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
 public class KasutajaAken extends JFrame implements KeyListener, MouseListener, ActionListener {
 
-    private Image aken_ikoon;
+    private Image akenIkoon;
 
-    private JPanel pildi_paneel;
-    private JPanel suhtlus_paneel;
+    private JPanel pildiPaneel;
+    private JPanel suhtlusPaneel;
 
     private JTextArea tuju;
-    private JScrollPane tuju_ala;
+    private JScrollPane tujuAla;
     private String tujutekst = "                                                                                                    "; //100 karakterit
     public void setTujutekst(String sisend) {
         tuju.removeAll();
@@ -34,40 +31,38 @@ public class KasutajaAken extends JFrame implements KeyListener, MouseListener, 
 
     public String getTujutekst() {return tujutekst;}
 
-    private String finall = "";
-    public void setfinall(String sisend) {
-        this.finall = sisend;
+    private String finalWord = "";
+    public void setFinalWord(String sisend) {
+        this.finalWord = sisend;
     }
 
-    private JLabel silt_vastus;
+    private JLabel siltVastus;
     private JTextArea vastus;
-    private JScrollPane vastus_ala;
-    private String vastus_tekst;
-    public String getVastus_tekst() { return vastus_tekst; }
-    public void setVastus_tekst(String vastus_tekst) { this.vastus_tekst = vastus_tekst; }
+    private JScrollPane vastusAla;
+    private String vastusTekst;
+    public String getVastusTekst() { return vastusTekst; }
+    public void setVastusTekst(String vastusTekst) { this.vastusTekst = vastusTekst; }
 
-    private JLabel silt_sisend;
+    private JLabel siltSisend;
     private JTextArea sisend;
-    private JScrollPane sisend_ala;
-    private String sisend_tekst;
-    public String getSisend_tekst() { return sisend_tekst; }
+    private JScrollPane sisendAla;
+    private String sisendTekst;
+    public String getSisendTekst() { return sisendTekst; }
 
-    public void setSisend_tekst(String sisend_tekst) { this.sisend_tekst = sisend_tekst; }
+    public void setSisendTekst(String sisendTekst) { this.sisendTekst = sisendTekst; }
 
     private JButton suhtle;
 
-    private JLabel pilt_ala;
+    private JLabel piltAla;
     private ImageIcon pilt;
     //pildid peaksid olema laiusega 380
-    private static final String[] pilt_failinimed = {"whale-fall.png","coolboi.jpg","iced.png","bedroom.gif","temple.gif"};
+    private static final String[] piltFailinimed = {"whale-fall.png","coolboi.jpg","iced.png","bedroom.gif","temple.gif"};
 
     public static String sisestatu = "";
-    public static String gib_sisestatu(){return sisestatu;}
+    public static String getSisestatu(){return sisestatu;}
+    public void kuvaVastus(){vastus.setText(finalWord);}
 
-    public void vastsue_kuvar(){vastus.setText(finall);}
-
-
-    public GridBagConstraints lahtripiirangud(int rida, int veerg,int mode, Component komponent){
+    public GridBagConstraints lahtriPiirangud(int rida, int veerg, int mode, Component komponent){
         GridBagConstraints piirangud = new GridBagConstraints();
         piirangud.gridx = veerg;
         piirangud.gridy = rida;
@@ -84,68 +79,86 @@ public class KasutajaAken extends JFrame implements KeyListener, MouseListener, 
         return piirangud;
     }
 
+    public ImageIcon looPilt(boolean suvapilt, String tee) {
+        if (suvapilt) {
+            return new ImageIcon(piltFailinimed[(int)(Math.random()* piltFailinimed.length)]);
+        } else {
+            return new ImageIcon(tee);
+        }
+    }
+
+    public void muudaPilt(ImageIcon uusPilt) {
+        piltAla.setIcon(uusPilt);
+        pilt = uusPilt;
+
+        pildiPaneel.setSize(pilt.getIconWidth(),pilt.getIconHeight());
+        setMinimumSize(new Dimension(410, suhtlusPaneel.getHeight()+ pildiPaneel.getHeight()));
+        setSize(410, suhtlusPaneel.getHeight()+ pildiPaneel.getHeight());
+
+    }
+
     public KasutajaAken (String algtekst) {
         //preset init.
-        setVastus_tekst(algtekst);
+        setVastusTekst(algtekst);
         Color c = new Color(244,164,164);
 
         //pilt init.
-        pilt = new ImageIcon(pilt_failinimed[(int)(Math.random()*pilt_failinimed.length)]);
-        pilt_ala = new JLabel(pilt);
+        pilt = looPilt(true,"");
+        piltAla = new JLabel(pilt);
 
         //paneelid init.
-        pildi_paneel = new JPanel();
-        pildi_paneel.setLayout(new GridBagLayout());
-        pildi_paneel.add(pilt_ala);
-        pildi_paneel.setSize(pilt.getIconWidth(),pilt.getIconHeight());
-        pildi_paneel.setBackground(c);
-        suhtlus_paneel = new JPanel();
-        suhtlus_paneel.setLayout(new GridBagLayout());
-        suhtlus_paneel.setSize(410,200);
-        suhtlus_paneel.setBackground(c);
+        pildiPaneel = new JPanel();
+        pildiPaneel.setLayout(new GridBagLayout());
+        pildiPaneel.add(piltAla);
+        pildiPaneel.setSize(pilt.getIconWidth(),pilt.getIconHeight());
+        pildiPaneel.setBackground(c);
+        suhtlusPaneel = new JPanel();
+        suhtlusPaneel.setLayout(new GridBagLayout());
+        suhtlusPaneel.setSize(410,200);
+        suhtlusPaneel.setBackground(c);
 
         //tuju kast init.
         tuju = new SonaVali(tujutekst,1,1);
         tuju.setEditable(false);
-        tuju_ala = new JScrollPane(tuju);
-        suhtlus_paneel.add(tuju_ala,lahtripiirangud(0,0,1,tuju));
+        tujuAla = new JScrollPane(tuju);
+        suhtlusPaneel.add(tujuAla, lahtriPiirangud(0,0,1,tuju));
 
         //programmi kast init.
-        silt_vastus = new PealKirje(" master: ");
-        suhtlus_paneel.add(silt_vastus,lahtripiirangud(1,0,0,silt_vastus));
-        vastus = new SonaVali(vastus_tekst,3,1);
+        siltVastus = new PealKirje(" master: ");
+        suhtlusPaneel.add(siltVastus, lahtriPiirangud(1,0,0, siltVastus));
+        vastus = new SonaVali(vastusTekst,3,1);
         vastus.setEditable(false);
-        vastus_ala = new JScrollPane(vastus);
-        suhtlus_paneel.add(vastus_ala,lahtripiirangud(2,0,1,vastus));
+        vastusAla = new JScrollPane(vastus);
+        suhtlusPaneel.add(vastusAla, lahtriPiirangud(2,0,1,vastus));
 
         //kasutaja kast.
-        silt_sisend = new PealKirje(" student: ");
-        suhtlus_paneel.add(silt_sisend,lahtripiirangud(3,0,0,silt_sisend));
-        sisend = new SonaVali(sisend_tekst,3,1);
-        sisend_ala = new JScrollPane(sisend);
-        suhtlus_paneel.add(sisend_ala,lahtripiirangud(4,0,1,sisend));
+        siltSisend = new PealKirje(" student: ");
+        suhtlusPaneel.add(siltSisend, lahtriPiirangud(3,0,0, siltSisend));
+        sisend = new SonaVali(sisendTekst,3,1);
+        sisendAla = new JScrollPane(sisend);
+        suhtlusPaneel.add(sisendAla, lahtriPiirangud(4,0,1,sisend));
 
         //nupp init.
         suhtle = new JButton(" speak ");
         suhtle.setFont(new Font("MS PGothic",Font.PLAIN,13));
         suhtle.setBackground(new Color(208,239,160));
-        suhtlus_paneel.add(suhtle,lahtripiirangud(5,0,0,suhtle));
+        suhtlusPaneel.add(suhtle, lahtriPiirangud(5,0,0,suhtle));
         suhtle.addActionListener(this);
 
         //tervik init.
-        add(pildi_paneel,BorderLayout.CENTER);
-        add(suhtlus_paneel,BorderLayout.SOUTH);
-        setSize(410,suhtlus_paneel.getHeight()+pildi_paneel.getHeight());
+        add(pildiPaneel,BorderLayout.CENTER);
+        add(suhtlusPaneel,BorderLayout.SOUTH);
+        setSize(410, suhtlusPaneel.getHeight()+ pildiPaneel.getHeight());
         setResizable(true);
-        setMinimumSize(new Dimension(410,suhtlus_paneel.getHeight()+pildi_paneel.getHeight()));
+        setMinimumSize(new Dimension(410, suhtlusPaneel.getHeight()+ pildiPaneel.getHeight()));
         addKeyListener(this);
         addMouseListener(this);
         setFocusable(true);
 
         //lisa init.
         setTitle("Java Projekt 2001: Zen Master");
-        aken_ikoon = Toolkit.getDefaultToolkit().getImage("meistriikoon.png");
-        setIconImage(aken_ikoon);
+        akenIkoon = Toolkit.getDefaultToolkit().getImage("meistriikoon.png");
+        setIconImage(akenIkoon);
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
@@ -156,8 +169,8 @@ public class KasutajaAken extends JFrame implements KeyListener, MouseListener, 
     public void keyReleased(KeyEvent e) {}
     public void keyPressed(KeyEvent e) {
         Color c = new Color((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
-        pildi_paneel.setBackground(c);
-        suhtlus_paneel.setBackground(c);
+        pildiPaneel.setBackground(c);
+        suhtlusPaneel.setBackground(c);
     }
 
     //Mouse Listener
@@ -176,8 +189,8 @@ public class KasutajaAken extends JFrame implements KeyListener, MouseListener, 
         //Võta vastu
         try {
             FileWriter fail = new FileWriter("slowandsteady.txt", true);
-            String faili_sisu = sisend.getText();
-            fail.write(faili_sisu);
+            String failiSisu = sisend.getText();
+            fail.write(failiSisu);
             fail.write("\n");
             fail.close();
             System.out.println("done");

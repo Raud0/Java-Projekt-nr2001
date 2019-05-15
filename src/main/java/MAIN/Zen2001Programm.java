@@ -1,21 +1,18 @@
 package MAIN;
 
-import DTOs.*;
-import SONAMOISTJA.*;
 import SONAVOTJA.Vastamine;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 
 public class Zen2001Programm {
 
+    public static KasutajaAken aken;
 
     private static final String[] emotsioonid = {
             "           ",
@@ -28,11 +25,11 @@ public class Zen2001Programm {
             "(ノ°∀°)ノ⌒･*:.｡. .｡.:*･゜ﾟ･*☆",
             "( • )( • )ԅ(≖‿≖ԅ)",
     };
-    private static ArrayList<Character> tuju_saba = new ArrayList<Character>();
-    public static ArrayList<Character> getTuju_saba() {return tuju_saba;}
+    private static ArrayList<Character> tujuSaba = new ArrayList<Character>();
+    public static ArrayList<Character> getTujuSaba() {return tujuSaba;}
 
     public static void lisaSappa(int i){
-        ArrayList<Character> tuju_saba = getTuju_saba();
+        ArrayList<Character> tuju_saba = getTujuSaba();
         tuju_saba.addAll(0,karakteriseerija(emotsioonid[i]));
         tuju_saba.addAll(0,karakteriseerija(emotsioonid[0]));
     }
@@ -41,11 +38,11 @@ public class Zen2001Programm {
 
         try {
             BufferedReader fail = new BufferedReader(new FileReader("slowandsteady.txt"));
-            String faili_sisu = fail.readLine();
+            String failiSisu = fail.readLine();
             fail.close();
-            String muteeritud_sisu = Vastamine.tester(2,faili_sisu);
+            String muteeritudSisu = Vastamine.tester(2,failiSisu);
             System.out.println("done");
-            return muteeritud_sisu;
+            return muteeritudSisu;
 
         } catch (IOException exception) {
             System.out.println(exception.getMessage());
@@ -72,7 +69,7 @@ public class Zen2001Programm {
 
         //Aken init.
         String algtekst = Vastamine.tester(0,"What do they want of Rathenau tonight?");
-        KasutajaAken aken = new KasutajaAken(algtekst);
+        aken = new KasutajaAken(algtekst);
 
         try {
             FileWriter fail = new FileWriter("slowandsteady.txt", true);
@@ -89,37 +86,37 @@ public class Zen2001Programm {
         }
 
         //Tujukas
-        StringBuilder sone_ehitaja = new StringBuilder(aken.getTujutekst());
+        StringBuilder soneEhitaja = new StringBuilder(aken.getTujutekst());
 
         //Loop
         int ajaluger = 0;
-        String siesendi_samasuse_kontroll = "";
+        String siesendiSamasuseKontroll = "";
         while(true){
             ajaluger++;
-            if (ajaluger%10 == 0 && getTuju_saba().size() <= 3) {
+            if (ajaluger%10 == 0 && getTujuSaba().size() <= 3) {
                 lisaSappa((int)(Math.random()*(emotsioonid.length-2)+1));
             }
 
             Thread.sleep(1000);
-            if (getTuju_saba().size()>0) {
-                sone_ehitaja.insert(0,getTuju_saba().get(getTuju_saba().size()-1));
-                getTuju_saba().remove(getTuju_saba().size()-1);
+            if (getTujuSaba().size()>0) {
+                soneEhitaja.insert(0, getTujuSaba().get(getTujuSaba().size()-1));
+                getTujuSaba().remove(getTujuSaba().size()-1);
             } else {
-                sone_ehitaja.insert(0,' ');
+                soneEhitaja.insert(0,' ');
             }
 
-            sone_ehitaja.deleteCharAt(sone_ehitaja.length()-1);
-            aken.setTujutekst(sone_ehitaja.toString());
+            soneEhitaja.deleteCharAt(soneEhitaja.length()-1);
+            aken.setTujutekst(soneEhitaja.toString());
 
-            String sisestatud_lause = KasutajaAken.gib_sisestatu();
+            String sisestatudLause = KasutajaAken.getSisestatu();
 
-            if(!(sisestatud_lause.equals(""))){
-                if(!(sisestatud_lause.equals(siesendi_samasuse_kontroll))) {
+            if(!(sisestatudLause.equals(""))){
+                if(!(sisestatudLause.equals(siesendiSamasuseKontroll))) {
 
-                    siesendi_samasuse_kontroll = sisestatud_lause;
-                    String vastus = Vastamine.vasta(sisestatud_lause);
-                    aken.setfinall(vastus);
-                    aken.vastsue_kuvar();
+                    siesendiSamasuseKontroll = sisestatudLause;
+                    String vastus = Vastamine.vasta(sisestatudLause);
+                    aken.setFinalWord(vastus);
+                    aken.kuvaVastus();
                 }
             }
         }

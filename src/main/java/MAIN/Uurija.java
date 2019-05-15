@@ -14,11 +14,11 @@ public class Uurija extends Thread {
     private static List<ResultsDTO> sonakogu = new ArrayList<ResultsDTO>();
 
     public static boolean onGrammatilineTekst(ResultsDTO vaste, String otsitud_kategooria, String otsitud_omadus) {
-        for (LexicalEntry leksiline_kirje : vaste.getLexicalEntries()) {
-            if (leksiline_kirje.getLexicalCategory().equals(otsitud_kategooria)) {
-                for (Entry kirje : leksiline_kirje.getEntries()){
-                    for (GrammaticalFeature grammatiline_omadus : kirje.getGrammaticalFeatures()) {
-                        if (grammatiline_omadus.getText().equals(otsitud_omadus)) {
+        for (LexicalEntry leksilineKirje : vaste.getLexicalEntries()) {
+            if (leksilineKirje.getLexicalCategory().equals(otsitud_kategooria)) {
+                for (Entry kirje : leksilineKirje.getEntries()){
+                    for (GrammaticalFeature grammatilineOmadus : kirje.getGrammaticalFeatures()) {
+                        if (grammatilineOmadus.getText().equals(otsitud_omadus)) {
                             return true;
                         }
                     }
@@ -33,26 +33,26 @@ public class Uurija extends Thread {
             sonad.remove(0);
         }
         //Tegija võimalused
-        List<Integer> tegija_indeksid = new ArrayList<Integer>();
+        List<Integer> tegijaIndeksid = new ArrayList<Integer>();
         for (int i = 0; i < sonad.size(); i++) {
-            if (sonad.get(i).getLexical_category().contains("Noun") || sonad.get(i).getLexical_category().contains("Pronoun")) {
-                tegija_indeksid.add(i);
+            if (sonad.get(i).getLexicalCategory().contains("Noun") || sonad.get(i).getLexicalCategory().contains("Pronoun")) {
+                tegijaIndeksid.add(i);
             }
         }
-        if (tegija_indeksid.size() > 0) {
+        if (tegijaIndeksid.size() > 0) {
             return true;
         }
         return false;
     }
 
     // Teeb paringuid sonade kohta
-    public static ResultsDTO sonaleidja(String sona) throws IOException {
+    public static ResultsDTO sonaLeidja(String sona) throws IOException {
         //Otsib paringut sonakogust
 
         for (ResultsDTO kirje : sonakogu  ) {if (kirje.getId().equalsIgnoreCase(sona)) {return kirje;}}
 
         //Kui ei leia, parib OxfordAPIlt ja lisab sonakokku
-        ResultsDTO vaste = Paring_OxfordAPI.sonaVaste(sona).getResults().get(0);
+        ResultsDTO vaste = ParingOxfordAPI.sonaVaste(sona).getResults().get(0);
         sonakogu.add(vaste);
         return vaste;
     }

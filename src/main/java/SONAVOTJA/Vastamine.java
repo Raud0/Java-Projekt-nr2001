@@ -1,18 +1,25 @@
 package SONAVOTJA;
 
 import DTOs.*;
+import MAIN.KasutajaAken;
 import MAIN.Uurija;
+import MAIN.Zen2001Programm;
 import SONAMOISTJA.Lause;
 
+import javax.swing.*;
+import java.awt.event.KeyListener;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Vastamine {
 
+    private static List<Teadmine> teadmistepagas = new ArrayList<Teadmine>();
+
     //tester, mis loob lause, tukeldab selle ja demonstreerib selle liigitamist, lopuks valjastab suvalistest sonadest sonumi
     public static String tester(int testmode, String sisend) throws IOException {
         if (testmode == 1) {
-            ResultsDTO results = Uurija.sonaleidja(sisend);
+            ResultsDTO results = Uurija.sonaLeidja(sisend);
             LexicalEntry lexicalEntries = results.getLexicalEntries().get((int)(Math.random()*results.getLexicalEntries().size()));
             Entry entries = lexicalEntries.getEntries().get((int)(Math.random()*lexicalEntries.getEntries().size()));
             Sense senses = entries.getSenses().get((int)(Math.random()*entries.getSenses().size()));
@@ -26,10 +33,10 @@ public class Vastamine {
             String testsone = "";
             //loob lause sisendiga
             Lause lause = new Lause(sisend);
-            List<String> lauseosad = lause.lauseTukeldaja(lause.getToores_lause());
-            lause.listiprintija(lauseosad,0);
+            List<String> lauseosad = lause.lauseTukeldaja(lause.getTooresLause());
+            lause.listiPrintija(lauseosad,0);
             lause.lauseTolk(lauseosad);
-            testsone = lause.listiprintija(lauseosad,0);
+            testsone = lause.listiPrintija(lauseosad,0);
             return testsone;
         }
         return "(*￣m￣)";
@@ -37,11 +44,14 @@ public class Vastamine {
 
     public static String vasta(String kuuldud_lause) throws IOException {
         String vastus = tester(2,kuuldud_lause);
+        ImageIcon pilt = Zen2001Programm.aken.looPilt(true,"");
+        //Zen2001Programm.aken.muudaPilt(pilt);
 
         Lause lause = new Lause(kuuldud_lause);
-        lause.lauseTolk(lause.lauseTukeldaja(lause.getToores_lause()));
+        lause.lauseTolk(lause.lauseTukeldaja(lause.getTooresLause()));
+        teadmistepagas.addAll(lause.getTeadmised());
 
-        if (lause.getGrammatiline_mood()[9]) {
+        if (lause.getGrammatilineMood()[9]) {
             //on küsimus, siis vastus muutub
         } else {
             //pole küsimus

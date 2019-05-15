@@ -7,18 +7,21 @@ import java.util.List;
 //sona ei pea ilmtingimata olema sonaraamatust leitav sona. ta voib olla ka nimi voi isegi sumbol
 public class Sona {
     private String tekst;
-    private List<String> lexical_category;
-    private List<Double> kategooria_kaalud;
+    private List<String> lexicalCategory;
+    private String type;
+    private List<Double> kategooriaKaalud;
 
     public String getTekst() {return tekst;}
-    public List<String> getLexical_category() {return lexical_category;}
-    public void setLexical_category(List<String> lexical_category) {this.lexical_category = lexical_category;}
-    public List<Double> getKategooria_kaalud() {return kategooria_kaalud;}
-    public void setKategooria_kaalud(List<Double> kategooria_kaalud) {this.kategooria_kaalud = kategooria_kaalud;}
+    public List<String> getLexicalCategory() {return lexicalCategory;}
+    public void setLexicalCategory(List<String> lexicalCategory) {this.lexicalCategory = lexicalCategory;}
+    public String getType() {return type;}
+    public void setType(String type) {this.type = type;}
+    public List<Double> getKategooriaKaalud() {return kategooriaKaalud;}
+    public void setKategooriaKaalud(List<Double> kategooriaKaalud) {this.kategooriaKaalud = kategooriaKaalud;}
 
     public void teeVerbiks() {
-        List<String> kategooriad = this.getLexical_category();
-        List<Double> kaalud = this.getKategooria_kaalud();
+        List<String> kategooriad = this.getLexicalCategory();
+        List<Double> kaalud = this.getKategooriaKaalud();
 
         for (int i = 0; i < kategooriad.size(); i++) {
             if (!kategooriad.get(i).equals("Verb")) {
@@ -43,13 +46,13 @@ public class Sona {
         for (int j = 0; j < kaalud.size(); j++) {kaalud.set(j,kaalud.get(j)/kogu_kaal);}
 
         //Muudan objekti
-        this.setLexical_category(kategooriad);
-        this.setKategooria_kaalud(kaalud);
+        this.setLexicalCategory(kategooriad);
+        this.setKategooriaKaalud(kaalud);
     }
 
     public Sona(String tekst) {
         this.tekst = tekst;
-        this.lexical_category = new ArrayList<String>();
-        this.kategooria_kaalud = new ArrayList<Double>();
+        this.lexicalCategory = new ArrayList<String>();
+        this.kategooriaKaalud = new ArrayList<Double>();
     }
 }

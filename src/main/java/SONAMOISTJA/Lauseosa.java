@@ -18,5 +18,14 @@ package SONAMOISTJA;
 
 //Pane tahele, et sona "is" pole transitiivne ja et "who" ei tahenda kohe kusilauset
 
+import java.util.List;
+
 public class Lauseosa {
+    private String type;
+    private List<Sona> sonad;
+
+    public Lauseosa(String type, List<Sona> sonad) {
+        this.type = type;
+        this.sonad = sonad;
+    }
 }

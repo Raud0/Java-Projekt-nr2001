@@ -13,7 +13,7 @@ import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
 
-public class Paring_OxfordAPI {
+public class ParingOxfordAPI {
 
     private static final String API_URL = "https://od-api.oxforddictionaries.com/api/v1";
     private static final String KEEL = "en";
@@ -45,7 +45,7 @@ public class Paring_OxfordAPI {
             else {
                 HttpEntity olevus = vastus.getEntity();
                 String vaste = EntityUtils.toString(olevus);
-                System.out.println(vaste);
+                //System.out.println(vaste);
                 tulemus = objectMapper.readValue(vaste, OxfordAPIVasteDTO.class);
                 EntityUtils.consume(olevus);
             }

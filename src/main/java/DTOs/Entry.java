@@ -17,7 +17,7 @@ public class Entry {
     private List<Sense> senses;
 
     public List<GrammaticalFeature> getGrammaticalFeatures() {return grammaticalFeatures;}
-    public String getHomograph_number() {return homographNumber;}
+    public String getHomographNumber() {return homographNumber;}
     public List<Sense> getSenses() {return senses;}
 
     public Entry() {}

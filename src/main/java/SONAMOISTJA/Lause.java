@@ -2,6 +2,7 @@ package SONAMOISTJA;
 
 import MAIN.Uurija;
 import DTOs.*;
+import SONAVOTJA.Teadmine;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,13 +13,14 @@ import java.util.concurrent.TimeUnit;
 public class Lause {
     private static final char[] sumbolid = {'-','–','…','?','.',',',':',';','(',')','"'};
 
-    private String toores_lause;
-    private List<String> tukeldatud_lause;
+    private String tooresLause;
+    private List<String> tukeldatudLause;
     private List<Sona> sonad;
     private List<Klausel> klauslid;
     private List<Lauseosa> lauseosad;
     private List<ResultsDTO> vasted;
-    private boolean[] grammatiline_mood = {
+    private List<Teadmine> teadmised;
+    private boolean[] grammatilineMood = {
             false, // 0: indicative
             false, // 1: subjunctive
             false, // 2: conditional
@@ -30,11 +32,12 @@ public class Lause {
             false, // 8: inferential
             false  // 9: interrogative
     };
+    private String aeg;
 
-    public String getToores_lause() {return toores_lause;}
-    public void setToores_lause(String toores_lause) {this.toores_lause = toores_lause;}
-    public List<String> getTukeldatud_lause() {return tukeldatud_lause;}
-    public void setTukeldatud_lause(List<String> tukeldatud_lause) {this.tukeldatud_lause = tukeldatud_lause;}
+    public String getTooresLause() {return tooresLause;}
+    public void setTooresLause(String tooresLause) {this.tooresLause = tooresLause;}
+    public List<String> getTukeldatudLause() {return tukeldatudLause;}
+    public void setTukeldatudLause(List<String> tukeldatudLause) {this.tukeldatudLause = tukeldatudLause;}
     public List<Sona> getSonad() {return sonad;}
     public void setSonad(List<Sona> sonad) {this.sonad = sonad;}
     public List<Klausel> getKlauslid() {return klauslid;}
@@ -43,12 +46,29 @@ public class Lause {
     public void setLauseosad(List<Lauseosa> lauseosad) {this.lauseosad = lauseosad;}
     public static char[] getSumbolid() {return sumbolid;}
     public List<ResultsDTO> getVasted() {return vasted;}
-    public boolean[] getGrammatiline_mood() {return grammatiline_mood;}
+    public List<Teadmine> getTeadmised() {return teadmised;}
+    public boolean[] getGrammatilineMood() {return grammatilineMood;}
+    public void setGrammatilineMoodAt(int index, boolean truthValue) {this.grammatilineMood[index] = truthValue;}
 
 
     //teeb teksti moistetavamaks
-    //voib olla peaks tulevikus automaatselt ara tegema "he's" -> "he is", samas, et langetada otsus, kas "'s" nimisonafraasis "the dog's" on contraction voi possessive, peab lauset enne moistma
-    public String lausesaniteerija(String lause) {
+    public String lauseSaniteerija(String lause) {
+
+        //eemaldame kõik mitteotsitavad sümbolid
+        lause = lause.replaceAll("[^A-Za-z0-9()\\[\\]]"," ");
+
+        //contractions
+        // 's 'd ignored
+        lause = lause.replaceAll("n't"," not");
+        lause = lause.replaceAll("'m"," am");
+        lause = lause.replaceAll("'re"," are");
+        lause = lause.replaceAll("'ve"," have");
+        lause = lause.replaceAll("'ll"," will");
+        lause = lause.replaceAll("'t"," it");
+        lause = lause.replaceAll("'em"," them");
+        lause = lause.replaceAll("y'","you ");
+        lause = lause.replaceAll("Y'","You ");
+
         //koik tuhikud uhekordseks
         while(lause.contains("  ")) {lause = lause.replaceAll(" {2}", " ");}
         //tekst ei alga tuhikutega
@@ -59,7 +79,7 @@ public class Lause {
     }
 
     //kuna ettesoodetud tekst voetakse sisse karakter haaval, on vaja need tagasi sonedeks teha
-    public String karakterid_sonaks(List<Character> osa) {
+    public String karakteridSonaks(List<Character> osa) {
         StringBuilder ehitaja = new StringBuilder(osa.size());
         for (Character x : osa) {
             ehitaja.append(x);
@@ -68,14 +88,14 @@ public class Lause {
     }
 
     //teeb lause osadeks (sonad, sumbolid)
-    public List<String> lauseTukeldaja(String toores_lause) {
-        List<String> tukeldatud_lause = new ArrayList<String>();
+    public List<String> lauseTukeldaja(String tooresLause) {
+        List<String> tukeldatudLause = new ArrayList<String>();
 
         //alustan uut sona "osa"
         List<Character> osa = new ArrayList<Character>();
         //kain labi koik karakterit ettesoodetud lauses
-        for(int i = 0; i < toores_lause.length(); i++) {
-            char x = toores_lause.charAt(i);
+        for(int i = 0; i < tooresLause.length(); i++) {
+            char x = tooresLause.charAt(i);
             //teen kindlaks, et "osa" on tuhi
             if (i == 0) {osa.clear();}
 
@@ -83,22 +103,22 @@ public class Lause {
             if (Character.isLetterOrDigit(x) || x == '-' || x == '–') {
                 osa.add(x);
             } else if (x != ' ') { //tuhikud alustavad uut sona, aga neid ennast ignoreeritakse, sest tuhikute asemel eraldatakse sonu nuud massiivi lahtritega
-                tukeldatud_lause.add(karakterid_sonaks(osa));
+                tukeldatudLause.add(karakteridSonaks(osa));
                 osa.clear();
                 osa.add(x);
             } else { //iga uue sumboliga lopetatakse vana sona ara ja alustatakse uut
-                if (osa.size() > 0) {tukeldatud_lause.add(karakterid_sonaks(osa));}
+                if (osa.size() > 0) {tukeldatudLause.add(karakteridSonaks(osa));}
                 osa.clear();
             }
 
             //lopetab kaesoleva sona, kui lausega on lopuni joutud
-            if(i == toores_lause.length() - 1 && osa.size() > 0){
-                tukeldatud_lause.add(karakterid_sonaks(osa));
+            if(i == tooresLause.length() - 1 && osa.size() > 0){
+                tukeldatudLause.add(karakteridSonaks(osa));
                 osa.clear();
             }
         }
 
-        return tukeldatud_lause;
+        return tukeldatudLause;
     }
 
     //sonad hakkavad midagi tahendama
@@ -114,25 +134,25 @@ public class Lause {
         System.out.println("Alustan Oxford API küsitlemist.");
         long start = System.nanoTime();
         for(Sona sona : sonad) {
-            ResultsDTO vaste = Uurija.sonaleidja(sona.getTekst());
+            ResultsDTO vaste = Uurija.sonaLeidja(sona.getTekst());
 
-            List<String> leksilised_kategooriad = new ArrayList<String>();
-            List<Double> kategooria_kaalud = new ArrayList<Double>();
-            List<LexicalEntry> leksilised_sisendid = vaste.getLexicalEntries();
+            List<String> leksilisedKategooriad = new ArrayList<String>();
+            List<Double> kategooriaKaalud = new ArrayList<Double>();
+            List<LexicalEntry> leksilisedSisendid = vaste.getLexicalEntries();
 
             vasted.add(vaste);
 
             //Lisan võimalikud leksilised kategooriad
-            for (LexicalEntry leksiline_sisend : leksilised_sisendid) {
-                leksilised_kategooriad.add(leksiline_sisend.getLexicalCategory());
+            for (LexicalEntry leksilineSisend : leksilisedSisendid) {
+                leksilisedKategooriad.add(leksilineSisend.getLexicalCategory());
             }
             //Lisan vastavad algtõenäosused
-            for (int i = 0; i < leksilised_kategooriad.size(); i++){
-                kategooria_kaalud.add(1.0/leksilised_kategooriad.size());
+            for (int i = 0; i < leksilisedKategooriad.size(); i++){
+                kategooriaKaalud.add(1.0/leksilisedKategooriad.size());
             }
 
-            sona.setLexical_category(leksilised_kategooriad);
-            sona.setKategooria_kaalud(kategooria_kaalud);
+            sona.setLexicalCategory(leksilisedKategooriad);
+            sona.setKategooriaKaalud(kategooriaKaalud);
         }
         long end = System.nanoTime();
         System.out.println("Lõpetasin küsitlemise. Aega kulus " + TimeUnit.SECONDS.convert(end - start, TimeUnit.NANOSECONDS) + " sekundit.");
@@ -143,8 +163,8 @@ public class Lause {
             boolean muudetud = false;
             Sona sona = sonad.get(i);
             String tekst = sona.getTekst();
-            List<String> kategooriad = sona.getLexical_category();
-            List<Double> kaalud = sona.getKategooria_kaalud();
+            List<String> kategooriad = sona.getLexicalCategory();
+            List<Double> kaalud = sona.getKategooriaKaalud();
 
             //Nimi
             if (Character.isUpperCase(tekst.charAt(0))) {
@@ -161,7 +181,8 @@ public class Lause {
                 char teksti_sumbol = tekst.charAt(0);
                 for (char sumbol : sumbolid) {
                     if (sumbol == teksti_sumbol) {
-                        if (sumbol == '?') {grammatiline_mood[9] = false;}
+                        if (sumbol == '?') {
+                            grammatilineMood[9] = false;}
                         if (!kategooriad.contains("Symbol")) {
                             kategooriad.add("Symbol");
                             kaalud.add(0.0);}
@@ -188,35 +209,43 @@ public class Lause {
     public List<Sona> lauseKontekstTolk(List<Sona> sonad) throws IOException {
 
         //Verbi võimalused
-        List<Integer> verbi_indeksid = new ArrayList<Integer>();
+        List<Integer> verbiIndeksid = new ArrayList<Integer>();
         for (int i = 0; i < sonad.size(); i++) {
-            if (sonad.get(i).getLexical_category().contains("Verb")) {
-                verbi_indeksid.add(i);
+            if (sonad.get(i).getLexicalCategory().contains("Verb")) {
+                verbiIndeksid.add(i);
             }
         }
 
-        if (verbi_indeksid.size() == 1) {
-            Sona sona = sonad.get(verbi_indeksid.get(0));
+        if (verbiIndeksid.size() == 1) {
+            List<Sona> predikaatorSonad = new ArrayList<Sona>();
+            Sona sona = sonad.get(verbiIndeksid.get(0));
             sona.teeVerbiks();
+            predikaatorSonad.add(sona);
+            lauseosad.add(new Lauseosa("Predicator",predikaatorSonad));
         }
 
-        if (verbi_indeksid.size() > 1) {
-            for (int i = 0; i < verbi_indeksid.size() - 1; i++) {
-                Sona sona_1 = sonad.get(verbi_indeksid.get(i));
-                Sona sona_2 = sonad.get(verbi_indeksid.get(i + 1));
+        if (verbiIndeksid.size() > 1) {
+            for (int i = 0; i < verbiIndeksid.size() - 1; i++) {
+                Sona sona1 = sonad.get(verbiIndeksid.get(i));
+                Sona sona2 = sonad.get(verbiIndeksid.get(i + 1));
 
-                ResultsDTO vaste = getVasted().get(verbi_indeksid.get(i));
+                ResultsDTO vaste = getVasted().get(verbiIndeksid.get(i));
                 boolean sobivad = false;
                 if (Uurija.onGrammatilineTekst(vaste,"Verb","Auxiliary")) {
-                    List<Sona> verbi_vahe = sonad.subList(verbi_indeksid.get(i)+1,verbi_indeksid.get(i+1));
-                    sobivad = (verbi_vahe.size() == 0);
+                    List<Sona> verbiVahe = sonad.subList(verbiIndeksid.get(i)+1,verbiIndeksid.get(i+1));
+                    sobivad = (verbiVahe.size() == 0);
                     if(!sobivad){
-                        sobivad = Uurija.onNimisonaFraas(verbi_vahe);
+                        sobivad = Uurija.onNimisonaFraas(verbiVahe);
                     }
 
                     if(sobivad) {
-                        sona_1.teeVerbiks();
-                        sona_2.teeVerbiks();
+                        List<Sona> predikaatorSonad = new ArrayList<Sona>();
+                        sona1.teeVerbiks();
+                        sona1.setType("Auxiliary");
+                        sona2.teeVerbiks();
+                        predikaatorSonad.add(sona1);
+                        predikaatorSonad.add(sona2);
+                        lauseosad.add(new Lauseosa("Predicator",predikaatorSonad));
                     }
                 }
             }
@@ -226,55 +255,60 @@ public class Lause {
         return sonad;
     }
 
-    public String listiprintija(List<String> list, int mode) {
-        StringBuilder sone_ehitaja = new StringBuilder();
+    public List<Lauseosa> leiaLauseosad(List<Sona> sonad) {
+        List<Lauseosa> lauseosad = new ArrayList<Lauseosa>();
+        return lauseosad;
+    }
+
+    public String listiPrintija(List<String> list, int mode) {
+        StringBuilder soneEhitaja = new StringBuilder();
         if (mode == 0) {
             sonad = this.getSonad();
             if (sonad.size() > 0) {
                 for (Sona sona : sonad) {
-                    double suurim_kaal = 0;
-                    int suurim_kaal_i = 0;
-                    List<Double> kaalud = sona.getKategooria_kaalud();
+                    double suurimKaal = 0;
+                    int suurimKaalIndeks = 0;
+                    List<Double> kaalud = sona.getKategooriaKaalud();
                     for (int i = 0; i < kaalud.size(); i++) {
-                        if (kaalud.get(i) > suurim_kaal) {
-                            suurim_kaal = kaalud.get(i);
-                            suurim_kaal_i = i;
+                        if (kaalud.get(i) > suurimKaal) {
+                            suurimKaal = kaalud.get(i);
+                            suurimKaalIndeks = i;
                         }
                     }
-                    sone_ehitaja.append(sona.getLexical_category().get(suurim_kaal_i));
-                    sone_ehitaja.append('|');
+                    soneEhitaja.append(sona.getLexicalCategory().get(suurimKaalIndeks));
+                    soneEhitaja.append('|');
                 }
-                System.out.println(sone_ehitaja.toString());
-                return sone_ehitaja.toString();
+                System.out.println(soneEhitaja.toString());
+                return soneEhitaja.toString();
             }
         }
         if (mode == 1) {
             sonad = this.getSonad();
             if (sonad.size() > 0) {
                 for (Sona sona : sonad) {
-                    for (String kategooria : sona.getLexical_category()) {
-                        sone_ehitaja.append(kategooria);
-                        sone_ehitaja.append('/');
+                    for (String kategooria : sona.getLexicalCategory()) {
+                        soneEhitaja.append(kategooria);
+                        soneEhitaja.append('/');
                     }
-                    sone_ehitaja.append('|');
+                    soneEhitaja.append('|');
                 }
-                System.out.println(sone_ehitaja.toString());
-                return sone_ehitaja.toString();
+                System.out.println(soneEhitaja.toString());
+                return soneEhitaja.toString();
             }
         }
 
         //default print, kui soovitud mood ei tööta
         for (String sone : list) {
-            sone_ehitaja.append(sone);
-            sone_ehitaja.append('|');
+            soneEhitaja.append(sone);
+            soneEhitaja.append('|');
         }
 
-        System.out.println(sone_ehitaja.toString());
-        return sone_ehitaja.toString();
+        System.out.println(soneEhitaja.toString());
+        return soneEhitaja.toString();
     }
 
-    public Lause(String toores_lause) throws IOException {
-        toores_lause = lausesaniteerija(toores_lause);
+    public Lause(String tooresLause) throws IOException {
+        tooresLause = lauseSaniteerija(tooresLause);
 
         /*
         Kui sisse antud sõne ei ole üks lause, siis lõikab sõne pooleks pärast esimest '?', '!' või '.'.
@@ -294,15 +328,16 @@ public class Lause {
         // ei toota ka sellistel juhtudel, kus nimi on luhike, nagu "I am Mr. K." laheks jargmise lausega kokku
 
 
-        String[] laused = toores_lause.split("(?<=\\p{javaUpperCase}{0}\\p{javaLowerCase}{0,3}[\\?\\.\\!] )");
+        String[] laused = tooresLause.split("(?<=\\p{javaUpperCase}{0}\\p{javaLowerCase}{0,3}[\\?\\.\\!] )");
         for (int i = 1; i < laused.length; i++) {
             Lause uus_lause = new Lause(laused[i]);
             // Tee uus staatiline sõnumite logija. Kahekordest listist. Ülemine tase, kus vahetumisi kirjutatakse ja alumine, kus on kõik laused, mis korraga öeldi, koos.
         }
 
-        this.toores_lause = laused[0];
-        this.tukeldatud_lause = lauseTukeldaja(toores_lause);
+        this.tooresLause = laused[0];
+        this.tukeldatudLause = lauseTukeldaja(tooresLause);
         this.sonad = new ArrayList<Sona>();
         this.vasted = new ArrayList<ResultsDTO>();
+        this.teadmised = new ArrayList<Teadmine>();
     }
 }

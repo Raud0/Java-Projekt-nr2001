@@ -24,7 +24,7 @@ public class Sense {
     public List<String> getDomains() {return domains;}
     public List<Example> getExamples() {return examples;}
     public List<Note> getNotes() {return notes;}
-    public List<String> getShort_definitionss() {return short_definitions;}
+    public List<String> getShortDefinitionss() {return short_definitions;}
     public List<ThesaurusLink> getThesaurusLinks() {return thesaurusLinks;}
     public List<Sense> getSubsenses() {return subsenses;}
 
