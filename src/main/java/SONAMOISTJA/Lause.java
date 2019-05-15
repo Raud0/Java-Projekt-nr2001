@@ -18,8 +18,18 @@ public class Lause {
     private List<Klausel> klauslid;
     private List<Lauseosa> lauseosad;
     private List<ResultsDTO> vasted;
-
-    public List<ResultsDTO> getVasted() {return vasted;}
+    private boolean[] grammatiline_mood = {
+            false, // 0: indicative
+            false, // 1: subjunctive
+            false, // 2: conditional
+            false, // 3: optative
+            false, // 4: imperative
+            false, // 5: jussive
+            false, // 6: potential
+            false, // 7: hypothetical
+            false, // 8: inferential
+            false  // 9: interrogative
+    };
 
     public String getToores_lause() {return toores_lause;}
     public void setToores_lause(String toores_lause) {this.toores_lause = toores_lause;}
@@ -32,6 +42,9 @@ public class Lause {
     public List<Lauseosa> getLauseosad() {return lauseosad;}
     public void setLauseosad(List<Lauseosa> lauseosad) {this.lauseosad = lauseosad;}
     public static char[] getSumbolid() {return sumbolid;}
+    public List<ResultsDTO> getVasted() {return vasted;}
+    public boolean[] getGrammatiline_mood() {return grammatiline_mood;}
+
 
     //teeb teksti moistetavamaks
     //voib olla peaks tulevikus automaatselt ara tegema "he's" -> "he is", samas, et langetada otsus, kas "'s" nimisonafraasis "the dog's" on contraction voi possessive, peab lauset enne moistma
@@ -148,6 +161,7 @@ public class Lause {
                 char teksti_sumbol = tekst.charAt(0);
                 for (char sumbol : sumbolid) {
                     if (sumbol == teksti_sumbol) {
+                        if (sumbol == '?') {grammatiline_mood[9] = false;}
                         if (!kategooriad.contains("Symbol")) {
                             kategooriad.add("Symbol");
                             kaalud.add(0.0);}
@@ -171,7 +185,7 @@ public class Lause {
     }
 
     //kui kogu informatsioon sonade kohta on käes, hakkan uurima sõnade võimalikke tähendusi lause kontekstist lähtudes
-    public List<Sona> lauseKontekstTolk(List<Sona> sonad) {
+    public List<Sona> lauseKontekstTolk(List<Sona> sonad) throws IOException {
 
         //Verbi võimalused
         List<Integer> verbi_indeksid = new ArrayList<Integer>();
@@ -194,7 +208,6 @@ public class Lause {
                 ResultsDTO vaste = getVasted().get(verbi_indeksid.get(i));
                 boolean sobivad = false;
                 if (Uurija.onGrammatilineTekst(vaste,"Verb","Auxiliary")) {
-                    verbi_indeksid.get(i);
                     List<Sona> verbi_vahe = sonad.subList(verbi_indeksid.get(i)+1,verbi_indeksid.get(i+1));
                     sobivad = (verbi_vahe.size() == 0);
                     if(!sobivad){

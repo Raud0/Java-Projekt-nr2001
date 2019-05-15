@@ -35,7 +35,7 @@ public class Uurija extends Thread {
         //Tegija võimalused
         List<Integer> tegija_indeksid = new ArrayList<Integer>();
         for (int i = 0; i < sonad.size(); i++) {
-            if (sonad.get(i).getLexical_category().contains("Noun") || sonad.get(i).getLexical_category().contains("Prooun")) {
+            if (sonad.get(i).getLexical_category().contains("Noun") || sonad.get(i).getLexical_category().contains("Pronoun")) {
                 tegija_indeksid.add(i);
             }
         }

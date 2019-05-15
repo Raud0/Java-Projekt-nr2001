@@ -35,7 +35,7 @@ public class Paring_OxfordAPI {
 
         OxfordAPIVasteDTO tulemus = null;
         try {
-            //System.out.println(vastus.getStatusLine());
+            //ystem.out.println(vastus.getStatusLine());
 
             //Kui asi ei toota, luuakse objekt ise koos vaikevaartustega
             if(vastus.getStatusLine().getStatusCode() != 200) {
@@ -45,7 +45,7 @@ public class Paring_OxfordAPI {
             else {
                 HttpEntity olevus = vastus.getEntity();
                 String vaste = EntityUtils.toString(olevus);
-                //System.out.println(vaste);
+                System.out.println(vaste);
                 tulemus = objectMapper.readValue(vaste, OxfordAPIVasteDTO.class);
                 EntityUtils.consume(olevus);
             }
