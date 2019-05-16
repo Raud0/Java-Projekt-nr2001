@@ -758,3 +758,28 @@ asd         ---------->          Noun|
 dasd         ---------->          Unknown|
 dasdasdasd         ---------->          Unknown|
 asdasd         ---------->          Unknown|
+
+
+
+Uus aken meie hinge                              2019-05-16 11:04:32.54
+
+
+
+
+
+Uus aken meie hinge                              2019-05-16 11:04:44.662
+
+
+koll         ---------->          Unknown|
+jijisdksdosdksd         ---------->          Unknown|
+Is it going to rain?         ---------->          ... You should go home.
+(￢_￢)
+i went to the store.         ---------->          Residual|Other|Preposition|Determiner|Noun|Symbol|
+ke         ---------->          Residual|
+
+
+
+Uus aken meie hinge                              2019-05-16 11:18:37.033
+
+
+He who does not steal is a virtuous man, he who steals is a brave man.         ---------->          Noun|Pronoun|Other|Adverb|Verb|Other|Determiner|Adjective|Noun|Symbol|Pronoun|Pronoun|Unknown|Other|Determiner|Adjective|Noun|Symbol|
