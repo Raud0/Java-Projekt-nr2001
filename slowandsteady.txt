@@ -610,3 +610,119 @@ Uus aken meie hinge                              2019-05-16 01:22:35.102
 
 3333333         ---------->          Unknown|
 111111111111         ---------->          Unknown|
+
+
+
+Uus aken meie hinge                              2019-05-16 08:38:53.516
+
+
+Here we are.
+         ---------->          Adverb/Interjection/Noun/|Pronoun/|Other/Noun/|
+He killed the cat.         ---------->          Pronoun/Noun/Residual/Residual/|Unknown/|Determiner/|Noun/Verb/Residual/|
+He kills the cat         ---------->          Pronoun/Noun/Residual/Residual/|Unknown/|Determiner/|Noun/Verb/Residual/|
+He has much to say.         ---------->          Pronoun/Noun/Residual/Residual/|Unknown/|Determiner/Pronoun/Adverb/|Preposition/Particle/Adverb/|Verb/Interjection/Noun/|
+He says much.         ---------->          Pronoun/Noun/Residual/Residual/|Unknown/|Determiner/Pronoun/Adverb/|
+
+
+
+Uus aken meie hinge                              2019-05-16 08:41:08.189
+
+
+There is no spoon.         ---------->          Adverb|Other|Determiner|Noun|
+
+
+
+Uus aken meie hinge                              2019-05-16 08:43:39.401
+
+
+They want Caesar.         ---------->          Pronoun|Verb|Noun|
+Do no harm.         ---------->          Noun|Determiner|Noun|
+Water is the source of all life.         ---------->          Noun|Other|Determiner|Noun|Preposition|Predeterminer|Noun|
+A red fox jumped over a large crate.         ---------->          Noun|Adjective|Noun|Unknown|Preposition|Determiner|Adjective|Noun|
+
+
+
+Uus aken meie hinge                              2019-05-16 08:51:41.125
+
+
+Here I am again.         ---------->          Adverb|Noun|Other|Adverb|
+
+
+
+Uus aken meie hinge                              2019-05-16 08:56:05.05
+
+
+Less spam.         ---------->          Determiner|Noun|
+
+
+
+Uus aken meie hinge                              2019-05-16 08:56:45.87
+
+
+less spam.         ---------->          Determiner|Noun|
+
+
+
+Uus aken meie hinge                              2019-05-16 08:58:51.565
+
+
+Donezo         ---------->          Noun|
+
+
+
+Uus aken meie hinge                              2019-05-16 08:59:26.054
+
+
+We won.         ---------->          Pronoun/Noun/|Other/Noun/|
+
+
+
+Uus aken meie hinge                              2019-05-16 09:01:53.718
+
+
+Okay.         ---------->          Noun/|
+Why do they want Rathenau tonight?         ---------->          Adverb/Interjection/Noun/|Verb/Noun/|Pronoun/|Verb/Noun/|Noun/|Adverb/Noun/|
+Why do they want Rathenau tonight?h         ---------->          Residual/Residual/Noun/|
+j         ---------->          Residual/Noun/Residual/|
+Why do they want Rathenau tonight?         ---------->          Adverb/Interjection/Noun/|Verb/Noun/|Pronoun/|Verb/Noun/|Noun/|Adverb/Noun/|
+Wha am I?         ---------->          Noun/|Other/Residual/Residual/Noun/|Residual/Pronoun/Noun/Residual/|
+
+
+
+Uus aken meie hinge                              2019-05-16 09:04:04.078
+
+
+Who am I?         ---------->          Pronoun/Residual/Noun/|Other/Residual/Residual/Noun/|Residual/Pronoun/Noun/Residual/|
+
+
+
+Uus aken meie hinge                              2019-05-16 09:04:53.103
+
+
+Who am I?         ---------->          Pronoun|Other|Noun|
+
+
+
+Uus aken meie hinge                              2019-05-16 09:08:10.541
+
+
+Why are you here?         ---------->          Tea.
+Where is my mind?         ---------->          Cannot say.
+
+
+
+Uus aken meie hinge                              2019-05-16 09:09:07.404
+
+
+Where is my mind?         ---------->          Very doubtful.
+(－.－)...zzz
+
+
+
+Uus aken meie hinge                              2019-05-16 09:22:10.96
+
+
+Why am I here?         ---------->          In my opinion, no.
+(^ω~)/
+Will I ever leave this Earth?         ---------->          It is in the cards.
+|･ω･)

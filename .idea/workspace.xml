@@ -8,11 +8,10 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MAIN/KasutajaAken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MAIN/KasutajaAken.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MAIN/Zen2001Programm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MAIN/Zen2001Programm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SONAMOISTJA/Lause.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SONAMOISTJA/Lause.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SONAVOTJA/Vastamine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SONAVOTJA/Vastamine.class" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,11 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="191" selection-start-line="191" selection-end-line="191" />
+            <state relative-caret-position="612">
+              <caret line="195" column="25" selection-start-line="195" selection-start-column="25" selection-end-line="195" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -32,13 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="180" column="53" selection-start-line="180" selection-start-column="53" selection-end-line="180" selection-end-column="53" />
-              <folding>
-                <element signature="e#8834#8840#0" expanded="true" />
-                <element signature="e#9690#9696#0" expanded="true" />
-                <element signature="e#9947#9957#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="340">
+              <caret line="76" column="75" selection-start-line="76" selection-start-column="75" selection-end-line="76" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -46,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/ParingOxfordAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="239">
               <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -67,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Uurija.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+            <state relative-caret-position="100">
+              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,14 +88,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+            <state relative-caret-position="387">
+              <caret line="34" column="58" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#377#387#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="128" column="21" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
+            <state relative-caret-position="1989">
+              <caret line="124" column="37" selection-start-line="124" selection-start-column="37" selection-end-line="124" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -110,7 +112,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Sona.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="-119">
               <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -121,19 +123,32 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>System.out</find>
+      <find>listiPrintija</find>
+      <find>System.out.println(&quot;done&quot;);</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java" />
       </list>
     </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="974" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -143,8 +158,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,7 +221,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557958979558" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557987871966" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -245,7 +262,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8c484054-f590-403e-9943-f64a9127b2e5" name="Default Changelist" comment="" />
+      <changelist id="5481915c-6ae0-4e2b-9bac-3b318f6c796a" name="Default Changelist" comment="" />
       <created>1552243283468</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -278,7 +295,8 @@
       <workItem from="1557856977404" duration="6674000" />
       <workItem from="1557866883714" duration="2152000" />
       <workItem from="1557940223085" duration="1824000" />
-      <workItem from="1557942241158" duration="11353000" />
+      <workItem from="1557942241158" duration="11665000" />
+      <workItem from="1557984759720" duration="3113000" />
     </task>
     <task id="LOCAL-00001" summary="removed idiocy">
       <created>1554237572528</created>
@@ -297,44 +315,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="460000" />
+    <option name="totallyTimeSpent" value="3885000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2521322" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4968017" weight="0.28141224" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32914045" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32914045" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3281412" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50319827" side_tool="true" weight="0.42471445" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4978678" visible="true" weight="0.423676" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2521322" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25426438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -363,7 +349,41 @@
       <window_info anchor="right" id="Maven" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25426438" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4968017" weight="0.28141224" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32914045" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32914045" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3281412" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50319827" side_tool="true" weight="0.42471445" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4978678" weight="0.423676" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="let's see if intellij is the greatest" />
@@ -516,9 +536,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SONAVOTJA.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SONAVOTJA.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/DTOs/Example.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -616,37 +634,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Klausel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="77" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Uurija.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Sona.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="-119">
           <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/ParingOxfordAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -660,47 +651,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+        <state relative-caret-position="612">
+          <caret line="195" column="25" selection-start-line="195" selection-start-column="25" selection-end-line="195" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/ParingOxfordAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#377#387#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="128" column="21" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
+        <state relative-caret-position="1989">
+          <caret line="124" column="37" selection-start-line="124" selection-start-column="37" selection-end-line="124" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Uurija.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Klausel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="77" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="180" column="53" selection-start-line="180" selection-start-column="53" selection-end-line="180" selection-end-column="53" />
+        <state relative-caret-position="340">
+          <caret line="76" column="75" selection-start-line="76" selection-start-column="75" selection-end-line="76" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="34" column="58" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
           <folding>
-            <element signature="e#8834#8840#0" expanded="true" />
-            <element signature="e#9690#9696#0" expanded="true" />
-            <element signature="e#9947#9957#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-680">
-          <caret line="8" column="140" selection-start-line="8" selection-start-column="140" selection-end-line="8" selection-end-column="140" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="191" selection-start-line="191" selection-end-line="191" />
         </state>
       </provider>
     </entry>

@@ -54,9 +54,6 @@ public class Lause {
     //teeb teksti moistetavamaks
     public String lauseSaniteerija(String lause) {
 
-        //eemaldame kõik mitteotsitavad sümbolid
-        lause = lause.replaceAll("[^A-Za-z0-9()\\[\\]]"," ");
-
         //contractions
         // 's 'd ignored
         lause = lause.replaceAll("n't"," not");
@@ -75,6 +72,10 @@ public class Lause {
         while(lause.startsWith(" ")) {lause = lause.replaceFirst("\\p{javaWhitespace}","");}
         //kolm punkti loetakse kokku uheks sumboliks
         lause = lause.replaceAll("\\.\\.\\.","…");
+
+        //eemaldame kõik mitteotsitavad sümbolid
+        lause = lause.replaceAll("[^A-Za-z0-9()\\[\\]][\\,\\?\\.\\!]"," ");
+
         return lause;
     }
 
@@ -131,10 +132,12 @@ public class Lause {
         }
 
         //Otsin välja, mis tüüpi sõna olla saab (verb, noun, jne.)
-        System.out.println("Alustan Oxford API küsitlemist.");
-        long start = System.nanoTime();
+
         for(Sona sona : sonad) {
+            long start = System.nanoTime();
             ResultsDTO vaste = Uurija.sonaLeidja(sona.getTekst());
+            long end = System.nanoTime();
+            System.out.println("Oxford API vastuse aeg: " + TimeUnit.SECONDS.convert(end - start, TimeUnit.NANOSECONDS) + " sekundit.");
 
             List<String> leksilisedKategooriad = new ArrayList<String>();
             List<Double> kategooriaKaalud = new ArrayList<Double>();
@@ -154,8 +157,8 @@ public class Lause {
             sona.setLexicalCategory(leksilisedKategooriad);
             sona.setKategooriaKaalud(kategooriaKaalud);
         }
-        long end = System.nanoTime();
-        System.out.println("Lõpetasin küsitlemise. Aega kulus " + TimeUnit.SECONDS.convert(end - start, TimeUnit.NANOSECONDS) + " sekundit.");
+
+
 
 
         //Leian lihtsamaid Unknown tüüpe.
@@ -277,7 +280,7 @@ public class Lause {
                     soneEhitaja.append(sona.getLexicalCategory().get(suurimKaalIndeks));
                     soneEhitaja.append('|');
                 }
-                System.out.println(soneEhitaja.toString());
+                //System.out.println(soneEhitaja.toString());
                 return soneEhitaja.toString();
             }
         }
@@ -291,7 +294,7 @@ public class Lause {
                     }
                     soneEhitaja.append('|');
                 }
-                System.out.println(soneEhitaja.toString());
+                //System.out.println(soneEhitaja.toString());
                 return soneEhitaja.toString();
             }
         }
@@ -302,7 +305,7 @@ public class Lause {
             soneEhitaja.append('|');
         }
 
-        System.out.println(soneEhitaja.toString());
+        //System.out.println(soneEhitaja.toString());
         return soneEhitaja.toString();
     }
 

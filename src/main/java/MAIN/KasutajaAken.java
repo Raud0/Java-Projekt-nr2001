@@ -194,7 +194,6 @@ public class KasutajaAken extends JFrame implements KeyListener, MouseListener, 
             fail.write(failiSisu);
 
             fail.close();
-            System.out.println("done");
         } catch (IOException exception) {
             System.out.println(exception.getMessage());
         }

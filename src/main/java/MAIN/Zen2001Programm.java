@@ -123,7 +123,6 @@ public class Zen2001Programm {
                         fail.write("         ---------->          " + prinditavVastus);
                         fail.write("\n");
                         fail.close();
-                        System.out.println("done");
                     } catch (IOException exception) {
                         System.out.println(exception.getMessage());
                     }

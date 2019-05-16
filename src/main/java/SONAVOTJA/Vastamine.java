@@ -16,23 +16,26 @@ public class Vastamine {
 
     private static List<Teadmine> teadmistepagas = new ArrayList<Teadmine>();
     private final static String[] eightBallVastused = {
-            "Absolutely.",
-            "Why ask if you know?",
-            "Definitely.",
-            "Computer says no.",
-            "It is so.",
-            "Cannot say.",
-            "You dont want to know!",
-            "YES!",
-            "No.",
-            "It is decided",
-            "Probably not so",
-            "Divination is for fools.",
-            "Very doubtful.",
-            "Go home.",
-            "Tea.",
-            "No, but it's for the best.",
-            "Not yet."
+            "I believe so. My answer is absolute.",
+            "Why do you ask me, if you already know the answer?",
+            "I would definitely think so.",
+            "My computer says null.",
+            "That is the whole truth of it.",
+            "I cannot say.",
+            "You are not ready for the answer!",
+            "  YES!\nYES!\n     YES!\n          YES!",
+            "In my opinion, no.",
+            "It is in your cards.",
+            "Depends on whether the stars align.",
+            "Double, double toil and trouble...",
+            "No, I think it's very improbable.",
+            "If you're here for divination, you're a bigger fool than I at first thought.",
+            "I have my doubts.",
+            "... You should go home.",
+            "And isn't that the billion dollar quesiton?",
+            "Please wait, the tea kettle is whistling.",
+            "No, but I think it is for the best.",
+            "Your time, it is not yet."
     };
 
     private final static String[] eightBallKaomoji = {
@@ -73,21 +76,20 @@ public class Vastamine {
     }
 
     public static String vasta(String kuuldud_lause) throws IOException {
-        String vastus = tester(2,kuuldud_lause);
-        ImageIcon pilt = Zen2001Programm.aken.looPilt(true,"");
+        String vastus;
+        //ImageIcon pilt = Zen2001Programm.aken.looPilt(true,"");
         //Zen2001Programm.aken.muudaPilt(pilt);
 
         Lause lause = new Lause(kuuldud_lause);
-
         lause.lauseTolk(lause.lauseTukeldaja(lause.getTooresLause()));
-        System.out.println(lause.getGrammatilineMood()[9]);
 
         if (lause.getGrammatilineMood()[9]) {
             //on küsimus, siis vastus muutub
-            return eightBallVastused[(int)(Math.random()*17)] + "                                             " + eightBallKaomoji[(int)(Math.random()*8)];
+            return eightBallVastused[(int)(Math.random()*eightBallVastused.length)] + "\n" + eightBallKaomoji[(int)(Math.random()*8)];
 
         } else {
-            //pole küsimus
+            //vastus = lause.listiPrintija(new ArrayList<String>(),0);
+            vastus = lause.listiPrintija(new ArrayList<String>(),0);
         }
 
         return vastus;
