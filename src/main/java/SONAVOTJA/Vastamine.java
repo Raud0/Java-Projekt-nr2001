@@ -77,8 +77,8 @@ public class Vastamine {
 
     public static String vasta(String kuuldud_lause) throws IOException {
         String vastus;
-        //ImageIcon pilt = Zen2001Programm.aken.looPilt(true,"");
-        //Zen2001Programm.aken.muudaPilt(pilt);
+        ImageIcon pilt = Zen2001Programm.aken.looPilt(true,"");
+        Zen2001Programm.aken.muudaPilt(pilt);
 
         Lause lause = new Lause(kuuldud_lause);
         lause.lauseTolk(lause.lauseTukeldaja(lause.getTooresLause()));

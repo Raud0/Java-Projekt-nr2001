@@ -88,8 +88,10 @@ public class KasutajaAken extends JFrame implements KeyListener, MouseListener, 
     }
 
     public void muudaPilt(ImageIcon uusPilt) {
-        piltAla.setIcon(uusPilt);
+        pildiPaneel.remove(piltAla);
         pilt = uusPilt;
+        piltAla.setIcon(pilt);
+        pildiPaneel.add(piltAla);
 
         pildiPaneel.setSize(pilt.getIconWidth(),pilt.getIconHeight());
         setMinimumSize(new Dimension(410, suhtlusPaneel.getHeight()+ pildiPaneel.getHeight()));
