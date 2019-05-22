@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5481915c-6ae0-4e2b-9bac-3b318f6c796a" name="Default Changelist" comment="no me">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5481915c-6ae0-4e2b-9bac-3b318f6c796a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/slowandsteady.txt" beforeDir="false" afterPath="$PROJECT_DIR$/slowandsteady.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,11 +18,79 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1072">
-              <caret line="169" column="39" lean-forward="true" selection-start-line="169" selection-start-column="39" selection-end-line="169" selection-end-column="39" />
+            <state relative-caret-position="2040">
+              <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="709">
+              <caret line="240" column="21" lean-forward="true" selection-start-line="240" selection-start-column="21" selection-end-line="240" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/ParingOxfordAPI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
               <folding>
-                <element signature="e#918#919#0" expanded="true" />
-                <element signature="e#957#958#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Klausel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="77" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Uurija.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="935">
+              <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/SONAVOTJA/Teadmine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="470">
+              <caret line="79" column="75" selection-start-line="79" selection-start-column="75" selection-end-line="79" selection-end-column="75" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -33,41 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="845">
-              <caret line="51" column="18" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SONAVOTJA/Teadmine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+            <state relative-caret-position="386">
+              <caret line="121" column="71" lean-forward="true" selection-start-line="121" selection-start-column="71" selection-end-line="121" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -75,20 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Sona.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DTOs/LexicalEntry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+            <state relative-caret-position="272">
+              <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,7 +124,6 @@
       <find>System.out</find>
       <find>listiPrintija</find>
       <find>System.out.println(&quot;done&quot;);</find>
-      <find>get</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -114,16 +134,16 @@
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java" />
         <option value="$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java" />
         <option value="$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="975" />
-    <option name="height" value="1090" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -134,6 +154,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,19 +186,26 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="MAIN" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java-Projekt-nr2001" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java-Projekt-nr2001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="SONAVOTJA" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557987871966" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557994717021" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -251,7 +279,6 @@
       <workItem from="1557940223085" duration="1824000" />
       <workItem from="1557942241158" duration="11665000" />
       <workItem from="1557984759720" duration="3113000" />
-      <workItem from="1558551259070" duration="6825000" />
     </task>
     <task id="LOCAL-00001" summary="removed idiocy">
       <created>1554237572528</created>
@@ -270,13 +297,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14275000" />
+    <option name="totallyTimeSpent" value="3885000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25973153" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25692964" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -285,7 +312,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4968017" visible="true" weight="0.28045326" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4968017" visible="true" weight="0.28141224" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -295,7 +322,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3281412" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50319827" side_tool="true" weight="0.42471445" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4978678" weight="0.42351276" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4978678" weight="0.423676" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -345,8 +372,7 @@
     <MESSAGE value="let's see if intellij is the greatest" />
     <MESSAGE value="removed idiocy" />
     <MESSAGE value="pretty sure this is what you didn't want, in an even uglier way" />
-    <MESSAGE value="no me" />
-    <option name="LAST_COMMIT_MESSAGE" value="no me" />
+    <option name="LAST_COMMIT_MESSAGE" value="pretty sure this is what you didn't want, in an even uglier way" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Kanvas.java" />
@@ -581,20 +607,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DTOs/LexicalEntry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/ParingOxfordAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+        <state relative-caret-position="459">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -605,30 +631,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Uurija.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DTOs/LexicalEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Sona.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+        <state relative-caret-position="272">
+          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/ParingOxfordAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Uurija.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -637,43 +663,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/Zen2001Programm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="845">
-          <caret line="51" column="18" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+        <state relative-caret-position="386">
+          <caret line="121" column="71" lean-forward="true" selection-start-line="121" selection-start-column="71" selection-end-line="121" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SONAVOTJA/Teadmine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        <state relative-caret-position="187">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SONAMOISTJA/Lause.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="709">
+          <caret line="240" column="21" lean-forward="true" selection-start-line="240" selection-start-column="21" selection-end-line="240" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MAIN/KasutajaAken.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1072">
-          <caret line="169" column="39" lean-forward="true" selection-start-line="169" selection-start-column="39" selection-end-line="169" selection-end-column="39" />
-          <folding>
-            <element signature="e#918#919#0" expanded="true" />
-            <element signature="e#957#958#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2040">
+          <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SONAVOTJA/Vastamine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
+        <state relative-caret-position="470">
+          <caret line="79" column="75" selection-start-line="79" selection-start-column="75" selection-end-line="79" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

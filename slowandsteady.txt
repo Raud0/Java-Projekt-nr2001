@@ -761,74 +761,25 @@ asdasd         ---------->          Unknown|
 
 
 
-Uus aken meie hinge                              2019-05-16 10:23:40.781
-
-
-uhh         ---------->          Unknown|
-welp         ---------->          Interjection|
-
-
-
-Uus aken meie hinge                              2019-05-16 10:46:38.702
-
-
-ohayo!         ---------->          Unknown|Unknown|
-i was young.         ---------->          Residual|Other|Adjective|Symbol|
-sup dop rup nup?         ---------->          Please wait, the tea kettle is whistling.
- ╮(︶︿︶)╭
-
-
-
-Uus aken meie hinge                              2019-05-16 10:52:45.191
-
-
-why loop         ---------->          Adverb|Noun|
-
-
-
-Uus aken meie hinge                              2019-05-16 11:03:31.435
-
-
-loe plz
-
-
-Uus aken meie hinge                              2019-05-16 11:21:01.708
+Uus aken meie hinge                              2019-05-16 11:04:32.54
 
 
 
 
 
-Uus aken meie hinge                              2019-05-22 23:36:33.748
+Uus aken meie hinge                              2019-05-16 11:04:44.662
 
 
-Why are you running xd?         ---------->          I believe so. My answer is absolute.
- ╮(︶︿︶)╭
-
-
-
-Uus aken meie hinge                              2019-05-22 23:38:33.555
-
-
-Why are you running xd?         ---------->          I believe so. My answer is absolute.
+koll         ---------->          Unknown|
+jijisdksdosdksd         ---------->          Unknown|
+Is it going to rain?         ---------->          ... You should go home.
 (￢_￢)
+i went to the store.         ---------->          Residual|Other|Preposition|Determiner|Noun|Symbol|
+ke         ---------->          Residual|
 
 
 
-Uus aken meie hinge                              2019-05-22 23:40:48.248
+Uus aken meie hinge                              2019-05-16 11:18:37.033
 
 
-Why are you running xd?         ---------->          
-
-
-
-Uus aken meie hinge                              2019-05-22 23:44:07.181
-
-
-Why are you running xd?         ---------->          It is in your cards.
-(－.－)...zzz
-
-
-
-Uus aken meie hinge                              2019-05-22 23:49:44.788
-
-
+He who does not steal is a virtuous man, he who steals is a brave man.         ---------->          Noun|Pronoun|Other|Adverb|Verb|Other|Determiner|Adjective|Noun|Symbol|Pronoun|Pronoun|Unknown|Other|Determiner|Adjective|Noun|Symbol|
