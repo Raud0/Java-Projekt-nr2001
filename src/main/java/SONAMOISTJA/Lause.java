@@ -66,15 +66,15 @@ public class Lause {
         lause = lause.replaceAll("y'","you ");
         lause = lause.replaceAll("Y'","You ");
 
+        //eemaldame kõik mitteotsitavad sümbolid
+        lause = lause.replaceAll("[^a-zA-Z0-9\\\\s+?!.]"," ");
+
         //koik tuhikud uhekordseks
         while(lause.contains("  ")) {lause = lause.replaceAll(" {2}", " ");}
         //tekst ei alga tuhikutega
         while(lause.startsWith(" ")) {lause = lause.replaceFirst("\\p{javaWhitespace}","");}
         //kolm punkti loetakse kokku uheks sumboliks
         lause = lause.replaceAll("\\.\\.\\.","…");
-
-        //eemaldame kõik mitteotsitavad sümbolid
-        lause = lause.replaceAll("[^A-Za-z0-9()\\[\\]][\\,\\?\\.\\!]"," ");
 
         return lause;
     }
@@ -330,7 +330,7 @@ public class Lause {
         // ei toota ka sellistel juhtudel, kus nimi on luhike, nagu "I am Mr. K." laheks jargmise lausega kokku
 
 
-        String[] laused = tooresLause.split("(?<=\\p{javaUpperCase}{0}\\p{javaLowerCase}{0,3}[\\?\\.\\!] )");
+        String[] laused = tooresLause.split("(?<=\\p{javaUpperCase}{0}\\p{javaLowerCase}{0,3}[?.!] )");
         for (int i = 1; i < laused.length; i++) {
             Lause uus_lause = new Lause(laused[i]);
             // Tee uus staatiline sõnumite logija. Kahekordest listist. Ülemine tase, kus vahetumisi kirjutatakse ja alumine, kus on kõik laused, mis korraga öeldi, koos.
