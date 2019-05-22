@@ -1,13 +1,11 @@
 package SONAVOTJA;
 
 import DTOs.*;
-import MAIN.KasutajaAken;
 import MAIN.Uurija;
 import MAIN.Zen2001Programm;
 import SONAMOISTJA.Lause;
 
 import javax.swing.*;
-import java.awt.event.KeyListener;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -38,7 +36,7 @@ public class Vastamine {
             "Your time, it is not yet."
     };
 
-    private final static String[] üldisedEightBallVastused = {
+    private final static String[] uldisedEightBallVastused = {
             "... You should go home.",
             "And isn't that the billion dollar question?",
             "I cannot say.",
@@ -52,36 +50,62 @@ public class Vastamine {
     };
 
     private final static String[] whenEightBallVastused = {
-
             "Your time, it is not yet.",
             "Depends on whether the stars align.",
+            "Never.",
+            "When pigs fly.",
+            "When time comes for the snows of yesteryear.",
+            "At the end of the universe.",
+            "Before you were born.",
+            "When you're in the grave.",
+            "When the eagles return.",
+            "When the king in the mountain rises.",
+            "When the arc comes to a close."
+    };
 
+    private final static String[] whereEightBallVastused = {
+            "Your home.",
+            "At the far edge of the universe.",
+            "Nowhere.",
+            "Wherever the road leads.",
+            "Wherever you are, is where it shall be.",
+            "Where the river meets the sea.",
     };
 
     private final static String[] howEightBallVastused = {
-
-            "Badly, I'm afraid."
-
+            "Badly, I'm afraid.",
+            "Well, I'm sure.",
+            "I don't need to tell you this. You can see the writing on the wall."
     };
 
     private final static String[] whoEightBallVastused = {
+            "Nobody, but everyone.",
+            "The King of Kings.",
+            "Look in the mirror.",
+            "But who are you?"
     };
 
     private final static String[] whichEightBallVastused = {
+            "The one that was yesterday.",
+            "I don't know, but not the one you're thinking of.",
+            "The one that your heart knows"
     };
 
     private final static String[] whyEightBallVastused = {
-
             "It is in your cards.",
+            "Because I said so.",
+            "Do you ask a fish why it swims?",
+            "I do not know.",
+            "Why do you ask?"
             //"That is the whole truth of it.",
-
     };
 
     private final static String[] whatEightBallVastused = {
+            "Nothing, and everything.",
+            "The end to all ends."
     };
 
     private final static String[] isAreEightBallVastused = {
-
             "I believe so. My answer is absolute.",
             "I would definitely think so.",
             "I cannot say.",
@@ -92,7 +116,9 @@ public class Vastamine {
             "No, I think it's very improbable.",
             "I have my doubts.",
             "No, but I think it is for the best.",
-
+            "Of course!",
+            "Never doubt it.",
+            "Does the pope shit in the woods?"
     };
 
 
@@ -121,7 +147,7 @@ public class Vastamine {
             return domains + ": " + text;
         }
         if (testmode == 2) {
-            String testsone = "";
+            String testsone;
             //loob lause sisendiga
             Lause lause = new Lause(sisend);
             List<String> lauseosad = lause.lauseTukeldaja(lause.getTooresLause());
@@ -143,44 +169,23 @@ public class Vastamine {
 
         if (lause.getGrammatilineMood()[9]) {
 
-
-            if((Math.random()*10) < 3) {
-                return üldisedEightBallVastused[(int) (Math.random() * üldisedEightBallVastused.length)] + "\n" + eightBallKaomoji[(int) (Math.random() * 8)];
-            }
-
             String kontrollitavKüsisõna = lause.getSonad().get(0).getTekst().toLowerCase();
+            if((Math.random()*10) < 3) {vastus = uldisedEightBallVastused[(int) (Math.random() * uldisedEightBallVastused.length)] + "\n" + eightBallKaomoji[(int) (Math.random() * 8)];}
+            else if(kontrollitavKüsisõna.equals("why")){vastus = whyEightBallVastused[(int) (Math.random() * whyEightBallVastused.length)];}
+            else if(kontrollitavKüsisõna.equals("is")||kontrollitavKüsisõna.equals("are")){vastus = isAreEightBallVastused[(int) (Math.random() * isAreEightBallVastused.length)];}
+            else if(kontrollitavKüsisõna.equals("how")){vastus = howEightBallVastused[(int) (Math.random() * howEightBallVastused.length)];}
+            else if(kontrollitavKüsisõna.equals("who")){vastus = whoEightBallVastused[(int) (Math.random() * whoEightBallVastused.length)];}
+            else if(kontrollitavKüsisõna.equals("where")){vastus = whereEightBallVastused[(int) (Math.random() * whereEightBallVastused.length)];}
+            else if(kontrollitavKüsisõna.equals("when")){vastus = whenEightBallVastused[(int) (Math.random() * whenEightBallVastused.length)];}
+            else if(kontrollitavKüsisõna.equals("which")){vastus = whichEightBallVastused[(int) (Math.random() * whichEightBallVastused.length)];}
+            else if(kontrollitavKüsisõna.equals("what")){vastus = whatEightBallVastused[(int) (Math.random() * whatEightBallVastused.length)];}
+            else{vastus = uldisedEightBallVastused[(int) (Math.random() * uldisedEightBallVastused.length)];}
 
-            if(kontrollitavKüsisõna.equals("why")){
-                return whyEightBallVastused[(int) (Math.random() * whatEightBallVastused.length)] + "\n" + eightBallKaomoji[(int) (Math.random() * 8)];
-            }
-
-            if(kontrollitavKüsisõna.equals("is")){
-                return isAreEightBallVastused[(int) (Math.random() * isAreEightBallVastused.length)] + "\n" + eightBallKaomoji[(int) (Math.random() * 8)];
-            }
-
-            if(kontrollitavKüsisõna.equals("are")){
-                return isAreEightBallVastused[(int) (Math.random() * isAreEightBallVastused.length)] + "\n" + eightBallKaomoji[(int) (Math.random() * 8)];
-            }
-
-            if(kontrollitavKüsisõna.equals("is")){
-                return isAreEightBallVastused[(int) (Math.random() * isAreEightBallVastused.length)] + "\n" + eightBallKaomoji[(int) (Math.random() * 8)];
-            }
-
-            if(kontrollitavKüsisõna.equals("how")){
-                return howEightBallVastused[(int) (Math.random() * howEightBallVastused.length)] + "\n" + eightBallKaomoji[(int) (Math.random() * 8)];
-            }
-
-            if(kontrollitavKüsisõna.equals("what")){
-                return whatEightBallVastused[(int) (Math.random() * whatEightBallVastused.length)] + "\n" + eightBallKaomoji[(int) (Math.random() * 8)];
-            }
-
-            else{
-                return üldisedEightBallVastused[(int) (Math.random() * üldisedEightBallVastused.length)] + "\n" + eightBallKaomoji[(int) (Math.random() * 8)];
-            }
+            vastus = vastus + " " + eightBallKaomoji[(int) (Math.random() * 8)];
 
         } else {
             //vastus = lause.listiPrintija(new ArrayList<String>(),0);
-            vastus = lause.listiPrintija(new ArrayList<String>(),0);
+            vastus = "Sõnade tõlkimis näide...\n" + lause.listiPrintija(new ArrayList<String>(),0);
         }
 
         ImageIcon piltP = Zen2001Programm.aken.looPilt(true,"");

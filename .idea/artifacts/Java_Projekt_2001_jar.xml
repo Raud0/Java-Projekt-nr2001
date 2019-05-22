@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact name="Java Projekt 2001:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Java_Projekt_2001_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Java Projekt 2001.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="Java Projekt 2001" />
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/bedroom.gif" />
+      <element id="file-copy" path="$PROJECT_DIR$/coolboi.jpg" />
+      <element id="file-copy" path="$PROJECT_DIR$/iced.png" />
+      <element id="file-copy" path="$PROJECT_DIR$/lepenseur.jpg" />
+      <element id="file-copy" path="$PROJECT_DIR$/meistriikoon.png" />
+      <element id="file-copy" path="$PROJECT_DIR$/slowandsteady.txt" />
+      <element id="file-copy" path="$PROJECT_DIR$/temple.gif" />
+      <element id="file-copy" path="$PROJECT_DIR$/whale-fall.png" />
+      <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
+      <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.8" />
+      <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.8" />
+      <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.11" />
+      <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
+      <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.5.7" />
+      <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.11" />
+    </root>
+  </artifact>
+</component>
