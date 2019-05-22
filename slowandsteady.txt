@@ -783,3 +783,17 @@ Uus aken meie hinge                              2019-05-16 11:18:37.033
 
 
 He who does not steal is a virtuous man, he who steals is a brave man.         ---------->          Noun|Pronoun|Other|Adverb|Verb|Other|Determiner|Adjective|Noun|Symbol|Pronoun|Pronoun|Unknown|Other|Determiner|Adjective|Noun|Symbol|
+
+
+
+Uus aken meie hinge                              2019-05-22 23:52:08.55
+
+
+rU the muffin man?
+hello
+
+
+Uus aken meie hinge                              2019-05-22 23:52:46.578
+
+
+how         ---------->          Adverb|
