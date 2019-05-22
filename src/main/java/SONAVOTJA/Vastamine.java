@@ -32,11 +32,69 @@ public class Vastamine {
             "If you're here for divination, you're a bigger fool than I at first thought.",
             "I have my doubts.",
             "... You should go home.",
-            "And isn't that the billion dollar quesiton?",
+            "And isn't that the billion dollar question?",
             "Please wait, the tea kettle is whistling.",
             "No, but I think it is for the best.",
             "Your time, it is not yet."
     };
+
+    private final static String[] üldisedEightBallVastused = {
+            "... You should go home.",
+            "And isn't that the billion dollar question?",
+            "I cannot say.",
+            "My computer says null.",
+            "Why do you ask me, if you already know the answer?",
+            "You are not ready for the answer!",
+            "If you're here for divination, you're a bigger fool than I at first thought.",
+            "Please wait, the tea kettle is whistling.",
+            "Double, double toil and trouble...",
+
+    };
+
+    private final static String[] whenEightBallVastused = {
+
+            "Your time, it is not yet.",
+            "Depends on whether the stars align.",
+
+    };
+
+    private final static String[] howEightBallVastused = {
+
+            "Badly, I'm afraid."
+
+    };
+
+    private final static String[] whoEightBallVastused = {
+    };
+
+    private final static String[] whichEightBallVastused = {
+    };
+
+    private final static String[] whyEightBallVastused = {
+
+            "It is in your cards.",
+            //"That is the whole truth of it.",
+
+    };
+
+    private final static String[] whatEightBallVastused = {
+    };
+
+    private final static String[] isAreEightBallVastused = {
+
+            "I believe so. My answer is absolute.",
+            "I would definitely think so.",
+            "I cannot say.",
+            "  YES!\nYES!\n     YES!\n          YES!",
+            "In my opinion, no.",
+            "It is in your cards.",
+            "Depends on whether the stars align.",
+            "No, I think it's very improbable.",
+            "I have my doubts.",
+            "No, but I think it is for the best.",
+
+    };
+
 
     private final static String[] eightBallKaomoji = {
             " ╮(︶︿︶)╭",
@@ -84,8 +142,41 @@ public class Vastamine {
         lause.lauseTolk(lause.lauseTukeldaja(lause.getTooresLause()));
 
         if (lause.getGrammatilineMood()[9]) {
-            //on küsimus, siis vastus muutub
-            return eightBallVastused[(int)(Math.random()*eightBallVastused.length)] + "\n" + eightBallKaomoji[(int)(Math.random()*8)];
+
+
+            if((Math.random()*10) < 3) {
+                return üldisedEightBallVastused[(int) (Math.random() * üldisedEightBallVastused.length)] + "\n" + eightBallKaomoji[(int) (Math.random() * 8)];
+            }
+
+            String kontrollitavKüsisõna = lause.getSonad().get(0).getTekst().toLowerCase();
+
+            if(kontrollitavKüsisõna.equals("why")){
+                return whyEightBallVastused[(int) (Math.random() * whatEightBallVastused.length)] + "\n" + eightBallKaomoji[(int) (Math.random() * 8)];
+            }
+
+            if(kontrollitavKüsisõna.equals("is")){
+                return isAreEightBallVastused[(int) (Math.random() * isAreEightBallVastused.length)] + "\n" + eightBallKaomoji[(int) (Math.random() * 8)];
+            }
+
+            if(kontrollitavKüsisõna.equals("are")){
+                return isAreEightBallVastused[(int) (Math.random() * isAreEightBallVastused.length)] + "\n" + eightBallKaomoji[(int) (Math.random() * 8)];
+            }
+
+            if(kontrollitavKüsisõna.equals("is")){
+                return isAreEightBallVastused[(int) (Math.random() * isAreEightBallVastused.length)] + "\n" + eightBallKaomoji[(int) (Math.random() * 8)];
+            }
+
+            if(kontrollitavKüsisõna.equals("how")){
+                return howEightBallVastused[(int) (Math.random() * howEightBallVastused.length)] + "\n" + eightBallKaomoji[(int) (Math.random() * 8)];
+            }
+
+            if(kontrollitavKüsisõna.equals("what")){
+                return whatEightBallVastused[(int) (Math.random() * whatEightBallVastused.length)] + "\n" + eightBallKaomoji[(int) (Math.random() * 8)];
+            }
+
+            else{
+                return üldisedEightBallVastused[(int) (Math.random() * üldisedEightBallVastused.length)] + "\n" + eightBallKaomoji[(int) (Math.random() * 8)];
+            }
 
         } else {
             //vastus = lause.listiPrintija(new ArrayList<String>(),0);

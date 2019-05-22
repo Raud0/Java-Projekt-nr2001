@@ -137,7 +137,7 @@ public class Lause {
             long start = System.nanoTime();
             ResultsDTO vaste = Uurija.sonaLeidja(sona.getTekst());
             long end = System.nanoTime();
-            System.out.println("Oxford API vastuse aeg: " + TimeUnit.SECONDS.convert(end - start, TimeUnit.NANOSECONDS) + " sekundit.");
+            System.out.println("Oxford API vastuse aeg: " + TimeUnit.MILLISECONDS.convert(end - start, TimeUnit.NANOSECONDS) + " millisekundit.");
 
             List<String> leksilisedKategooriad = new ArrayList<String>();
             List<Double> kategooriaKaalud = new ArrayList<Double>();
